@@ -1,0 +1,32 @@
+version: fingerprint-wire-v1
+seed: 202610191550
+reference_packs: 3
+workers: 2
+replicates:
+  clean: 60
+  swap: 30
+  mix: 30
+  qsim: 30
+minimum_clean_equivalence_lower: 0.8
+minimum_fault_power_lower: 0.8
+runtime:
+  numpy: 1.26.4
+  scipy: 1.17.1
+evidence:
+  interval_result:
+    path: docs/report/fingerprint-product-v1/intervals.json
+    sha256: 0abdef6e612fc114591e853beb1890e2431149e4a8f1f135b7a143a12dcc00b5
+  interval_acceptance:
+    path: docs/validation/product-fingerprint-intervals.json
+    sha256: 8bb9c32db0476030fbeb36095f335a8c54887d48a344c4fda8fb37d581acd1e5
+  null_result:
+    path: docs/report/fingerprint-product-null-v1/null.json
+    sha256: 9135325776bc9d355f64c1d0e45bef64afacc197ad75699fe09c94c9b741aa03
+  null_acceptance:
+    path: docs/validation/product-fingerprint-null.json
+    sha256: 9954d8a35f283df82414bdaa8d6721ba636de052ddaf703d45c25b8070ccbc63
+null_source_files:
+  src/servegauge/validation/fingerprint_product_null.py: 32ef5e89cfa21693777da7115baf42cb7e0c9a53300d5dd185e6052e747b7a33
+rationale: Three independent calibrated packs, per-pack held-out clean/swap/mix/original-noise
+  rates with Wilson lower gates. No pooling across shared reference packs, adaptive
+  stopping, changed faults or margins; no runtime equivalence enabled by this study.

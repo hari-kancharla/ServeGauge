@@ -1,0 +1,14 @@
+[
+  {
+    "run_id": "run-a",
+    "endpoint_id": "mock:one",
+    "suite_id": "S1",
+    "item_id": "P01-a",
+    "sample_idx": 0,
+    "status": 200,
+    "cost_usd": 0.0,
+    "cost_source": "estimate",
+    "request_json": "{\"messages\":[{\"content\":\"hello\",\"role\":\"user\"}]}",
+    "usage_json": "{\"completion_tokens\":1,\"prompt_tokens\":1}"
+  }
+]

@@ -1,0 +1,1579 @@
+model: deepseek/deepseek-v4-pro-0813
+discovered_at: '2026-10-18T07:48:15.830834+00:00'
+source_url: https://openrouter.ai/api/v1/models/deepseek/deepseek-v4-pro-0813/endpoints
+endpoints:
+- id: or:deepseek/deepseek-v4-pro-0813@relace/fp4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: relace/fp4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Relace
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: Relace | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000012'
+      completion: '0.000008'
+      input_cache_read: '0.00000012'
+      discount: 0
+    provider_name: Relace
+    tag: relace/fp4
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 393216
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - top_p
+    - top_k
+    - min_p
+    - stop
+    - max_tokens
+    - logit_bias
+    - frequency_penalty
+    - presence_penalty
+    - repetition_penalty
+    - tools
+    - tool_choice
+    - response_format
+    - reasoning_effort
+    supports_tool_choice:
+      none: false
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@baidu/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: baidu/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Baidu
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: Baidu | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000013332'
+      completion: '0.00000039996'
+      input_cache_read: '0.000000004242'
+      discount: 0.899
+    provider_name: Baidu
+    tag: baidu/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 393216
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - top_p
+    - max_tokens
+    - stop
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@wafer/mxfp4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: wafer/mxfp4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Wafer
+    quantization: mxfp4
+    service_tier: unknown
+  metadata:
+    name: Wafer | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000025'
+      completion: '0.0000025'
+      input_cache_read: '0.00000005'
+      discount: 0
+    provider_name: Wafer
+    tag: wafer/mxfp4
+    service_tier: null
+    quantization: mxfp4
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - top_p
+    - top_k
+    - min_p
+    - frequency_penalty
+    - presence_penalty
+    - repetition_penalty
+    - stop
+    - seed
+    - max_tokens
+    - logit_bias
+    - response_format
+    - structured_outputs
+    - tools
+    - logprobs
+    - top_logprobs
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@ionstream
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: ionstream
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Ionstream
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Ionstream | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000037'
+      completion: '0.00000293'
+      input_cache_read: '0.000000088'
+      discount: 0
+    provider_name: Ionstream
+    tag: ionstream
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - response_format
+    - tools
+    - tool_choice
+    - structured_outputs
+    - logprobs
+    - top_logprobs
+    - top_p
+    - top_k
+    - frequency_penalty
+    - presence_penalty
+    - stop
+    - seed
+    - logit_bias
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 99.93055555555556
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@sail-research/us
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: sail-research/us
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Sail Research
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: Sail Research | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1048576
+    pricing:
+      prompt: '0.000000448'
+      completion: '0.000001164'
+      input_cache_read: '0.0000000935'
+      discount: 0
+    provider_name: Sail Research
+    tag: sail-research/us
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 384000
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - top_p
+    - top_k
+    - frequency_penalty
+    - presence_penalty
+    - stop
+    - seed
+    - max_tokens
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@sail-research/fp4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: sail-research/fp4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Sail Research
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: Sail Research | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1048576
+    pricing:
+      prompt: '0.000000448'
+      completion: '0.000001164'
+      input_cache_read: '0.0000000935'
+      discount: 0
+    provider_name: Sail Research
+    tag: sail-research/fp4
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 384000
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - top_p
+    - top_k
+    - frequency_penalty
+    - presence_penalty
+    - stop
+    - seed
+    - max_tokens
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@streamlake
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: streamlake
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: StreamLake
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: StreamLake | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1024000
+    pricing:
+      prompt: '0.00000066'
+      completion: '0.00000198'
+      input_cache_read: '0.000000022'
+      discount: 0.5
+    provider_name: StreamLake
+    tag: streamlake
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 384000
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - response_format
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@deepseek
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: deepseek
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: DeepSeek
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: DeepSeek | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000066'
+      completion: '0.00000198'
+      input_cache_read: '0.000000022'
+      discount: 0
+      overrides:
+      - utc_days:
+        - saturday
+        - sunday
+        prompt: '0.00000066'
+        completion: '0.00000198'
+        input_cache_read: '0.000000022'
+      - utc_start: 0
+        utc_end: 100
+        utc_days:
+        - monday
+        - tuesday
+        - wednesday
+        - thursday
+        - friday
+        prompt: '0.00000066'
+        completion: '0.00000198'
+        input_cache_read: '0.000000022'
+      - utc_start: 100
+        utc_end: 400
+        utc_days:
+        - monday
+        - tuesday
+        - wednesday
+        - thursday
+        - friday
+        prompt: '0.00000132'
+        completion: '0.00000396'
+        input_cache_read: '0.000000044'
+      - utc_start: 400
+        utc_end: 600
+        utc_days:
+        - monday
+        - tuesday
+        - wednesday
+        - thursday
+        - friday
+        prompt: '0.00000066'
+        completion: '0.00000198'
+        input_cache_read: '0.000000022'
+      - utc_start: 600
+        utc_end: 1000
+        utc_days:
+        - monday
+        - tuesday
+        - wednesday
+        - thursday
+        - friday
+        prompt: '0.00000132'
+        completion: '0.00000396'
+        input_cache_read: '0.000000044'
+      - utc_start: 1000
+        utc_end: 0
+        utc_days:
+        - monday
+        - tuesday
+        - wednesday
+        - thursday
+        - friday
+        prompt: '0.00000066'
+        completion: '0.00000198'
+        input_cache_read: '0.000000022'
+    provider_name: DeepSeek
+    tag: deepseek
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 393216
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - logprobs
+    - top_logprobs
+    - tools
+    - tool_choice
+    - response_format
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@dekallm
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: dekallm
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: DekaLLM
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: DekaLLM | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000088'
+      completion: '0.0000038'
+      input_cache_read: '0.00000015'
+      discount: 0
+    provider_name: DekaLLM
+    tag: dekallm
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - frequency_penalty
+    - logit_bias
+    - max_tokens
+    - presence_penalty
+    - seed
+    - stop
+    - temperature
+    - top_p
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: false
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 97.60119940029985
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@novita/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: novita/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Novita
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: Novita | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000099'
+      completion: '0.00000297'
+      input_cache_read: '0.000000033'
+      discount: 0.25
+    provider_name: Novita
+    tag: novita/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 393216
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - seed
+    - top_k
+    - repetition_penalty
+    - response_format
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@gmicloud/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: gmicloud/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: GMICloud
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: GMICloud | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1048575
+    pricing:
+      prompt: '0.000001056'
+      completion: '0.000003168'
+      input_cache_read: '0.0000000352'
+      discount: 0.2
+    provider_name: GMICloud
+    tag: gmicloud/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 943717
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - seed
+    - response_format
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: null
+    uptime_last_5m: null
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@alibaba
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: alibaba
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Alibaba
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Alibaba | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1000000
+    pricing:
+      prompt: '0.000001122'
+      completion: '0.000003366'
+      input_cache_read: '0.0000001122'
+      discount: 0
+      overrides:
+      - utc_start: 0
+        utc_end: 1400
+        prompt: '0.000001122'
+        completion: '0.000003366'
+        input_cache_read: '0.0000001122'
+      - utc_start: 1400
+        utc_end: 0
+        prompt: '0.0000005808'
+        completion: '0.0000017424'
+        input_cache_read: '0.00000005808'
+    provider_name: Alibaba
+    tag: alibaba
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 393216
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - seed
+    - presence_penalty
+    - response_format
+    - top_k
+    - frequency_penalty
+    - stop
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: null
+    uptime_last_1d: 99.27745664739885
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@deepinfra/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: deepinfra/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: DeepInfra
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: DeepInfra | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000013'
+      completion: '0.0000026'
+      input_cache_read: '0.0000001'
+      discount: 0
+    provider_name: DeepInfra
+    tag: deepinfra/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 16384
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - repetition_penalty
+    - top_k
+    - seed
+    - min_p
+    - logit_bias
+    - tools
+    - tool_choice
+    - structured_outputs
+    - response_format
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@coreweave/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: coreweave/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: CoreWeave
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: CoreWeave | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000131'
+      completion: '0.00000396'
+      input_cache_read: '0.000000044'
+      discount: 0
+    provider_name: CoreWeave
+    tag: coreweave/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - top_k
+    - repetition_penalty
+    - frequency_penalty
+    - presence_penalty
+    - stop
+    - seed
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 99.92057188244638
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@alibaba/us-east-1
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: alibaba/us-east-1
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Alibaba
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Alibaba | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1000000
+    pricing:
+      prompt: '0.00000132'
+      completion: '0.00000396'
+      input_cache_read: '0.000000132'
+      discount: 0
+      overrides:
+      - utc_start: 0
+        utc_end: 1400
+        prompt: '0.00000132'
+        completion: '0.00000396'
+        input_cache_read: '0.000000132'
+      - utc_start: 1400
+        utc_end: 0
+        prompt: '0.00000066'
+        completion: '0.00000198'
+        input_cache_read: '0.000000066'
+    provider_name: Alibaba
+    tag: alibaba/us-east-1
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 393216
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - seed
+    - presence_penalty
+    - response_format
+    - top_k
+    - frequency_penalty
+    - stop
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: null
+    uptime_last_5m: null
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@atlas-cloud/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: atlas-cloud/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: AtlasCloud
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: AtlasCloud | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000132'
+      completion: '0.00000396'
+      input_cache_read: '0.000000132'
+      discount: 0
+    provider_name: AtlasCloud
+    tag: atlas-cloud/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 393216
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - top_k
+    - min_p
+    - frequency_penalty
+    - presence_penalty
+    - repetition_penalty
+    - stop
+    - seed
+    - logit_bias
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: null
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@parasail/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: parasail/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Parasail
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: Parasail | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000132'
+      completion: '0.00000396'
+      input_cache_read: '0.000000044'
+      discount: 0
+    provider_name: Parasail
+    tag: parasail/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - frequency_penalty
+    - presence_penalty
+    - repetition_penalty
+    - seed
+    - stop
+    - top_k
+    - logit_bias
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: false
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: null
+    uptime_last_5m: null
+    uptime_last_1d: 98.24281150159744
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@together
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: together
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Together
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Together | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000132'
+      completion: '0.00000396'
+      input_cache_read: '0.00000013'
+      discount: 0
+    provider_name: Together
+    tag: together
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - top_k
+    - repetition_penalty
+    - logit_bias
+    - min_p
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 99.370188943317
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@digitalocean
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: digitalocean
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: DigitalOcean
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: DigitalOcean | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000132'
+      completion: '0.00000396'
+      input_cache_read: '0.000000044'
+      discount: 0
+    provider_name: DigitalOcean
+    tag: digitalocean
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - top_p
+    - max_tokens
+    - response_format
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - structured_outputs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: null
+    uptime_last_5m: null
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@siliconflow/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: siliconflow/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: SiliconFlow
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: SiliconFlow | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000132'
+      completion: '0.00000396'
+      input_cache_read: '0.000000044'
+      discount: 0
+    provider_name: SiliconFlow
+    tag: siliconflow/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 393216
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - top_p
+    - top_k
+    - frequency_penalty
+    - max_tokens
+    - response_format
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: null
+    uptime_last_5m: null
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@cloudflare
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: cloudflare
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Cloudflare
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Cloudflare | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000132'
+      completion: '0.00000396'
+      input_cache_read: '0.000000044'
+      discount: 0
+    provider_name: Cloudflare
+    tag: cloudflare
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - top_k
+    - seed
+    - repetition_penalty
+    - frequency_penalty
+    - presence_penalty
+    - min_p
+    - stop
+    - logit_bias
+    - response_format
+    - structured_outputs
+    - logprobs
+    - top_logprobs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: null
+    uptime_last_5m: null
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@phala
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: phala
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Phala
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Phala | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000145'
+      completion: '0.00000436'
+      input_cache_read: '0.00000015'
+      discount: 0
+    provider_name: Phala
+    tag: phala
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 393216
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - seed
+    - top_k
+    - min_p
+    - repetition_penalty
+    - response_format
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: null
+    uptime_last_5m: null
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:deepseek/deepseek-v4-pro-0813@venice
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: deepseek/deepseek-v4-pro-0813
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: deepseek-v4-pro-0813
+  openrouter_pin:
+    tag: venice
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Venice
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Venice | deepseek/deepseek-v4-pro-20260813
+    model_id: deepseek/deepseek-v4-pro-0813
+    model_name: 'DeepSeek: DeepSeek V4 Pro 0813'
+    context_length: 1000000
+    pricing:
+      prompt: '0.00000165'
+      completion: '0.00000495'
+      input_cache_read: '0.000000165'
+      discount: 0
+    provider_name: Venice
+    tag: venice
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 32768
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - top_k
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: false
+    status: 0
+    uptime_last_30m: null
+    uptime_last_5m: null
+    uptime_last_1d: 97.91666666666666
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+routing_verification_limit: Generation records identify providers, not exact endpoint
+  tags, variants or regions.
+external_signals:
+  status: unavailable; authenticated capture pending
+  rows: []
+  drives_verdict: false

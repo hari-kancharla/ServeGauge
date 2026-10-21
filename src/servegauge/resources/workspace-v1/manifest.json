@@ -1,0 +1,30 @@
+{
+  "files": {
+    "configs/accounting_completion_v1.json": "d70303f272bb6e71c74f6d511ea042b915b8b1be0e72cb0107e45166eb405185",
+    "configs/accounting_cost_v1.json": "c5ec048cb73df5c6bf59c687860a4b79ad20228d264a7b2b6680148e79624657",
+    "configs/accounting_tokenizer_v1.json": "4ef5043f68b27ca25279aa84e59f063cf44f2e3e119509dd3cb6ffde9dfd05a9",
+    "configs/budgets.yaml": "1f7731347082a90e633739d675aef837c48615123742dcd424ba3040f305bc7f",
+    "configs/cache_probes_v1.json": "96f16f0f7d320ce9b3d2657c5972ab4aa2846351a972be01e38d740cd0130fa1",
+    "configs/cost_scenarios.yaml": "6df48e29979c632e2ed4ee0d491c157fc88ab6110defa6881cfd1020d8b523f9",
+    "configs/embedding_minilm_v1.json": "217ff0238cfebe1bcb457609652a7011aaa9eb2c20eb14c109819db0403df808",
+    "configs/fingerprints.yaml": "c37163c687906273744a129cf77f4459d4e4c377cfedb1e63c55bc93cbc17a5e",
+    "configs/fingerprints_embed.yaml": "7a946a5c4ade651ed53e6933996316ce0951683a00e524982880dc6b4d51ecf2",
+    "configs/margins.yaml": "72a5480c72d1eecbf489641e98d65a60490a346a43f70edb390dec9f9926ced1",
+    "configs/monitor_transport_admission_v1.json": "1223536a978933109eec0e2b298a05f369b78603b633589beb5bc12fe7d19df0",
+    "configs/monitor_transport_v1.yaml": "d3a4d8271439ade54f9a77aaeb8a86d85f81a25c5f030728dec2f97ac3be3342",
+    "configs/monitor_transport_v2.yaml": "a1f742d62f07e25864d0ca8b5459202853680f3e9facfcb09c7dbb3ca476fe69",
+    "configs/observatory.mock.yaml": "2305ea6dcdcd77e5ac0b0123acc7b734f249e3c895ea95786207f37985a3c7eb",
+    "configs/observatory.schema.json": "6cf52baffee71d1f43a160ca5d0bcce1561922951d514717c0c378999d08c19b",
+    "configs/observatory.yaml": "dd392b7ea99a90899e24de3adf506cad2a0ca4a03d9c76355a6e2b33ba58322c",
+    "configs/operations_health_v1.json": "f2d63f8db439a5dab91ea1a00bc4209d7531acb4cacf7911ce5626fbcde71045",
+    "configs/operations_v1.json": "a5edca5d530b7c2a0d8c11b2035bf6b070cfb8ffee47d9073458f3c1537cadda",
+    "configs/requirements/example_app.yaml": "a0777bfa7ec5828d317ac0d40a572b2df90202c2b06be4ae957fe27a64449963",
+    "configs/suites.yaml": "b8eeea610522274d16a2dd4701388c7aa75e6ace89107bbce3364dac9137da0a",
+    "docs/METHODS.md": "ae761c57f6436c475fa4ec08ae9045e41405767d365fe88098b06aec6bebb31f",
+    "profiles/glm-5.3.yaml": "247872a5a9271d6650ef1536562af2514becdd5c05b5b33f1982e0035b474fdd",
+    "profiles/gpt-oss-120b.yaml": "a75465cfeaf2f0b21b32d0535772778dfb70fd4db82d09ce2e5ca568eb4c6bf9",
+    "profiles/gpt-oss-20b.yaml": "3798867f3f649d24cb7f903abf543fcf3c7a07fdd655ba07adf79a7748867219",
+    "profiles/qwen3-0.6b-study.yaml": "cadfe713bda161bd83e20014ab5ff112c8ed0b70b487f3e3a92097387dae6f70"
+  },
+  "version": "workspace-template-v1"
+}

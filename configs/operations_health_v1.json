@@ -1,0 +1,7 @@
+{
+  "version": "operational-health-v1",
+  "units": "ordinary-suite-trial-procedure",
+  "margin_source": "comparative_defaults",
+  "pairing": "exact-initial-requests-and-protocol",
+  "outcome": "all-observed-opportunities-successful"
+}

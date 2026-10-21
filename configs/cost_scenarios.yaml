@@ -1,0 +1,6 @@
+version: cost-scenarios-v1
+completion_tokens: [64, 256, 1024]
+continuation_prompt_tokens: 4096
+assume_intentional_rejections_unbilled: true
+billing_policy_source: https://openrouter.ai/pricing
+rationale: "Illustrative averages and maximum bounded agent turns, not measured usage. Conditional scenarios assume intentional over-context probes return errors and incur no model-token charge under the cited OpenRouter policy; all-attempt scenarios also price those probes. Initial input uses the official local template when supported, otherwise canonical wire tokenization. Native overhead and actual reasoning usage remain unknown. The ledger retains conservative charges when actual cost is unknown; these scenarios never release holds or raise caps."

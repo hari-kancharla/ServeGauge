@@ -1,0 +1,10 @@
+# Disabled owner template. Populate explicit, freshly discovered endpoint snapshots
+# and qualified references before an owner run. No keys or credentials belong here.
+version: observatory-v1
+id: servegauge-observatory
+enabled: false
+mode: owner
+endpoint_selection: explicit
+models: []
+budgets: {probe: 0, daily: 0, weekly: 0, monthly: 0}
+publishing: {enabled: false, repo_id: null, credential_env: HF_TOKEN, license: cc-by-4.0}

@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite this software and the measurement methods used in your analysis."
+title: ServeGauge
+type: software
+version: 0.1.0.dev0
+license: Apache-2.0
+authors:
+  - family-names: Kancharla
+    given-names: Hari Krishna

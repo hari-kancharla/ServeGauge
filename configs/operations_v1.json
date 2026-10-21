@@ -1,0 +1,10 @@
+{
+  "version": "client-operations-v1",
+  "smoke": {"items": 50, "agent_tasks": 4},
+  "core": {"items": 200, "agent_tasks": 12},
+  "full": {"items": 600, "agent_tasks": 30},
+  "output_cap": 256,
+  "agent_output_cap": 1024,
+  "agent_steps": 3,
+  "agent_turn_headroom": 2
+}

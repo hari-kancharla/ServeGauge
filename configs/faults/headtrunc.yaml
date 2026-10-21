@@ -1,0 +1,3 @@
+fault_id: F-HEADTRUNC
+truncate_prompt_head_over: 16000
+seed: 7

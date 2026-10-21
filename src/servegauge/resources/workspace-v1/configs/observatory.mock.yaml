@@ -1,0 +1,22 @@
+# In-process ASGI only: no local server, sockets, credentials or provider calls.
+# Default cadences use canonical sizes; daily includes the full FP1 collection.
+version: observatory-v1
+id: servegauge-local-demo
+enabled: true
+mode: mock
+endpoint_selection: explicit
+seed: 20261020
+requests_per_minute: 600000
+models:
+  - id: scripted-gpt-oss
+    profile: gpt-oss-120b
+    sampling_version: v2
+    reference: {tier: MOCK, pack: null}
+    endpoints:
+      - id: mock:observatory
+        kind: mock
+        base_url: http://127.0.0.1:8011/v1
+        model: mock
+        claimed_profile: gpt-oss-120b
+budgets: {probe: 0, daily: 0, weekly: 0, monthly: 0}
+publishing: {enabled: false, repo_id: null, credential_env: HF_TOKEN, license: cc-by-4.0}

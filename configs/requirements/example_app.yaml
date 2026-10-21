@@ -1,0 +1,14 @@
+app: support-bot
+requires:
+  - id: tools-basic
+    tests: [T02, T03, T05, T06]
+    margin: 0.02
+  - id: tools-parallel
+    tests: [T04]
+  - id: json-strict
+    tests: [J02, J05]
+  - id: context-64k
+    tests: [L04, L05]
+    params: {min_effective_context: 64000}
+  - id: effort-works
+    tests: [P07]

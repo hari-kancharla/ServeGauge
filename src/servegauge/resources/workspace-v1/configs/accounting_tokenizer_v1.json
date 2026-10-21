@@ -1,0 +1,6 @@
+{
+  "version": "claimed-tokenizer-v1",
+  "projection": "native-prompt-over-claimed-template-v1",
+  "counter_version": "hf-api-adapter-v1",
+  "counter_date": "2026-10-18"
+}

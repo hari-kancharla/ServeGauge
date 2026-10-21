@@ -1,0 +1,6 @@
+# Socket-blocked transport fixtures only; these are simulated ledger dollars.
+monthly_usd: 1
+per_run_usd: 1
+dev_live_usd: 1
+selfhost_usd_per_session: 0
+stop_at_fraction: 0.9

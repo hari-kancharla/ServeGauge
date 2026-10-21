@@ -1,0 +1,3 @@
+fault_id: F-OUTTRUNC
+truncate_output_after: 6000
+seed: 7

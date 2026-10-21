@@ -1,0 +1,35 @@
+/Starter Files/
+.DS_Store
+.venv/
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
+data/
+bundles/
+reports/
+dist/
+*.egg-info/
+refs/**/manifest.json
+refs/**/pack.json
+refs/**/*.parquet
+.env
+.env.*
+!.env.example
+
+# Local instructions, development records, and account state
+/AGENTS.md
+/README_FIRST.md
+/KICKOFF_PROMPT.md
+/docs/IMPLEMENT.md
+/docs/SPEC.md
+/docs/PLAN.md
+/docs/STATUS.md
+/docs/RESEARCH.md
+/docs/plans/
+/budget/

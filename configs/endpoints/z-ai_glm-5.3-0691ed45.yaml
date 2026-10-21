@@ -1,0 +1,2993 @@
+model: z-ai/glm-5.3
+discovered_at: '2026-10-18T07:51:14.868017+00:00'
+source_url: https://openrouter.ai/api/v1/models/z-ai/glm-5.3/endpoints
+endpoints:
+- id: or:z-ai/glm-5.3@relace
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: relace
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Relace
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Relace | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000000632'
+      completion: '0.0000044'
+      input_cache_read: '0.0000000588'
+      discount: 0
+    provider_name: Relace
+    tag: relace
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 131072
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - seed
+    - top_k
+    - repetition_penalty
+    - tools
+    - tool_choice
+    - response_format
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@wafer/us
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: wafer/us
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Wafer
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: Wafer | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.000000079'
+      completion: '0.0000048'
+      input_cache_read: '0.000000078'
+      discount: 0
+    provider_name: Wafer
+    tag: wafer/us
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - top_p
+    - top_k
+    - min_p
+    - frequency_penalty
+    - presence_penalty
+    - repetition_penalty
+    - stop
+    - seed
+    - max_tokens
+    - logit_bias
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@inference-net/fp4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: inference-net/fp4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: InferenceNet
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: InferenceNet | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000008'
+      completion: '0.000004381'
+      input_cache_read: '0.000000076'
+      discount: 0
+    provider_name: InferenceNet
+    tag: inference-net/fp4
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - seed
+    - top_k
+    - min_p
+    - logit_bias
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - repetition_penalty
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@morph/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: morph/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Morph
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: Morph | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.000000082'
+      completion: '0.000006'
+      input_cache_read: '0.000000051'
+      discount: 0
+    provider_name: Morph
+    tag: morph/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - stop
+    - top_p
+    - top_k
+    - min_p
+    - frequency_penalty
+    - presence_penalty
+    - repetition_penalty
+    - seed
+    - logit_bias
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 99.71160778658977
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@reka
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: reka
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Reka
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Reka | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 262144
+    pricing:
+      prompt: '0.00000014'
+      completion: '0.0000042'
+      input_cache_read: '0.000000105'
+      discount: 0.3
+    provider_name: Reka
+    tag: reka
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 235929
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - temperature
+    - top_p
+    - top_k
+    - max_tokens
+    - stop
+    - seed
+    - frequency_penalty
+    - presence_penalty
+    - repetition_penalty
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@makora/fp4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: makora/fp4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Makora
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: Makora | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000014'
+      completion: '0.0000044'
+      input_cache_read: '0.0000001'
+      discount: 0
+    provider_name: Makora
+    tag: makora/fp4
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 128000
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - top_p
+    - top_k
+    - frequency_penalty
+    - presence_penalty
+    - repetition_penalty
+    - stop
+    - max_tokens
+    - seed
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 96.66908037653874
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@wafer/fp4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: wafer/fp4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Wafer
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: Wafer | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.000000179'
+      completion: '0.0000048'
+      input_cache_read: '0.000000178'
+      discount: 0
+    provider_name: Wafer
+    tag: wafer/fp4
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - top_p
+    - top_k
+    - min_p
+    - frequency_penalty
+    - presence_penalty
+    - repetition_penalty
+    - stop
+    - seed
+    - max_tokens
+    - logit_bias
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@dekallm
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: dekallm
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: DekaLLM
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: DekaLLM | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000018'
+      completion: '0.00000295'
+      input_cache_read: '0.00000015'
+      discount: 0
+    provider_name: DekaLLM
+    tag: dekallm
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - frequency_penalty
+    - logit_bias
+    - max_tokens
+    - presence_penalty
+    - seed
+    - stop
+    - temperature
+    - top_p
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 97.68451519536903
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@akashml/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: akashml/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: AkashML
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: AkashML | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000019'
+      completion: '0.0000044'
+      input_cache_read: '0.00000019'
+      discount: 0
+    provider_name: AkashML
+    tag: akashml/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 131072
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - temperature
+    - top_p
+    - top_k
+    - repetition_penalty
+    - frequency_penalty
+    - presence_penalty
+    - stop
+    - seed
+    - max_tokens
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@io-net/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: io-net/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Io Net
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: Io Net | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 262124
+    pricing:
+      prompt: '0.00000049'
+      completion: '0.0000026'
+      input_cache_read: '0.00000019'
+      discount: 0
+    provider_name: Io Net
+    tag: io-net/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 131072
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - response_format
+    - logprobs
+    - top_logprobs
+    - seed
+    - stop
+    - min_p
+    - top_k
+    - top_p
+    - presence_penalty
+    - frequency_penalty
+    - repetition_penalty
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@sail-research/us
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: sail-research/us
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Sail Research
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: Sail Research | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000005'
+      completion: '0.000001505'
+      input_cache_read: '0.000000119'
+      discount: 0
+    provider_name: Sail Research
+    tag: sail-research/us
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - frequency_penalty
+    - max_tokens
+    - presence_penalty
+    - seed
+    - stop
+    - temperature
+    - top_k
+    - top_p
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@sail-research/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: sail-research/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Sail Research
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: Sail Research | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000005'
+      completion: '0.000001505'
+      input_cache_read: '0.000000119'
+      discount: 0
+    provider_name: Sail Research
+    tag: sail-research/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - top_p
+    - top_k
+    - frequency_penalty
+    - presence_penalty
+    - stop
+    - seed
+    - max_tokens
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@inceptron/fp4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: inceptron/fp4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Inceptron
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: Inceptron | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000055'
+      completion: '0.000001505'
+      input_cache_read: '0.00000018'
+      discount: 0
+    provider_name: Inceptron
+    tag: inceptron/fp4
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - max_tokens
+    - top_p
+    - stop
+    - frequency_penalty
+    - logit_bias
+    - parallel_tool_calls
+    - presence_penalty
+    - seed
+    - response_format
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 99.93055555555556
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@deepinfra/fp4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: deepinfra/fp4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: DeepInfra
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: DeepInfra | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000005625'
+      completion: '0.0000025'
+      input_cache_read: '0.000000125'
+      discount: 0.375
+    provider_name: DeepInfra
+    tag: deepinfra/fp4
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 131072
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - repetition_penalty
+    - top_k
+    - seed
+    - min_p
+    - logit_bias
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: false
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 99.50331125827815
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@baidu/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: baidu/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Baidu
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: Baidu | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000005992'
+      completion: '0.0000018832'
+      input_cache_read: '0.00000011128'
+      discount: 0.572
+    provider_name: Baidu
+    tag: baidu/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 131072
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - top_p
+    - max_tokens
+    - frequency_penalty
+    - presence_penalty
+    - repetition_penalty
+    - stop
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@tenstorrent/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: tenstorrent/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Tenstorrent
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: Tenstorrent | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1044480
+    pricing:
+      prompt: '0.0000006'
+      completion: '0.0000025'
+      input_cache_read: '0.0000001'
+      discount: 0
+    provider_name: Tenstorrent
+    tag: tenstorrent/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 131072
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - top_p
+    - top_k
+    - stop
+    - seed
+    - max_tokens
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 97.03264094955489
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@siliconflow/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: siliconflow/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: SiliconFlow
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: SiliconFlow | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000007'
+      completion: '0.0000022'
+      input_cache_read: '0.00000013'
+      discount: 0.5
+    provider_name: SiliconFlow
+    tag: siliconflow/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 262144
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - top_p
+    - top_k
+    - frequency_penalty
+    - max_tokens
+    - tools
+    - tool_choice
+    - response_format
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@novita/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: novita/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Novita
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: Novita | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000007'
+      completion: '0.0000022'
+      input_cache_read: '0.00000013'
+      discount: 0.5
+    provider_name: Novita
+    tag: novita/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 131072
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - seed
+    - top_k
+    - repetition_penalty
+    - response_format
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@phala
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: phala
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Phala
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Phala | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000084'
+      completion: '0.00000264'
+      input_cache_read: '0.000000156'
+      discount: 0.4
+    provider_name: Phala
+    tag: phala
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - seed
+    - top_k
+    - min_p
+    - repetition_penalty
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: null
+    uptime_last_5m: null
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@decart/fp4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: decart/fp4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Decart
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: Decart | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000084'
+      completion: '0.00000266'
+      input_cache_read: '0.00000019'
+      discount: 0
+    provider_name: Decart
+    tag: decart/fp4
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - top_p
+    - top_k
+    - min_p
+    - frequency_penalty
+    - presence_penalty
+    - repetition_penalty
+    - stop
+    - seed
+    - max_tokens
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@digitalocean
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: digitalocean
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: DigitalOcean
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: DigitalOcean | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000091'
+      completion: '0.00000286'
+      input_cache_read: '0.000000169'
+      discount: 0
+    provider_name: DigitalOcean
+    tag: digitalocean
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 128000
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - top_p
+    - max_tokens
+    - response_format
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - structured_outputs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 99.65181058495823
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@gmicloud/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: gmicloud/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: GMICloud
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: GMICloud | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000098'
+      completion: '0.00000308'
+      input_cache_read: '0.000000182'
+      discount: 0.3
+    provider_name: GMICloud
+    tag: gmicloud/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - seed
+    - response_format
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 98.36065573770492
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@alibaba
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: alibaba
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Alibaba
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Alibaba | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1000000
+    pricing:
+      prompt: '0.00000119'
+      completion: '0.00000374'
+      input_cache_read: '0.000000238'
+      discount: 0
+    provider_name: Alibaba
+    tag: alibaba
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 131072
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - seed
+    - presence_penalty
+    - response_format
+    - top_k
+    - frequency_penalty
+    - stop
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: null
+    uptime_last_5m: null
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@coreweave/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: coreweave/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: CoreWeave
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: CoreWeave | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000012'
+      completion: '0.000004'
+      input_cache_read: '0.00000019'
+      discount: 0
+    provider_name: CoreWeave
+    tag: coreweave/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - top_k
+    - repetition_penalty
+    - frequency_penalty
+    - presence_penalty
+    - stop
+    - seed
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 96.66666666666667
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@friendli
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: friendli
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Friendli
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Friendli | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000126'
+      completion: '0.00000396'
+      input_cache_read: '0.000000234'
+      discount: 0.1
+    provider_name: Friendli
+    tag: friendli
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - seed
+    - top_k
+    - min_p
+    - repetition_penalty
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: false
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@mistral/zdr
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: mistral/zdr
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Mistral
+    quantization: nvfp4
+    service_tier: unknown
+  metadata:
+    name: Mistral | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000014'
+      completion: '0.0000044'
+      input_cache_read: '0.00000014'
+      discount: 0
+    provider_name: Mistral
+    tag: mistral/zdr
+    service_tier: null
+    quantization: nvfp4
+    max_completion_tokens: 131072
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - seed
+    - response_format
+    - structured_outputs
+    - tools
+    - logprobs
+    - top_logprobs
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: false
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 99.69418960244649
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@baseten/fp4/us
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: baseten/fp4/us
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: BaseTen
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: BaseTen | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000014'
+      completion: '0.0000044'
+      input_cache_read: '0.00000014'
+      discount: 0
+    provider_name: BaseTen
+    tag: baseten/fp4/us
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 262144
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@mistral/nvfp4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: mistral/nvfp4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Mistral
+    quantization: nvfp4
+    service_tier: unknown
+  metadata:
+    name: Mistral | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000014'
+      completion: '0.0000044'
+      input_cache_read: '0.00000014'
+      discount: 0
+    provider_name: Mistral
+    tag: mistral/nvfp4
+    service_tier: null
+    quantization: nvfp4
+    max_completion_tokens: 131072
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - seed
+    - response_format
+    - structured_outputs
+    - tools
+    - logprobs
+    - top_logprobs
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: false
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 99.77426636568849
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@nebius/fp4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: nebius/fp4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Nebius
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: Nebius | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1024000
+    pricing:
+      prompt: '0.0000014'
+      completion: '0.0000044'
+      discount: 0
+    provider_name: Nebius
+    tag: nebius/fp4
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 921600
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - seed
+    - top_k
+    - logit_bias
+    - logprobs
+    - top_logprobs
+    - repetition_penalty
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 94.9671772428884
+    supports_implicit_caching: false
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@crusoe/fp4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: crusoe/fp4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Crusoe
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: Crusoe | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000014'
+      completion: '0.0000044'
+      input_cache_read: '0.00000013'
+      discount: 0
+    provider_name: Crusoe
+    tag: crusoe/fp4
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - seed
+    - min_p
+    - repetition_penalty
+    - top_k
+    - logit_bias
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@primeintellect
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: primeintellect
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: PrimeIntellect
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: PrimeIntellect | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000014'
+      completion: '0.0000044'
+      input_cache_read: '0.00000026'
+      discount: 0
+    provider_name: PrimeIntellect
+    tag: primeintellect
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 131072
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - max_tokens
+    - temperature
+    - top_p
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: null
+    uptime_last_5m: null
+    uptime_last_1d: 99.67159277504105
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@venice
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: venice
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Venice
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Venice | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1000000
+    pricing:
+      prompt: '0.0000014'
+      completion: '0.0000044'
+      input_cache_read: '0.00000026'
+      discount: 0.2
+    provider_name: Venice
+    tag: venice
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 131072
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - top_k
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: null
+    uptime_last_5m: null
+    uptime_last_1d: 96.05263157894737
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@together
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: together
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Together
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Together | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048575
+    pricing:
+      prompt: '0.0000014'
+      completion: '0.0000044'
+      input_cache_read: '0.00000026'
+      discount: 0
+    provider_name: Together
+    tag: together
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 943717
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - top_k
+    - repetition_penalty
+    - logit_bias
+    - min_p
+    - response_format
+    - structured_outputs
+    - logprobs
+    - top_logprobs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 99.07094594594594
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@parasail/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: parasail/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Parasail
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: Parasail | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000014'
+      completion: '0.0000044'
+      input_cache_read: '0.00000026'
+      discount: 0
+    provider_name: Parasail
+    tag: parasail/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - frequency_penalty
+    - presence_penalty
+    - repetition_penalty
+    - seed
+    - stop
+    - top_k
+    - logit_bias
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 99.67320261437908
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@modal
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: modal
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Modal
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Modal | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000014'
+      completion: '0.0000044'
+      input_cache_read: '0.00000026'
+      discount: 0
+    provider_name: Modal
+    tag: modal
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - top_p
+    - stop
+    - max_tokens
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@baseten/fp4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: baseten/fp4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: BaseTen
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: BaseTen | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000014'
+      completion: '0.0000044'
+      input_cache_read: '0.00000014'
+      discount: 0
+    provider_name: BaseTen
+    tag: baseten/fp4
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 262144
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: null
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@fireworks
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: fireworks
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Fireworks
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Fireworks | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000014'
+      completion: '0.0000044'
+      input_cache_read: '0.00000026'
+      discount: 0
+    provider_name: Fireworks
+    tag: fireworks
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - top_k
+    - repetition_penalty
+    - logit_bias
+    - logprobs
+    - top_logprobs
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 99.80824544582933
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@cloudflare
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: cloudflare
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Cloudflare
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Cloudflare | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000014'
+      completion: '0.0000044'
+      input_cache_read: '0.00000026'
+      discount: 0
+    provider_name: Cloudflare
+    tag: cloudflare
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - top_k
+    - seed
+    - repetition_penalty
+    - frequency_penalty
+    - presence_penalty
+    - min_p
+    - stop
+    - logit_bias
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: null
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@atlas-cloud/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: atlas-cloud/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: AtlasCloud
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: AtlasCloud | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000014'
+      completion: '0.0000044'
+      input_cache_read: '0.00000026'
+      discount: 0
+    provider_name: AtlasCloud
+    tag: atlas-cloud/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 131072
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - top_k
+    - min_p
+    - frequency_penalty
+    - presence_penalty
+    - repetition_penalty
+    - stop
+    - seed
+    - logit_bias
+    - response_format
+    - tools
+    - tool_choice
+    - structured_outputs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@z-ai/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: z-ai/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Z.AI
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: Z.AI | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000014'
+      completion: '0.0000044'
+      input_cache_read: '0.00000026'
+      discount: 0
+    provider_name: Z.AI
+    tag: z-ai/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 131072
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - tools
+    - tool_choice
+    - top_k
+    - response_format
+    - reasoning_effort
+    supports_tool_choice:
+      none: false
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@mistral/nvfp4/eu
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: mistral/nvfp4/eu
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Mistral
+    quantization: nvfp4
+    service_tier: unknown
+  metadata:
+    name: Mistral | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.00000154'
+      completion: '0.00000484'
+      input_cache_read: '0.000000154'
+      discount: 0
+    provider_name: Mistral
+    tag: mistral/nvfp4/eu
+    service_tier: null
+    quantization: nvfp4
+    max_completion_tokens: 131072
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - seed
+    - response_format
+    - structured_outputs
+    - tools
+    - logprobs
+    - top_logprobs
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: false
+      function: true
+    status: 0
+    uptime_last_30m: null
+    uptime_last_5m: null
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@modelrun/fp4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: modelrun/fp4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: ModelRun
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: ModelRun | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000021'
+      completion: '0.0000066'
+      input_cache_read: '0.0000004'
+      discount: 0
+    provider_name: ModelRun
+    tag: modelrun/fp4
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 524288
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - presence_penalty
+    - repetition_penalty
+    - frequency_penalty
+    - stop
+    - top_p
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: null
+    uptime_last_5m: null
+    uptime_last_1d: 99.06735751295336
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@fireworks/fast
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: fireworks/fast
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Fireworks
+    quantization: unknown
+    service_tier: priority
+  metadata:
+    name: Fireworks | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000021'
+      completion: '0.0000066'
+      input_cache_read: '0.00000039'
+      discount: 0
+    provider_name: Fireworks
+    tag: fireworks/fast
+    service_tier: priority
+    quantization: unknown
+    max_completion_tokens: 943718
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - top_k
+    - repetition_penalty
+    - logit_bias
+    - logprobs
+    - top_logprobs
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@baseten/us/fast
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: baseten/us/fast
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: BaseTen
+    quantization: fp8
+    service_tier: priority
+  metadata:
+    name: BaseTen | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000021'
+      completion: '0.0000066'
+      input_cache_read: '0.00000021'
+      discount: 0
+    provider_name: BaseTen
+    tag: baseten/us/fast
+    service_tier: priority
+    quantization: fp8
+    max_completion_tokens: 262144
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@baseten/fast
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: baseten/fast
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: BaseTen
+    quantization: fp8
+    service_tier: priority
+  metadata:
+    name: BaseTen | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1048576
+    pricing:
+      prompt: '0.0000021'
+      completion: '0.0000066'
+      input_cache_read: '0.00000021'
+      discount: 0
+    provider_name: BaseTen
+    tag: baseten/fast
+    service_tier: priority
+    quantization: fp8
+    max_completion_tokens: 262144
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: null
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+- id: or:z-ai/glm-5.3@alibaba/prime
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: z-ai/glm-5.3
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: glm-5.3
+  openrouter_pin:
+    tag: alibaba/prime
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Alibaba
+    quantization: unknown
+    service_tier: priority
+  metadata:
+    name: Alibaba | z-ai/glm-5.3-20260816
+    model_id: z-ai/glm-5.3
+    model_name: 'Z.ai: GLM 5.3'
+    context_length: 1000000
+    pricing:
+      prompt: '0.0000028'
+      completion: '0.0000088'
+      input_cache_read: '0.00000056'
+      discount: 0
+    provider_name: Alibaba
+    tag: alibaba/prime
+    service_tier: priority
+    quantization: unknown
+    max_completion_tokens: 131072
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - seed
+    - presence_penalty
+    - response_format
+    - top_k
+    - frequency_penalty
+    - stop
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: null
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+routing_verification_limit: Generation records identify providers, not exact endpoint
+  tags, variants or regions.
+external_signals:
+  status: unavailable; authenticated capture pending
+  rows: []
+  drives_verdict: false

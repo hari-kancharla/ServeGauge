@@ -1,0 +1,27 @@
+# SPEC defaults are frozen. New checks declare their units; no margin search.
+statistics:
+  alpha: 0.05
+  target_power: 0.8
+  bootstrap_resamples: 2000
+  permutation_resamples: 2000
+  rationale: "SPEC 12: family-wise verdicts, paired designs and at least 2000 bootstrap draws"
+invariant_defaults:
+  k_fail: 2
+  tolerance: 0.01
+  rationale: "SPEC 19.1: repeated, replayed violations; clean PASS needs a tight 95% upper bound"
+comparative_defaults:
+  margin: 0.03
+  rationale: "Three percentage points for generated binary capability outcomes; check-specific values override"
+T02: {margin: 0.02, rationale: "two points of schema accuracy is user-visible at agent scale"}
+T01: {margin: 0.03, rationale: "KVV-style trigger agreement varies a few points run to run"}
+B01: {margin: 0.03, rationale: "three percent of local prompt tokens, after matched-input reference overhead calibration; no absolute template assumption"}
+P07:
+  effort_ignored_ratio: 1.25
+  pass_reference_fraction: 0.5
+  token_pseudocount: 1
+  rationale: "SPEC S1: ratio 1.25 ignored boundary; PASS clears half the reference ratio; positive offset defines log ratios at observed zero"
+P06: {prob_sum_tolerance: 0.001, rationale: "floating-point slack"}
+FP3: {missing_logprob_floor: -30.0, rationale: "below any realistic top-k logprob"}
+FP1: {margin: 0.03, rationale: "three hundredths of a bit of mean JSD displacement from matched-n same-model controls; first declared for the offline lab"}
+FP2: {margin: 0.03, rationale: "three percentage points of fixed-length normalized Hamming-MMD displacement from matched-n same-model controls"}
+P03.cache: {margin: 0.03, rationale: "three percentage points of adjacent completion-change frequency, clustered by independent prompt"}

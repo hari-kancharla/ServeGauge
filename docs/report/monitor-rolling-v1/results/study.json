@@ -1,0 +1,1134 @@
+{
+  "alarm_admission_enabled": false,
+  "artifact_sha256": {
+    "abrupt-core-events.json": "e5fc365bdacc8312dcc2afd118c40419db68f2e0fabb6097767bfd9f5b54d8bc",
+    "abrupt-core.npz": "c4ac080c2c2ae0269cdc6627ac3ae1a52523a534b62fea729661743f6eb93fe7",
+    "gradual-core-events.json": "f4213257638989830cf6c8d5f07cb584c55c805ee751ec82c875d2345bf5e1c2",
+    "gradual-core.npz": "4035a47a0a5dceb2098efe1a4fed7eda3e0f162e7927c3eee821a2a980c6359a",
+    "gradual-monthly-events.json": "d18f79416cc5ddaff81fd144371c5167706236c9338744e4189b9468679898ac",
+    "gradual-monthly.npz": "c2399fefb0da3f3cdf25f62e71cc388b079d5930c093296b6e9b151e90844740",
+    "mild-core-events.json": "fc968d5ab2afc49e4efe7f644b812b25d46a735eb22a18ce3773a82f62349cfb",
+    "mild-core.npz": "e7373d49a74fb5fa006b66f324faa34a04ec4a9907b9cae8809ff1910fe188ab",
+    "mild-monthly-events.json": "d27fb9eb30f0bbc6fe287880e8c3fab06054c0bfc858081f12ed6d30b1b9fbae",
+    "mild-monthly.npz": "dfdfced20a9a5bb45d8bc15aec55ed06c754f176b91a22cc2c8fd856653a7ef8",
+    "missing-gradual-events.json": "fea16baf024ec398da77e17fbdac2fe577dc8d0d29d33dc30626c1554c7023fa",
+    "missing-gradual.npz": "0a048e0166ab2101c840dab5d06cb7202c6abc6e062c010965e45e752f6c3872",
+    "null-half-events.json": "2f759197df6f0df91363a0c08a802cbf2ca5cf886435c832efa93d05e19f231a",
+    "null-half.npz": "89c2ea11c30d2feae4067cdeb488bfedce8485e58078a759761ed1282f6fa604",
+    "null-high-events.json": "2f759197df6f0df91363a0c08a802cbf2ca5cf886435c832efa93d05e19f231a",
+    "null-high.npz": "b881f1b00c42afc9fdb3a1372f67804e862bf33420683e644e15bebcc70887a4",
+    "null-three-quarters-events.json": "2f759197df6f0df91363a0c08a802cbf2ca5cf886435c832efa93d05e19f231a",
+    "null-three-quarters.npz": "39bb6ef3a3a7e3a7009ec50b54cea0b1ce7b00a1faf1e0e24536ccb89a27ac1e",
+    "public-replay.json": "ecf831be926f16433db214111ec478d04b96b1fc5e736037da9dbc91ab235c9d"
+  },
+  "cases": [
+    {
+      "any_event_ci_high": 0.0019170472812529349,
+      "any_event_ci_low": 0.0,
+      "any_event_count": 0,
+      "any_event_rate": 0.0,
+      "available_windows": 300000,
+      "baseline": 0.5,
+      "cadence": "daily",
+      "days": 150,
+      "events_per_trajectory": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "limitation": "Percentile bootstrap; zero-variance samples are descriptive, not proof of zero operating risk.",
+        "mean": 0.0,
+        "n": 2000,
+        "resamples": 2000,
+        "unit": "independent trajectory"
+      },
+      "generator_seed": 14248532979145782922,
+      "name": "null-half",
+      "reference_tier": "MOCK",
+      "replicates": 2000,
+      "scope": "Independent constructed binomial batches, not provider or operating admission.",
+      "size": 400,
+      "total_windows": 300000
+    },
+    {
+      "any_event_ci_high": 0.0019170472812529349,
+      "any_event_ci_low": 0.0,
+      "any_event_count": 0,
+      "any_event_rate": 0.0,
+      "available_windows": 300000,
+      "baseline": 0.75,
+      "cadence": "daily",
+      "days": 150,
+      "events_per_trajectory": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "limitation": "Percentile bootstrap; zero-variance samples are descriptive, not proof of zero operating risk.",
+        "mean": 0.0,
+        "n": 2000,
+        "resamples": 2000,
+        "unit": "independent trajectory"
+      },
+      "generator_seed": 11558062319138323574,
+      "name": "null-three-quarters",
+      "reference_tier": "MOCK",
+      "replicates": 2000,
+      "scope": "Independent constructed binomial batches, not provider or operating admission.",
+      "size": 400,
+      "total_windows": 300000
+    },
+    {
+      "any_event_ci_high": 0.0019170472812529349,
+      "any_event_ci_low": 0.0,
+      "any_event_count": 0,
+      "any_event_rate": 0.0,
+      "available_windows": 300000,
+      "baseline": 0.95,
+      "cadence": "daily",
+      "days": 150,
+      "events_per_trajectory": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "limitation": "Percentile bootstrap; zero-variance samples are descriptive, not proof of zero operating risk.",
+        "mean": 0.0,
+        "n": 2000,
+        "resamples": 2000,
+        "unit": "independent trajectory"
+      },
+      "generator_seed": 9888698770081801244,
+      "name": "null-high",
+      "reference_tier": "MOCK",
+      "replicates": 2000,
+      "scope": "Independent constructed binomial batches, not provider or operating admission.",
+      "size": 400,
+      "total_windows": 300000
+    },
+    {
+      "any_event_ci_high": 1.0,
+      "any_event_ci_low": 0.9980829527187469,
+      "any_event_count": 2000,
+      "any_event_rate": 1.0,
+      "available_windows": 240000,
+      "baseline": 0.95,
+      "cadence": "daily",
+      "change_index": 30,
+      "conditional_delay_windows": {
+        "ci_high": 0.4165,
+        "ci_low": 0.3745,
+        "limitation": "Percentile bootstrap; zero-variance samples are descriptive, not proof of zero operating risk.",
+        "mean": 0.3945,
+        "n": 2000,
+        "resamples": 2000,
+        "unit": "independent trajectory"
+      },
+      "days": 120,
+      "detected": 2000,
+      "drop": 0.2,
+      "effect_intervals_covering_truth": 2000,
+      "effect_intervals_observed": 2000,
+      "events_per_trajectory": {
+        "ci_high": 1.0,
+        "ci_low": 1.0,
+        "limitation": "Percentile bootstrap; zero-variance samples are descriptive, not proof of zero operating risk.",
+        "mean": 1.0,
+        "n": 2000,
+        "resamples": 2000,
+        "unit": "independent trajectory"
+      },
+      "followup_windows": 90,
+      "generator_seed": 9453444981623611951,
+      "name": "abrupt-core",
+      "power": 1.0,
+      "power_ci_high": 1.0,
+      "power_ci_low": 0.9980829527187469,
+      "prechange_alarm_trajectories": 0,
+      "ramp": 1,
+      "reference_tier": "MOCK",
+      "replicates": 2000,
+      "right_censored": 0,
+      "scope": "Independent constructed binomial batches, not provider or operating admission.",
+      "size": 400,
+      "total_windows": 240000
+    },
+    {
+      "any_event_ci_high": 1.0,
+      "any_event_ci_low": 0.9980829527187469,
+      "any_event_count": 2000,
+      "any_event_rate": 1.0,
+      "available_windows": 240000,
+      "baseline": 0.95,
+      "cadence": "daily",
+      "change_index": 30,
+      "conditional_delay_windows": {
+        "ci_high": 14.7975,
+        "ci_low": 14.712987499999999,
+        "limitation": "Percentile bootstrap; zero-variance samples are descriptive, not proof of zero operating risk.",
+        "mean": 14.7535,
+        "n": 2000,
+        "resamples": 2000,
+        "unit": "independent trajectory"
+      },
+      "days": 120,
+      "detected": 2000,
+      "drop": 0.2,
+      "effect_intervals_covering_truth": 2875,
+      "effect_intervals_observed": 2875,
+      "events_per_trajectory": {
+        "ci_high": 1.46,
+        "ci_low": 1.4155,
+        "limitation": "Percentile bootstrap; zero-variance samples are descriptive, not proof of zero operating risk.",
+        "mean": 1.4375,
+        "n": 2000,
+        "resamples": 2000,
+        "unit": "independent trajectory"
+      },
+      "followup_windows": 90,
+      "generator_seed": 12925238422146372642,
+      "name": "gradual-core",
+      "power": 1.0,
+      "power_ci_high": 1.0,
+      "power_ci_low": 0.9980829527187469,
+      "prechange_alarm_trajectories": 0,
+      "ramp": 30,
+      "reference_tier": "MOCK",
+      "replicates": 2000,
+      "right_censored": 0,
+      "scope": "Independent constructed binomial batches, not provider or operating admission.",
+      "size": 400,
+      "total_windows": 240000
+    },
+    {
+      "any_event_ci_high": 1.0,
+      "any_event_ci_low": 0.9980829527187469,
+      "any_event_count": 2000,
+      "any_event_rate": 1.0,
+      "available_windows": 72000,
+      "baseline": 0.95,
+      "cadence": "monthly",
+      "change_index": 12,
+      "conditional_delay_windows": {
+        "ci_high": 5.7645,
+        "ci_low": 5.723,
+        "limitation": "Percentile bootstrap; zero-variance samples are descriptive, not proof of zero operating risk.",
+        "mean": 5.743,
+        "n": 2000,
+        "resamples": 2000,
+        "unit": "independent trajectory"
+      },
+      "days": 36,
+      "detected": 2000,
+      "drop": 0.2,
+      "effect_intervals_covering_truth": 2212,
+      "effect_intervals_observed": 2212,
+      "events_per_trajectory": {
+        "ci_high": 1.12,
+        "ci_low": 1.0935,
+        "limitation": "Percentile bootstrap; zero-variance samples are descriptive, not proof of zero operating risk.",
+        "mean": 1.106,
+        "n": 2000,
+        "resamples": 2000,
+        "unit": "independent trajectory"
+      },
+      "followup_windows": 24,
+      "generator_seed": 17354579924164311587,
+      "name": "gradual-monthly",
+      "power": 1.0,
+      "power_ci_high": 1.0,
+      "power_ci_low": 0.9980829527187469,
+      "prechange_alarm_trajectories": 0,
+      "ramp": 12,
+      "reference_tier": "MOCK",
+      "replicates": 2000,
+      "right_censored": 0,
+      "scope": "Independent constructed binomial batches, not provider or operating admission.",
+      "size": 800,
+      "total_windows": 72000
+    },
+    {
+      "any_event_ci_high": 0.995069703146784,
+      "any_event_ci_low": 0.9870439223284629,
+      "any_event_count": 1984,
+      "any_event_rate": 0.992,
+      "available_windows": 240000,
+      "baseline": 0.95,
+      "cadence": "daily",
+      "change_index": 30,
+      "conditional_delay_windows": {
+        "ci_high": 60.26163054435484,
+        "ci_low": 59.47276965725807,
+        "limitation": "Percentile bootstrap; zero-variance samples are descriptive, not proof of zero operating risk.",
+        "mean": 59.86189516129032,
+        "n": 1984,
+        "resamples": 2000,
+        "unit": "independent trajectory"
+      },
+      "days": 120,
+      "detected": 1984,
+      "drop": 0.05,
+      "effect_intervals_covering_truth": 1984,
+      "effect_intervals_observed": 1984,
+      "events_per_trajectory": {
+        "ci_high": 0.9955,
+        "ci_low": 0.9879875,
+        "limitation": "Percentile bootstrap; zero-variance samples are descriptive, not proof of zero operating risk.",
+        "mean": 0.992,
+        "n": 2000,
+        "resamples": 2000,
+        "unit": "independent trajectory"
+      },
+      "followup_windows": 90,
+      "generator_seed": 546355398652836338,
+      "name": "mild-core",
+      "power": 0.992,
+      "power_ci_high": 0.995069703146784,
+      "power_ci_low": 0.9870439223284629,
+      "prechange_alarm_trajectories": 0,
+      "ramp": 30,
+      "reference_tier": "MOCK",
+      "replicates": 2000,
+      "right_censored": 16,
+      "scope": "Independent constructed binomial batches, not provider or operating admission.",
+      "size": 400,
+      "total_windows": 240000
+    },
+    {
+      "any_event_ci_high": 0.13864525624017204,
+      "any_event_ci_low": 0.10979828036261141,
+      "any_event_count": 247,
+      "any_event_rate": 0.1235,
+      "available_windows": 72000,
+      "baseline": 0.95,
+      "cadence": "monthly",
+      "change_index": 12,
+      "conditional_delay_windows": {
+        "ci_high": 21.71255060728745,
+        "ci_low": 21.344129554655872,
+        "limitation": "Percentile bootstrap; zero-variance samples are descriptive, not proof of zero operating risk.",
+        "mean": 21.530364372469634,
+        "n": 247,
+        "resamples": 2000,
+        "unit": "independent trajectory"
+      },
+      "days": 36,
+      "detected": 247,
+      "drop": 0.05,
+      "effect_intervals_covering_truth": 247,
+      "effect_intervals_observed": 247,
+      "events_per_trajectory": {
+        "ci_high": 0.1385,
+        "ci_low": 0.1095,
+        "limitation": "Percentile bootstrap; zero-variance samples are descriptive, not proof of zero operating risk.",
+        "mean": 0.1235,
+        "n": 2000,
+        "resamples": 2000,
+        "unit": "independent trajectory"
+      },
+      "followup_windows": 24,
+      "generator_seed": 10136124048896854850,
+      "name": "mild-monthly",
+      "power": 0.1235,
+      "power_ci_high": 0.13864525624017204,
+      "power_ci_low": 0.10979828036261141,
+      "prechange_alarm_trajectories": 0,
+      "ramp": 12,
+      "reference_tier": "MOCK",
+      "replicates": 2000,
+      "right_censored": 1753,
+      "scope": "Independent constructed binomial batches, not provider or operating admission.",
+      "size": 800,
+      "total_windows": 72000
+    },
+    {
+      "any_event_ci_high": 0.08684155730340053,
+      "any_event_ci_low": 0.06378984993294572,
+      "any_event_count": 149,
+      "any_event_rate": 0.0745,
+      "available_windows": 204081,
+      "baseline": 0.95,
+      "cadence": "daily",
+      "change_index": 30,
+      "conditional_delay_windows": {
+        "ci_high": 24.449664429530202,
+        "ci_low": 22.409395973154364,
+        "limitation": "Percentile bootstrap; zero-variance samples are descriptive, not proof of zero operating risk.",
+        "mean": 23.42953020134228,
+        "n": 149,
+        "resamples": 2000,
+        "unit": "independent trajectory"
+      },
+      "days": 120,
+      "detected": 149,
+      "drop": 0.2,
+      "effect_intervals_covering_truth": 149,
+      "effect_intervals_observed": 149,
+      "events_per_trajectory": {
+        "ci_high": 0.086,
+        "ci_low": 0.063,
+        "limitation": "Percentile bootstrap; zero-variance samples are descriptive, not proof of zero operating risk.",
+        "mean": 0.0745,
+        "n": 2000,
+        "resamples": 2000,
+        "unit": "independent trajectory"
+      },
+      "followup_windows": 90,
+      "generator_seed": 241951676828208291,
+      "missing": 0.15,
+      "name": "missing-gradual",
+      "power": 0.0745,
+      "power_ci_high": 0.08684155730340053,
+      "power_ci_low": 0.06378984993294572,
+      "prechange_alarm_trajectories": 0,
+      "ramp": 30,
+      "reference_tier": "MOCK",
+      "replicates": 2000,
+      "right_censored": 1851,
+      "scope": "Independent constructed binomial batches, not provider or operating admission.",
+      "size": 400,
+      "total_windows": 240000
+    }
+  ],
+  "held_out_public_replay": [
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 0,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 1,
+      "windows": 45
+    },
+    {
+      "events": 0,
+      "size": 400,
+      "trajectory": 2,
+      "windows": 45
+    },
+    {
+      "events": 3,
+      "size": 800,
+      "trajectory": 3,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 4,
+      "windows": 45
+    },
+    {
+      "events": 3,
+      "size": 800,
+      "trajectory": 5,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 6,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 7,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 8,
+      "windows": 45
+    },
+    {
+      "events": 3,
+      "size": 800,
+      "trajectory": 9,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 10,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 11,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 12,
+      "windows": 45
+    },
+    {
+      "events": 0,
+      "size": 800,
+      "trajectory": 13,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 14,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 15,
+      "windows": 45
+    },
+    {
+      "events": 3,
+      "size": 400,
+      "trajectory": 16,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 800,
+      "trajectory": 17,
+      "windows": 45
+    },
+    {
+      "events": 0,
+      "size": 400,
+      "trajectory": 18,
+      "windows": 45
+    },
+    {
+      "events": 3,
+      "size": 800,
+      "trajectory": 19,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 20,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 21,
+      "windows": 45
+    },
+    {
+      "events": 0,
+      "size": 400,
+      "trajectory": 22,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 23,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 24,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 25,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 26,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 27,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 28,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 29,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 30,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 800,
+      "trajectory": 31,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 32,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 800,
+      "trajectory": 33,
+      "windows": 45
+    },
+    {
+      "events": 3,
+      "size": 400,
+      "trajectory": 34,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 35,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 36,
+      "windows": 45
+    },
+    {
+      "events": 3,
+      "size": 800,
+      "trajectory": 37,
+      "windows": 45
+    },
+    {
+      "events": 0,
+      "size": 400,
+      "trajectory": 38,
+      "windows": 45
+    },
+    {
+      "events": 3,
+      "size": 800,
+      "trajectory": 39,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 40,
+      "windows": 45
+    },
+    {
+      "events": 0,
+      "size": 800,
+      "trajectory": 41,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 42,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 43,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 44,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 800,
+      "trajectory": 45,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 46,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 47,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 48,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 49,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 50,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 800,
+      "trajectory": 51,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 52,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 800,
+      "trajectory": 53,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 54,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 55,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 56,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 57,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 58,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 59,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 60,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 61,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 62,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 63,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 64,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 65,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 66,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 67,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 68,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 69,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 70,
+      "windows": 45
+    },
+    {
+      "events": 3,
+      "size": 800,
+      "trajectory": 71,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 72,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 800,
+      "trajectory": 73,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 74,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 75,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 76,
+      "windows": 45
+    },
+    {
+      "events": 0,
+      "size": 800,
+      "trajectory": 77,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 78,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 79,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 80,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 800,
+      "trajectory": 81,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 82,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 83,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 84,
+      "windows": 45
+    },
+    {
+      "events": 3,
+      "size": 800,
+      "trajectory": 85,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 86,
+      "windows": 45
+    },
+    {
+      "events": 3,
+      "size": 800,
+      "trajectory": 87,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 88,
+      "windows": 45
+    },
+    {
+      "events": 3,
+      "size": 800,
+      "trajectory": 89,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 90,
+      "windows": 45
+    },
+    {
+      "events": 3,
+      "size": 800,
+      "trajectory": 91,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 92,
+      "windows": 45
+    },
+    {
+      "events": 3,
+      "size": 800,
+      "trajectory": 93,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 94,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 800,
+      "trajectory": 95,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 96,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 800,
+      "trajectory": 97,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 98,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 99,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 100,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 101,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 102,
+      "windows": 45
+    },
+    {
+      "events": 3,
+      "size": 800,
+      "trajectory": 103,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 104,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 800,
+      "trajectory": 105,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 106,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 107,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 400,
+      "trajectory": 108,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 800,
+      "trajectory": 109,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 110,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 111,
+      "windows": 45
+    },
+    {
+      "events": 0,
+      "size": 400,
+      "trajectory": 112,
+      "windows": 45
+    },
+    {
+      "events": 3,
+      "size": 800,
+      "trajectory": 113,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 114,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 115,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 116,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 800,
+      "trajectory": 117,
+      "windows": 45
+    },
+    {
+      "events": 2,
+      "size": 400,
+      "trajectory": 118,
+      "windows": 45
+    },
+    {
+      "events": 1,
+      "size": 800,
+      "trajectory": 119,
+      "windows": 45
+    }
+  ],
+  "limitations": [
+    "Single-stream count simulations do not empirically certify the complete observatory family.",
+    "Dependent responses, provider captures and arbitrary missingness remain unqualified.",
+    "Conditional delay excludes misses; right-censored trajectories remain reported.",
+    "Intervals describe input expected contrasts, not a changepoint location or a root cause."
+  ],
+  "model_api_calls": 0,
+  "new_spend_usd": 0,
+  "operating_qualification_accepted": false,
+  "policy": {
+    "batch_sizes": {
+      "core": 400,
+      "full": 800
+    },
+    "family_alpha": 0.05,
+    "horizon_days": 30,
+    "max_false_events_30_days": 1.0,
+    "max_history_batches": 121,
+    "max_streams": 100,
+    "max_updates": 120,
+    "version": "monitor-transport-v2"
+  },
+  "source_hash": "8b645eadfa87f0e01625697c65c7b94a1225295b8f08ab4b2710c2751fa510b4",
+  "study_plan_sha256": "10448acc689bdc9e4b79f74772fb689560b4c3797f86fa2a05b503843483c9ae",
+  "study_script_sha256": "1f06a711a978a378fc5147b53de7a3d2d786a321965b337fdf9fa5b4e713331a"
+}

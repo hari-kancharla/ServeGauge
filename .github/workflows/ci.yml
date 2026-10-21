@@ -1,0 +1,19 @@
+name: Offline checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  check:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+          enable-cache: true
+      - run: uv run python scripts/dev.py setup
+      - run: uv run python scripts/dev.py check
+      - run: uv run pytest --no-cov -m slow tests/integration/test_distribution_boundary.py

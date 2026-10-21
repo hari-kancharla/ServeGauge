@@ -1,0 +1,49 @@
+name: Owner-approved documentation Pages
+'on':
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Publish the reviewed empty documentation site (no provider captures)
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: servegauge-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    if: ${{ vars.PAGES_ENABLED == 'true' && inputs.publish && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+          enable-cache: false
+      - run: uv sync --locked --no-dev
+      - name: Build documentation only; never select private raw captures implicitly
+        run: uv run --offline --no-dev servegauge site build --out reports/pages
+      - name: Verify content removal, secret scan and publication scope
+        env:
+          SERVEGAUGE_ALLOW_PUBLISH: '1'
+        run: uv run --offline --no-dev servegauge site verify --out reports/pages --for-publication --confirm
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: reports/pages
+  deploy:
+    if: ${{ vars.PAGES_ENABLED == 'true' && inputs.publish && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) }}
+    needs: build
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy owner-approved documentation artifact
+        id: deployment
+        uses: actions/deploy-pages@v4

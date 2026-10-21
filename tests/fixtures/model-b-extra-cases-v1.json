@@ -1,0 +1,83 @@
+{
+  "version": "original-model-b-extra-cases-v1",
+  "texts": [],
+  "chats": [
+    {
+      "name": "nullable-calls",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Say OK"
+        },
+        {
+          "role": "assistant",
+          "content": "OK",
+          "tool_calls": null
+        },
+        {
+          "role": "user",
+          "content": "Again"
+        }
+      ],
+      "native_messages": [
+        {
+          "role": "user",
+          "content": "Say OK"
+        },
+        {
+          "role": "assistant",
+          "content": "OK",
+          "tool_calls": null
+        },
+        {
+          "role": "user",
+          "content": "Again"
+        }
+      ]
+    },
+    {
+      "name": "repeated-reasoning-chunks",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Reason twice"
+        },
+        {
+          "role": "assistant",
+          "content": "Done",
+          "reasoning": "step step",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "step "
+            },
+            {
+              "type": "reasoning.text",
+              "text": "step"
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": "Continue"
+        }
+      ],
+      "native_messages": [
+        {
+          "role": "user",
+          "content": "Reason twice"
+        },
+        {
+          "role": "assistant",
+          "content": "Done",
+          "reasoning_content": "step step"
+        },
+        {
+          "role": "user",
+          "content": "Continue"
+        }
+      ]
+    }
+  ],
+  "third_party_benchmark_text": false
+}

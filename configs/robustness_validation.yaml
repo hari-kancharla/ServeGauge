@@ -1,0 +1,23 @@
+version: robust-evidence-v3.1
+seed: 202610190801
+minimum_independent_groups: 30
+minimum_anchor_tokens: 2
+observations_per_session: 8
+effective_group_sizes: [30, 60, 120]
+evaluation_groups: 60
+calibration_replicates: 1000
+null_replicates: 2000
+fault_replicates: 100
+permutations: 2000
+healthy_logit_jitter: 0.3
+fault_logit_noise: 0.3
+ar1_rho: 0.8
+cache_burst_length: 4
+guard_replicates: 30
+workers: 4
+anchors: [red, blue]
+maximum_family_false_positive_rate: 0.05
+minimum_fault_power_lower: 0.8
+profiles: [iid, correlated, cache_bursts, linked_cache]
+rationale: "Independent session blocks, full cache provenance; fixed probe anchors, no missing-value imputation; separate calibration/evaluation; original fault strength and policy alpha"
+signal_scope: mock-session-bank-v3-1

@@ -1,0 +1,50 @@
+{
+  "assets": {
+    "calibration": {
+      "path": "docs/report/fingerprint-wire-v1/calibration/pack-00.json",
+      "sha256": "6d6351088661ab19186ea30617b7bdf298768eb29f7af3fcdb04975f1af7db41"
+    },
+    "interval_acceptance": {
+      "path": "docs/validation/product-fingerprint-intervals.json",
+      "sha256": "8bb9c32db0476030fbeb36095f335a8c54887d48a344c4fda8fb37d581acd1e5"
+    },
+    "interval_result": {
+      "path": "docs/report/fingerprint-product-v1/intervals.json",
+      "sha256": "0abdef6e612fc114591e853beb1890e2431149e4a8f1f135b7a143a12dcc00b5"
+    },
+    "null_acceptance": {
+      "path": "docs/validation/product-fingerprint-null.json",
+      "sha256": "9954d8a35f283df82414bdaa8d6721ba636de052ddaf703d45c25b8070ccbc63"
+    },
+    "null_result": {
+      "path": "docs/report/fingerprint-product-null-v1/null.json",
+      "sha256": "9135325776bc9d355f64c1d0e45bef64afacc197ad75699fe09c94c9b741aa03"
+    },
+    "wire": {
+      "path": "docs/report/fingerprint-wire-v1/wire.json",
+      "sha256": "063d8366897b62a76cfc86e6e2b39d839642498864b53e4c8e514f563223133b"
+    },
+    "wire_acceptance": {
+      "path": "docs/validation/product-fingerprint-wire.json",
+      "sha256": "2d32a6cab5a95b01056811bd0d0b2d8ac6e1baad631232ad2136ba573d33eeab"
+    }
+  },
+  "id": "captured-scripted-text-v1",
+  "implementation": {
+    "src/servegauge/refs/fingerprint.py": "03a4ad63a3a3a911e1502dd3b6820cf28d629a8995d4a9c2fe23ffb650e8f68b",
+    "src/servegauge/refs/fingerprint_qualification.py": "7bc6a01b5fcc17dc0ef3e95a565bb967cb7a7c2e80edb91c73b2ed3db76fe2ff",
+    "src/servegauge/refs/pack.py": "ed5f96630042ec89819dcfe95392b61d2d252b009582403139b79282c2782c7b",
+    "src/servegauge/scoring/fingerprint_collection.py": "9c8100d8da9a01212648f7616fb478eac7533bd629022eefbb6a5f29175d9a78",
+    "src/servegauge/scoring/fingerprint_comparison.py": "f8aa63f38b14f71164c687866716575bd204e79a526c8f28174b830b1889aa14",
+    "src/servegauge/scoring/fingerprint_results.py": "e27e3e9cf32a693d8c517b07e6512d2e51c315ba4bdfe1fc1a1189c5ec28e2cc",
+    "src/servegauge/suites/s6_fingerprint.py": "01f1b6553ca77c3d026a1d6bb5c23575bfa5b6d6f2d1723f35e44ff66e35b241",
+    "src/servegauge/verdicts/engine.py": "91ca67da73dbd619c954ef644ec9eee3cd38c7a4d45998dff1c3df45cbbb4972"
+  },
+  "runtime": {
+    "architecture": "arm64",
+    "numpy": "1.26.4",
+    "platform": "Darwin",
+    "python": "3.12.15",
+    "scipy": "1.17.1"
+  }
+}

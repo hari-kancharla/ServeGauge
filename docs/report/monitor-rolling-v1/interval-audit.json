@@ -1,0 +1,79 @@
+{
+  "scope": "Supplementary trajectory-family coverage audit of all emitted independent-input contrasts. Zero-event trajectories cover vacuously. Does not assert conditional coverage given selection.",
+  "source_hash": "8b645eadfa87f0e01625697c65c7b94a1225295b8f08ab4b2710c2751fa510b4",
+  "cases": [
+    {
+      "case": "null-half",
+      "trajectories": 2000,
+      "with_any_emitted_interval_failure": 0,
+      "failure_ci_low": 0.0,
+      "failure_ci_high": 0.0019170472812529349,
+      "emitted_intervals": 0
+    },
+    {
+      "case": "null-three-quarters",
+      "trajectories": 2000,
+      "with_any_emitted_interval_failure": 0,
+      "failure_ci_low": 0.0,
+      "failure_ci_high": 0.0019170472812529349,
+      "emitted_intervals": 0
+    },
+    {
+      "case": "null-high",
+      "trajectories": 2000,
+      "with_any_emitted_interval_failure": 0,
+      "failure_ci_low": 0.0,
+      "failure_ci_high": 0.0019170472812529349,
+      "emitted_intervals": 0
+    },
+    {
+      "case": "abrupt-core",
+      "trajectories": 2000,
+      "with_any_emitted_interval_failure": 0,
+      "failure_ci_low": 0.0,
+      "failure_ci_high": 0.0019170472812529349,
+      "emitted_intervals": 2000
+    },
+    {
+      "case": "gradual-core",
+      "trajectories": 2000,
+      "with_any_emitted_interval_failure": 0,
+      "failure_ci_low": 0.0,
+      "failure_ci_high": 0.0019170472812529349,
+      "emitted_intervals": 2875
+    },
+    {
+      "case": "gradual-monthly",
+      "trajectories": 2000,
+      "with_any_emitted_interval_failure": 0,
+      "failure_ci_low": 0.0,
+      "failure_ci_high": 0.0019170472812529349,
+      "emitted_intervals": 2212
+    },
+    {
+      "case": "mild-core",
+      "trajectories": 2000,
+      "with_any_emitted_interval_failure": 0,
+      "failure_ci_low": 0.0,
+      "failure_ci_high": 0.0019170472812529349,
+      "emitted_intervals": 1984
+    },
+    {
+      "case": "mild-monthly",
+      "trajectories": 2000,
+      "with_any_emitted_interval_failure": 0,
+      "failure_ci_low": 0.0,
+      "failure_ci_high": 0.0019170472812529349,
+      "emitted_intervals": 247
+    },
+    {
+      "case": "missing-gradual",
+      "trajectories": 2000,
+      "with_any_emitted_interval_failure": 0,
+      "failure_ci_low": 0.0,
+      "failure_ci_high": 0.0019170472812529349,
+      "emitted_intervals": 149
+    }
+  ],
+  "operating_qualification_accepted": false
+}

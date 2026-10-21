@@ -1,0 +1,104 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "servegauge"
+version = "0.1.0.dev0"
+description = "Requirements-driven inference endpoint checks with replayable evidence"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+authors = [{name = "Hari Krishna Kancharla"}]
+dependencies = [
+  "httpx>=0.28",
+  "pydantic>=2.10",
+  "typer>=0.16",
+  "rich>=13.9",
+  "pyyaml>=6",
+  "jsonschema>=4.23",
+  "numpy>=1.26.4",
+  "scipy>=1.14",
+  "polars>=1.25",
+  "pyarrow>=19",
+  "duckdb>=1.2",
+  "zstandard>=0.23",
+  "jinja2>=3.1",
+  "fastapi>=0.115",
+  "uvicorn>=0.34",
+  "huggingface-hub>=0.29",
+  "openai-harmony>=0.0.8",
+  "tiktoken>=0.12",
+  "tokenizers>=0.21",
+  "filelock>=3.17",
+  "matplotlib>=3.10",
+]
+
+[project.scripts]
+servegauge = "servegauge.cli:main"
+trueweights = "servegauge.cli:main"
+
+[project.optional-dependencies]
+embed = ["sentence-transformers>=3"]
+bfcl = ["bfcl-eval"]
+tau = []
+selfhost = ["modal"]
+
+[dependency-groups]
+dev = [
+  "ruff>=0.11", "mypy>=1.15", "pytest>=8.3", "pytest-asyncio>=1.4",
+  "pytest-socket>=0.7", "pytest-cov>=6", "hypothesis>=6.127", "respx>=0.22",
+  "types-PyYAML", "types-jsonschema", "scipy-stubs",
+]
+
+[tool.hatch.build]
+skip-excluded-dirs = true
+exclude = [
+  "Starter Files/", ".cache/", ".hypothesis/", ".venv/", "__pycache__/", "*.py[cod]",
+  ".pytest_cache/", ".mypy_cache/", ".ruff_cache/", ".coverage*", "htmlcov/", ".DS_Store",
+  "AGENTS.md", "README_FIRST.md", "KICKOFF_PROMPT.md", "/budget/",
+  "/docs/IMPLEMENT.md", "/docs/SPEC.md", "/docs/PLAN.md", "/docs/STATUS.md",
+  "/docs/RESEARCH.md", "/docs/plans/",
+  ".[eE][nN][vV]*", "/data/", "/bundles/", "/reports/", "/dist/", "*.egg-info/",
+]
+
+[tool.hatch.build.targets.sdist]
+only-include = [
+  ".gitattributes", ".gitignore", ".python-version", ".github", "CITATION.cff",
+  "LICENSE", "README.md", "pyproject.toml", "uv.lock",
+  "configs", "docs", "profiles", "scripts", "src", "tests",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/servegauge", "src/trueweights"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+extend-exclude = ["Starter Files"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]
+addopts = "--disable-socket -m 'not live and not slow'"
+asyncio_mode = "auto"
+markers = [
+  "live: owner-gated live API tests",
+  "slow: statistical simulations",
+  "qualified_runtime: requires the exact empirical fingerprint runtime",
+]
+
+[tool.coverage.run]
+source = ["servegauge"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true

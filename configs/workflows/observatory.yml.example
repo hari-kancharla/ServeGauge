@@ -1,0 +1,42 @@
+name: Owner-gated private observatory
+'on':
+  workflow_dispatch:
+    inputs:
+      cadence:
+        description: Explicit owner-approved cadence
+        type: choice
+        options: [probe, daily, weekly, monthly]
+        default: probe
+  schedule:
+    - cron: '23 */6 * * *'
+    - cron: '41 2 * * *'
+    - cron: '11 3 * * 1'
+    - cron: '53 4 1 * *'
+permissions:
+  contents: read
+concurrency:
+  group: servegauge-private-observatory
+  cancel-in-progress: false
+jobs:
+  observatory:
+    if: ${{ vars.OBSERVATORY_ENABLED == 'true' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) }}
+    runs-on: [self-hosted, servegauge-owner]
+    environment: observatory-owner
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+          clean: false
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+          enable-cache: false
+      - run: uv sync --locked --no-dev
+      - name: Reserved owner window and local numeric export only
+        env:
+          OBSERVATORY_ENABLED: ${{ vars.OBSERVATORY_ENABLED }}
+          SERVEGAUGE_OWNER_RUN: ${{ vars.SERVEGAUGE_OWNER_RUN }}
+          SERVEGAUGE_STATE_ROOT: ${{ vars.SERVEGAUGE_STATE_ROOT }}
+          SERVEGAUGE_TOKENIZER_CACHE: ${{ vars.SERVEGAUGE_TOKENIZER_CACHE }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: uv run --offline --no-dev python scripts/observatory_workflow.py

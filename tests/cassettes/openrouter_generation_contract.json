@@ -1,0 +1,30 @@
+{
+  "provenance": "Synthetic generation-record contract; no paid calls recorded.",
+  "payload": {
+    "data": {
+      "id": "gen-fixture-1",
+      "provider_name": "Provider A",
+      "provider_responses": [
+        {
+          "provider_name": "Provider A",
+          "status": 200
+        },
+        {
+          "provider_name": "Provider A",
+          "status": 200
+        }
+      ],
+      "native_tokens_prompt": 20,
+      "native_tokens_completion": 4,
+      "tokens_prompt": 20,
+      "tokens_completion": 4,
+      "native_tokens_reasoning": 2,
+      "finish_reason": "stop",
+      "total_cost": 3e-06,
+      "upstream_id": "fixture-upstream",
+      "service_tier": null,
+      "account_id": "must-not-escape",
+      "external_user": "must-not-escape"
+    }
+  }
+}

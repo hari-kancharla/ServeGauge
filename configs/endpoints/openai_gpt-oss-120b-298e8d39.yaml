@@ -1,0 +1,1740 @@
+model: openai/gpt-oss-120b
+discovered_at: '2026-10-18T13:07:21.615530+00:00'
+source_url: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+endpoints:
+- id: or:openai/gpt-oss-120b@near-ai/fp4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: near-ai/fp4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Near AI
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: Near AI | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 131072
+    pricing:
+      prompt: '0.00000003'
+      completion: '0.00000015'
+      input_cache_read: '0.000000015'
+      discount: 0
+    provider_name: Near AI
+    tag: near-ai/fp4
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 117964
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - top_p
+    - top_k
+    - frequency_penalty
+    - presence_penalty
+    - repetition_penalty
+    - max_tokens
+    - stop
+    - seed
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: false
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: true
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@venice/int4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: venice/int4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Venice
+    quantization: int4
+    service_tier: unknown
+  metadata:
+    name: Venice | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 128000
+    pricing:
+      prompt: '0.00000003'
+      completion: '0.00000015'
+      input_cache_read: '0.00000003'
+      discount: 0
+    provider_name: Venice
+    tag: venice/int4
+    service_tier: null
+    quantization: int4
+    max_completion_tokens: 32768
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - top_k
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 99.65277777777779
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: false
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@coreweave/fp4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: coreweave/fp4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: CoreWeave
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: CoreWeave | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 131072
+    pricing:
+      prompt: '0.00000003'
+      completion: '0.00000017'
+      input_cache_read: '0.00000003'
+      discount: 0
+    provider_name: CoreWeave
+    tag: coreweave/fp4
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 117964
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - structured_outputs
+    - response_format
+    - max_tokens
+    - temperature
+    - top_p
+    - top_k
+    - repetition_penalty
+    - frequency_penalty
+    - presence_penalty
+    - stop
+    - seed
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: true
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@dekallm/bf16
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: dekallm/bf16
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: DekaLLM
+    quantization: bf16
+    service_tier: unknown
+  metadata:
+    name: DekaLLM | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 131072
+    pricing:
+      prompt: '0.00000003'
+      completion: '0.00000018'
+      input_cache_read: '0.00000003'
+      discount: 0
+    provider_name: DekaLLM
+    tag: dekallm/bf16
+    service_tier: null
+    quantization: bf16
+    max_completion_tokens: 117964
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - frequency_penalty
+    - logit_bias
+    - max_tokens
+    - presence_penalty
+    - seed
+    - stop
+    - temperature
+    - top_p
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: false
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: true
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@akashml/bf16
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: akashml/bf16
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: AkashML
+    quantization: bf16
+    service_tier: unknown
+  metadata:
+    name: AkashML | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 131072
+    pricing:
+      prompt: '0.00000003'
+      completion: '0.000000187'
+      input_cache_read: '0.00000003'
+      discount: 0
+    provider_name: AkashML
+    tag: akashml/bf16
+    service_tier: null
+    quantization: bf16
+    max_completion_tokens: 117964
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - top_p
+    - top_k
+    - stop
+    - seed
+    - frequency_penalty
+    - presence_penalty
+    - repetition_penalty
+    - max_tokens
+    - response_format
+    - structured_outputs
+    - tools
+    - logprobs
+    - top_logprobs
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: false
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: true
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@deepinfra/bf16
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: deepinfra/bf16
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: DeepInfra
+    quantization: bf16
+    service_tier: unknown
+  metadata:
+    name: DeepInfra | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 131072
+    pricing:
+      prompt: '0.000000037'
+      completion: '0.00000017'
+      discount: 0
+    provider_name: DeepInfra
+    tag: deepinfra/bf16
+    service_tier: null
+    quantization: bf16
+    max_completion_tokens: 117964
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - repetition_penalty
+    - top_k
+    - seed
+    - min_p
+    - tools
+    - tool_choice
+    - structured_outputs
+    - logit_bias
+    - response_format
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 93.61111111111111
+    supports_implicit_caching: false
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: true
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@crusoe/bf16
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: crusoe/bf16
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Crusoe
+    quantization: bf16
+    service_tier: unknown
+  metadata:
+    name: Crusoe | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 131072
+    pricing:
+      prompt: '0.00000005'
+      completion: '0.00000025'
+      input_cache_read: '0.00000005'
+      discount: 0
+    provider_name: Crusoe
+    tag: crusoe/bf16
+    service_tier: null
+    quantization: bf16
+    max_completion_tokens: 117964
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - seed
+    - min_p
+    - repetition_penalty
+    - top_k
+    - logit_bias
+    - structured_outputs
+    - response_format
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: false
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 99.65277777777779
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: true
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@mancer/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: mancer/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Mancer 2
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: Mancer 2 | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 131072
+    pricing:
+      prompt: '0.00000005'
+      completion: '0.00000025'
+      discount: 0
+    provider_name: Mancer 2
+    tag: mancer/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 117964
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - repetition_penalty
+    - logit_bias
+    - top_k
+    - min_p
+    - seed
+    - top_a
+    - response_format
+    - logprobs
+    - top_logprobs
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: false
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 99.50354609929079
+    supports_implicit_caching: false
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: true
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@novita/fp4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: novita/fp4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Novita
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: Novita | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 131072
+    pricing:
+      prompt: '0.00000005'
+      completion: '0.00000025'
+      discount: 0
+    provider_name: Novita
+    tag: novita/fp4
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 32768
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - seed
+    - top_k
+    - repetition_penalty
+    - tools
+    - tool_choice
+    - response_format
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 99.025069637883
+    supports_implicit_caching: false
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: false
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@digitalocean
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: digitalocean
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: DigitalOcean
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: DigitalOcean | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 128000
+    pricing:
+      prompt: '0.00000006'
+      completion: '0.00000042'
+      input_cache_read: '0.000000012'
+      discount: 0
+    provider_name: DigitalOcean
+    tag: digitalocean
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 4096
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - temperature
+    - top_p
+    - max_tokens
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: false
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@google-vertex/global
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: google-vertex/global
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Google
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Google | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 131072
+    pricing:
+      prompt: '0.00000009'
+      completion: '0.00000036'
+      discount: 0
+    provider_name: Google
+    tag: google-vertex/global
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 117964
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - structured_outputs
+    - response_format
+    - max_tokens
+    - temperature
+    - top_p
+    - seed
+    - repetition_penalty
+    - top_k
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: -5
+    uptime_last_30m: 0
+    uptime_last_5m: 0
+    uptime_last_1d: 1.5277777777777777
+    supports_implicit_caching: false
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: true
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@baseten/fp4/us
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: baseten/fp4/us
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: BaseTen
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: BaseTen | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 128072
+    pricing:
+      prompt: '0.0000001'
+      completion: '0.0000005'
+      input_cache_read: '0.0000001'
+      discount: 0
+    provider_name: BaseTen
+    tag: baseten/fp4/us
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 115264
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: false
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: true
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@baseten/fp4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: baseten/fp4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: BaseTen
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: BaseTen | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 128072
+    pricing:
+      prompt: '0.0000001'
+      completion: '0.0000005'
+      input_cache_read: '0.0000001'
+      discount: 0
+    provider_name: BaseTen
+    tag: baseten/fp4
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 115264
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: false
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 99.91915925626516
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: true
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@parasail/fp4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: parasail/fp4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Parasail
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: Parasail | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 131072
+    pricing:
+      prompt: '0.0000001'
+      completion: '0.00000075'
+      input_cache_read: '0.000000055'
+      discount: 0
+    provider_name: Parasail
+    tag: parasail/fp4
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 117964
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - structured_outputs
+    - max_tokens
+    - temperature
+    - top_p
+    - frequency_penalty
+    - presence_penalty
+    - repetition_penalty
+    - seed
+    - stop
+    - top_k
+    - logit_bias
+    - response_format
+    - tools
+    - tool_choice
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: false
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: true
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@sambanova
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: sambanova
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: SambaNova
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: SambaNova | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 131072
+    pricing:
+      prompt: '0.00000014'
+      completion: '0.00000095'
+      discount: 0
+    provider_name: SambaNova
+    tag: sambanova
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 117964
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - top_k
+    - stop
+    - tools
+    - tool_choice
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 99.71367215461704
+    supports_implicit_caching: false
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: false
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@amazon-bedrock/eu-west-1
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: amazon-bedrock/eu-west-1
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Amazon Bedrock
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Amazon Bedrock | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 131072
+    pricing:
+      prompt: '0.00000015'
+      completion: '0.0000006'
+      discount: 0
+    provider_name: Amazon Bedrock
+    tag: amazon-bedrock/eu-west-1
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 117964
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - top_k
+    - stop
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: null
+    uptime_last_5m: null
+    uptime_last_1d: 100
+    supports_implicit_caching: false
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: false
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@nebius/fp4
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: nebius/fp4
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Nebius
+    quantization: fp4
+    service_tier: unknown
+  metadata:
+    name: Nebius | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 131072
+    pricing:
+      prompt: '0.00000015'
+      completion: '0.0000006'
+      discount: 0
+    provider_name: Nebius
+    tag: nebius/fp4
+    service_tier: null
+    quantization: fp4
+    max_completion_tokens: 117964
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - seed
+    - top_k
+    - logit_bias
+    - response_format
+    - structured_outputs
+    - tools
+    - tool_choice
+    - repetition_penalty
+    - reasoning_effort
+    supports_tool_choice:
+      none: false
+      auto: true
+      required: false
+      function: false
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: false
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: true
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@amazon-bedrock
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: amazon-bedrock
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Amazon Bedrock
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Amazon Bedrock | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 131072
+    pricing:
+      prompt: '0.00000015'
+      completion: '0.0000006'
+      discount: 0
+    provider_name: Amazon Bedrock
+    tag: amazon-bedrock
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 117964
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - top_k
+    - stop
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: false
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: false
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@siliconflow/fp8
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: siliconflow/fp8
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: SiliconFlow
+    quantization: fp8
+    service_tier: unknown
+  metadata:
+    name: SiliconFlow | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 131072
+    pricing:
+      prompt: '0.00000015'
+      completion: '0.0000006'
+      input_cache_read: '0.000000075'
+      discount: 0
+    provider_name: SiliconFlow
+    tag: siliconflow/fp8
+    service_tier: null
+    quantization: fp8
+    max_completion_tokens: 8192
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - structured_outputs
+    - response_format
+    - temperature
+    - top_p
+    - top_k
+    - frequency_penalty
+    - max_tokens
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: -2
+    uptime_last_30m: 84.61538461538461
+    uptime_last_5m: 100
+    uptime_last_1d: 79.85212569316081
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: true
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@phala
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: phala
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Phala
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Phala | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 131072
+    pricing:
+      prompt: '0.00000015'
+      completion: '0.0000006'
+      discount: 0
+    provider_name: Phala
+    tag: phala
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 32768
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - seed
+    - top_k
+    - min_p
+    - repetition_penalty
+    - tools
+    - tool_choice
+    - response_format
+    - structured_outputs
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: false
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: true
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@together
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: together
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Together
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Together | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 131072
+    pricing:
+      prompt: '0.00000015'
+      completion: '0.0000006'
+      discount: 0
+    provider_name: Together
+    tag: together
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 117964
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - structured_outputs
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - frequency_penalty
+    - presence_penalty
+    - top_k
+    - repetition_penalty
+    - logit_bias
+    - min_p
+    - tools
+    - tool_choice
+    - response_format
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: -2
+    uptime_last_30m: 80
+    uptime_last_5m: 100
+    uptime_last_1d: 81.52753108348135
+    supports_implicit_caching: false
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: true
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@groq
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: groq
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Groq
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Groq | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 131072
+    pricing:
+      prompt: '0.00000015'
+      completion: '0.0000006'
+      input_cache_read: '0.000000075'
+      discount: 0
+    provider_name: Groq
+    tag: groq
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 65536
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - seed
+    - response_format
+    - tools
+    - tool_choice
+    - structured_outputs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: true
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@mara
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: mara
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Mara
+    quantization: unknown
+    service_tier: unknown
+  metadata:
+    name: Mara | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 131072
+    pricing:
+      prompt: '0.00000015'
+      completion: '0.00000075'
+      discount: 0
+    provider_name: Mara
+    tag: mara
+    service_tier: null
+    quantization: unknown
+    max_completion_tokens: 117964
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - stop
+    - top_k
+    - top_p
+    - tool_choice
+    - tools
+    - structured_outputs
+    - response_format
+    - logprobs
+    - top_logprobs
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: -2
+    uptime_last_30m: 86.66666666666667
+    uptime_last_5m: 0
+    uptime_last_1d: 98.37997054491899
+    supports_implicit_caching: false
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: true
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+- id: or:openai/gpt-oss-120b@cerebras/fp16
+  kind: openrouter
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-oss-120b
+  api_key_env: OPENROUTER_API_KEY
+  claimed_profile: gpt-oss-120b
+  openrouter_pin:
+    tag: cerebras/fp16
+    require_parameters: true
+    allow_fallbacks: false
+  defaults: {}
+  labels:
+    provider_name: Cerebras
+    quantization: fp16
+    service_tier: unknown
+  metadata:
+    name: Cerebras | openai/gpt-oss-120b
+    model_id: openai/gpt-oss-120b
+    model_name: 'OpenAI: gpt-oss-120b'
+    context_length: 131072
+    pricing:
+      prompt: '0.00000035'
+      completion: '0.00000075'
+      input_cache_read: '0.00000035'
+      discount: 0
+    provider_name: Cerebras
+    tag: cerebras/fp16
+    service_tier: null
+    quantization: fp16
+    max_completion_tokens: 40960
+    max_prompt_tokens: null
+    supported_parameters:
+    - reasoning
+    - include_reasoning
+    - max_tokens
+    - temperature
+    - top_p
+    - stop
+    - seed
+    - logprobs
+    - top_logprobs
+    - tools
+    - tool_choice
+    - response_format
+    - structured_outputs
+    - frequency_penalty
+    - presence_penalty
+    - logit_bias
+    - reasoning_effort
+    supports_tool_choice:
+      none: true
+      auto: true
+      required: true
+      function: true
+    status: 0
+    uptime_last_30m: 100
+    uptime_last_5m: 100
+    uptime_last_1d: 100
+    supports_implicit_caching: true
+    native_tools: {}
+    supports_voice_cloning: false
+    supports_multiple_audio_references: false
+    supports_image_reference: false
+    supports_diarization: false
+    latency_last_30m: null
+    throughput_last_30m: null
+    declared_json_schema:
+      value: true
+      verified: true
+      source: https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints
+    strict_schema_guarantee:
+      verified: false
+      features: []
+      source: https://openrouter.ai/docs/guides/features/structured-outputs
+      reason: router capability does not establish native strict enforcement
+routing_verification_limit: Generation records identify providers, not exact endpoint
+  tags, variants or regions.

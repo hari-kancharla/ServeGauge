@@ -1,0 +1,70 @@
+version: generated-v1
+protocol:
+  smoke: {invariant_trials: 10, diversity_prompts: 10, diversity_repeats: 3, effort_items: 15, seed_trials: 10}
+  core: {invariant_trials: 400, diversity_prompts: 40, diversity_repeats: 20, effort_items: 30, seed_trials: 40}
+  full: {invariant_trials: 800, diversity_prompts: 80, diversity_repeats: 40, effort_items: 60, seed_trials: 80}
+  cap_tokens: 16
+  cap_text_repetitions: 64
+  stop_string: TW_STOP
+  output_headroom: 64
+  maximum_probe_context: 131072
+  ordinary_output_cap: 2048
+  effort_output_cap: 2048
+  effort_minimum_output: 1536
+  seed: 20261018
+  max_replay_trials: 1
+  rationale: "Core zero-violation Wilson upper bound must clear SPEC's 1% tolerance; smoke retains uncertainty"
+tool_calling:
+  smoke: {items: 100, structural_repeats: 1, agent_tasks: 5}
+  core: {items: 500, structural_repeats: 3, agent_tasks: 100}
+  full: {items: 2000, structural_repeats: 5, agent_tasks: 200}
+  samples_per_item: 2
+  output_cap: 2048
+  max_tools: 30
+  numeric_tolerance: 1.0e-9
+  replay_batch: 8
+  replay_limit: 64
+  agent_min_steps: 3
+  agent_max_steps: 12
+  agent_turn_headroom: 2
+  rationale: "Two draws supply baseline-self trigger F1; core 100 agent tasks clear the unchanged 0.03 paired-score margin, unlike n=20; replay bounds retain sensitivity to 5% faults"
+structured:
+  smoke: {items: 50}
+  core: {items: 200}
+  full: {items: 600}
+  output_cap: 2048
+  truncation_cap: 16
+  truncation_records: 128
+  numeric_tolerance: 1.0e-9
+  rationale: "SPEC S3 independent cases per mode; small invariant cells remain inconclusive"
+long_context:
+  smoke: {lengths: [4000, 16000, 32000], depths: [0, 50, 100], task_types: 1, repeats: 1}
+  core: {lengths: [4000, 16000, 32000, 64000], depths: [0, 10, 25, 50, 75, 90, 100], task_types: 2, repeats: 8}
+  full: {lengths: [4000, 16000, 32000, 64000, 96000], depths: [0, 10, 25, 50, 75, 90, 100], task_types: 2, repeats: 16}
+  output_cap: 1024
+  output_headroom: 2048
+  maximum_probe_context: 131072
+  aggregate_records: 16
+  padding_tokens: 64
+  maximum_length_excess: 128
+  construction_iterations: 4
+  prefix_cache_items: {smoke: 3, core: 112, full: 224}
+  prefix_cache_lengths: {smoke: 4000, core: 16000, full: 32000}
+  rationale: "Decimal-k grid matches the explicit 64000 requirement example; eight independent versions of 7 depths x 2 tasks give n=112 per length without changing 0.03 margins; visible input tokens and actual canary positions are retained"
+accounting:
+  smoke: {items: 50}
+  core: {items: 200}
+  full: {items: 600}
+  output_cap: 128
+  counter_date: "2026-10-18"
+  counter_version: hf-api-adapter-v1
+  rationale: "B01 compares reported-minus-local tokens divided by local tokens against matched reference overhead; only complete, identical input layouts qualify"
+reasoning:
+  smoke: {items: 40, samples: 1, lengths: [4000], long_items: 112}
+  core: {items: 200, samples: 2, lengths: [4000, 8000, 16000], long_items: 112}
+  full: {items: 400, samples: 4, lengths: [4000, 8000, 16000, 32000], long_items: 224}
+  math_output_cap: 4096
+  output_headroom: 1024
+  allowed_lengths: [4000, 8000, 16000, 32000]
+  degeneration_ngram: 8
+  rationale: "SPEC avg@1/2/4 clusters math repeats by problem; 112 independent long outputs per length clear unchanged 3pp NI at clean boundaries; headroom prevents cap censoring"

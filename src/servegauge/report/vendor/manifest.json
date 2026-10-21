@@ -1,0 +1,17 @@
+{
+  "version": "6.4.0",
+  "license": "BSD-3-Clause",
+  "retrieved": "2026-10-19",
+  "files": {
+    "vega-6.4.0.min.js": {
+      "url": "https://cdn.jsdelivr.net/npm/vega@6.4.0/build/vega.min.js",
+      "sha256": "8f6a3587cf8d4f42c7e08120e3eb05d067e746d554e39d2dcf52acc0bd5ba28f",
+      "bytes": 521123
+    },
+    "vega-LICENSE.txt": {
+      "url": "https://raw.githubusercontent.com/vega/vega/v6.4.0/LICENSE",
+      "sha256": "63727832aaf62004a2b249c933e327f3c90caf49e41a72f4bf436edf632cbda8",
+      "bytes": 1533
+    }
+  }
+}

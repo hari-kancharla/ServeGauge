@@ -1,0 +1,6 @@
+version: fingerprint-embedding-v1
+model_manifest: configs/embedding_minilm_v1.json
+smoke: {fp4_cells: 2, fp4_samples: 15}
+core: {fp4_cells: 25, fp4_samples: 10}
+full: {fp4_cells: 25, fp4_samples: 10}
+rationale: "Explicit opt-in only; complete uncensored text, pinned local CPU model, summed per-prompt energy; no practical margin/equivalence qualification"

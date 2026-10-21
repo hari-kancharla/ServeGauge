@@ -1,0 +1,58 @@
+id: glm-5.3
+weights: zai-org/GLM-5.3
+openrouter_slug: z-ai/glm-5.3
+family: glm-5.3
+chat_format: glm-5.3
+tokenizer:
+  kind: glm-5.3
+  hf_model: zai-org/GLM-5.3
+  hf_revision: ba32f8c19c8738e2c57c71798c601d477a7bf844
+  provider_overhead: requires_reference_calibration
+reasoning:
+  control: chat_template
+  levels: [low, high, max]
+  default: max
+  api_parameter: reasoning_effort
+  clear_thinking_default: false
+recommended_sampling: {}
+format_markers:
+  - '[gMASK]'
+  - '<sop>'
+  - '<|system|>'
+  - '<|user|>'
+  - '<|assistant|>'
+  - '<|observation|>'
+  - '<tool_call>'
+  - '</tool_call>'
+  - '<arg_key>'
+  - '<arg_value>'
+immutable_params: {}
+tool_id_format: null
+reference_tiers: []
+sources:
+  - &card https://huggingface.co/zai-org/GLM-5.3/blob/ba32f8c19c8738e2c57c71798c601d477a7bf844/README.md
+  - &tree https://huggingface.co/zai-org/GLM-5.3/tree/ba32f8c19c8738e2c57c71798c601d477a7bf844
+  - &template https://huggingface.co/zai-org/GLM-5.3/blob/ba32f8c19c8738e2c57c71798c601d477a7bf844/chat_template.jinja
+  - &api https://docs.z.ai/guides/llm/glm-5.3
+  - &router https://openrouter.ai/z-ai/glm-5.3
+field_sources:
+  id: *card
+  weights: *card
+  openrouter_slug: *router
+  family: *card
+  chat_format: *template
+  tokenizer: *tree
+  tokenizer.kind: *template
+  tokenizer.hf_model: *tree
+  tokenizer.hf_revision: *tree
+  reasoning: *template
+  reasoning.api_parameter: *api
+  format_markers: *template
+unverified:
+  - tokenizer.provider_overhead
+  - reasoning.provider_parameter_mapping
+  - reasoning.provider_clear_thinking_default
+  - recommended_sampling
+  - immutable_params
+  - tool_id_format
+  - reference_tiers

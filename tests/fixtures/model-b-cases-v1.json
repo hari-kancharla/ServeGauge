@@ -1,0 +1,1309 @@
+{
+  "version": "original-model-b-cases-v1",
+  "third_party_benchmark_text": false,
+  "texts": [
+    "",
+    "Hello, world!",
+    "café 北京 東京 🙂",
+    "é é\n\t",
+    "العربية हिन्दी русский",
+    "[gMASK]<sop><|assistant|>",
+    "<think>original</think>",
+    "{} [] \\ \"quoted\"",
+    "Original case 0: 雨 café ",
+    "Original case 1: 雨 café x",
+    "Original case 2: 雨 café xx",
+    "Original case 3: 雨 café xxx",
+    "Original case 4: 雨 café xxxx",
+    "Original case 5: 雨 café xxxxx",
+    "Original case 6: 雨 café xxxxxx",
+    "Original case 7: 雨 café xxxxxxx",
+    "Original case 8: 雨 café xxxxxxxx",
+    "Original case 9: 雨 café xxxxxxxxx",
+    "Original case 10: 雨 café xxxxxxxxxx",
+    "Original case 11: 雨 café xxxxxxxxxxx",
+    "Original case 12: 雨 café xxxxxxxxxxxx",
+    "Original case 13: 雨 café xxxxxxxxxxxxx",
+    "Original case 14: 雨 café xxxxxxxxxxxxxx",
+    "Original case 15: 雨 café xxxxxxxxxxxxxxx",
+    "Original case 16: 雨 café xxxxxxxxxxxxxxxx",
+    "Original case 17: 雨 café xxxxxxxxxxxxxxxxx",
+    "Original case 18: 雨 café xxxxxxxxxxxxxxxxxx",
+    "Original case 19: 雨 café xxxxxxxxxxxxxxxxxxx",
+    "Original case 20: 雨 café xxxxxxxxxxxxxxxxxxxx",
+    "Original case 21: 雨 café xxxxxxxxxxxxxxxxxxxxx",
+    "Original case 22: 雨 café xxxxxxxxxxxxxxxxxxxxxx",
+    "Original case 23: 雨 café ",
+    "Original case 24: 雨 café x",
+    "Original case 25: 雨 café xx",
+    "Original case 26: 雨 café xxx",
+    "Original case 27: 雨 café xxxx",
+    "Original case 28: 雨 café xxxxx",
+    "Original case 29: 雨 café xxxxxx",
+    "Original case 30: 雨 café xxxxxxx",
+    "Original case 31: 雨 café xxxxxxxx",
+    "Original case 32: 雨 café xxxxxxxxx",
+    "Original case 33: 雨 café xxxxxxxxxx",
+    "Original case 34: 雨 café xxxxxxxxxxx",
+    "Original case 35: 雨 café xxxxxxxxxxxx",
+    "Original case 36: 雨 café xxxxxxxxxxxxx",
+    "Original case 37: 雨 café xxxxxxxxxxxxxx",
+    "Original case 38: 雨 café xxxxxxxxxxxxxxx",
+    "Original case 39: 雨 café xxxxxxxxxxxxxxxx",
+    "Original case 40: 雨 café xxxxxxxxxxxxxxxxx",
+    "Original case 41: 雨 café xxxxxxxxxxxxxxxxxx",
+    "Original case 42: 雨 café xxxxxxxxxxxxxxxxxxx",
+    "Original case 43: 雨 café xxxxxxxxxxxxxxxxxxxx",
+    "Original case 44: 雨 café xxxxxxxxxxxxxxxxxxxxx",
+    "Original case 45: 雨 café xxxxxxxxxxxxxxxxxxxxxx",
+    "Original case 46: 雨 café ",
+    "Original case 47: 雨 café x",
+    "Original case 48: 雨 café xx",
+    "Original case 49: 雨 café xxx",
+    "Original case 50: 雨 café xxxx",
+    "Original case 51: 雨 café xxxxx",
+    "Original case 52: 雨 café xxxxxx",
+    "Original case 53: 雨 café xxxxxxx",
+    "Original case 54: 雨 café xxxxxxxx",
+    "Original case 55: 雨 café xxxxxxxxx",
+    "Original case 56: 雨 café xxxxxxxxxx",
+    "Original case 57: 雨 café xxxxxxxxxxx",
+    "Original case 58: 雨 café xxxxxxxxxxxx",
+    "Original case 59: 雨 café xxxxxxxxxxxxx",
+    "Original case 60: 雨 café xxxxxxxxxxxxxx",
+    "Original case 61: 雨 café xxxxxxxxxxxxxxx",
+    "Original case 62: 雨 café xxxxxxxxxxxxxxxx",
+    "Original case 63: 雨 café xxxxxxxxxxxxxxxxx",
+    "Original case 64: 雨 café xxxxxxxxxxxxxxxxxx",
+    "Original case 65: 雨 café xxxxxxxxxxxxxxxxxxx",
+    "Original case 66: 雨 café xxxxxxxxxxxxxxxxxxxx",
+    "Original case 67: 雨 café xxxxxxxxxxxxxxxxxxxxx",
+    "Original case 68: 雨 café xxxxxxxxxxxxxxxxxxxxxx",
+    "Original case 69: 雨 café ",
+    "Original case 70: 雨 café x",
+    "Original case 71: 雨 café xx",
+    "Original case 72: 雨 café xxx",
+    "Original case 73: 雨 café xxxx",
+    "Original case 74: 雨 café xxxxx",
+    "Original case 75: 雨 café xxxxxx",
+    "Original case 76: 雨 café xxxxxxx",
+    "Original case 77: 雨 café xxxxxxxx",
+    "Original case 78: 雨 café xxxxxxxxx",
+    "Original case 79: 雨 café xxxxxxxxxx",
+    "Original case 80: 雨 café xxxxxxxxxxx",
+    "Original case 81: 雨 café xxxxxxxxxxxx",
+    "Original case 82: 雨 café xxxxxxxxxxxxx",
+    "Original case 83: 雨 café xxxxxxxxxxxxxx",
+    "Original case 84: 雨 café xxxxxxxxxxxxxxx",
+    "Original case 85: 雨 café xxxxxxxxxxxxxxxx",
+    "Original case 86: 雨 café xxxxxxxxxxxxxxxxx",
+    "Original case 87: 雨 café xxxxxxxxxxxxxxxxxx",
+    "Original case 88: 雨 café xxxxxxxxxxxxxxxxxxx",
+    "Original case 89: 雨 café xxxxxxxxxxxxxxxxxxxx",
+    "Original case 90: 雨 café xxxxxxxxxxxxxxxxxxxxx",
+    "Original case 91: 雨 café xxxxxxxxxxxxxxxxxxxxxx",
+    "Original case 92: 雨 café ",
+    "Original case 93: 雨 café x",
+    "Original case 94: 雨 café xx",
+    "Original case 95: 雨 café xxx",
+    "Original case 96: 雨 café xxxx",
+    "Original case 97: 雨 café xxxxx",
+    "Original case 98: 雨 café xxxxxx",
+    "Original case 99: 雨 café xxxxxxx"
+  ],
+  "chats": [
+    {
+      "name": "plain",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Hello, 北京 café 🙂"
+        }
+      ],
+      "native_messages": [
+        {
+          "role": "user",
+          "content": "Hello, 北京 café 🙂"
+        }
+      ]
+    },
+    {
+      "name": "system-blocks",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Keep the original accents: é é."
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "First\n"
+            },
+            {
+              "type": "text",
+              "text": "second العربية हिन्दी"
+            }
+          ]
+        }
+      ],
+      "native_messages": [
+        {
+          "role": "system",
+          "content": "Keep the original accents: é é."
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "First\n"
+            },
+            {
+              "type": "text",
+              "text": "second العربية हिन्दी"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "visible-history",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Count 3"
+        },
+        {
+          "role": "assistant",
+          "content": "  Three.\n"
+        },
+        {
+          "role": "user",
+          "content": "Now 4"
+        }
+      ],
+      "native_messages": [
+        {
+          "role": "user",
+          "content": "Count 3"
+        },
+        {
+          "role": "assistant",
+          "content": "  Three.\n"
+        },
+        {
+          "role": "user",
+          "content": "Now 4"
+        }
+      ]
+    },
+    {
+      "name": "inline-reasoning",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Choose 7"
+        },
+        {
+          "role": "assistant",
+          "content": "<think>Consider seven.</think> 7"
+        },
+        {
+          "role": "user",
+          "content": "Why?"
+        }
+      ],
+      "native_messages": [
+        {
+          "role": "user",
+          "content": "Choose 7"
+        },
+        {
+          "role": "assistant",
+          "content": "<think>Consider seven.</think> 7"
+        },
+        {
+          "role": "user",
+          "content": "Why?"
+        }
+      ]
+    },
+    {
+      "name": "parallel-low-false",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Use the original converters."
+        },
+        {
+          "role": "assistant",
+          "content": null,
+          "reasoning": "Use both tools.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Use both tools."
+            }
+          ],
+          "tool_calls": [
+            {
+              "id": "one",
+              "type": "function",
+              "function": {
+                "name": "convert",
+                "arguments": "{\"value\":3,\"unit\":\"雨\"}"
+              }
+            },
+            {
+              "id": "two",
+              "type": "function",
+              "function": {
+                "name": "verify",
+                "arguments": "{\"options\":{\"exact\":true},\"labels\":[\"北京\",\"café\"]}"
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "two",
+          "content": "verified"
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "one",
+          "content": "converted"
+        }
+      ],
+      "native_messages": [
+        {
+          "role": "user",
+          "content": "Use the original converters."
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "one",
+              "type": "function",
+              "function": {
+                "name": "convert",
+                "arguments": {
+                  "value": 3,
+                  "unit": "雨"
+                }
+              }
+            },
+            {
+              "id": "two",
+              "type": "function",
+              "function": {
+                "name": "verify",
+                "arguments": {
+                  "options": {
+                    "exact": true
+                  },
+                  "labels": [
+                    "北京",
+                    "café"
+                  ]
+                }
+              }
+            }
+          ],
+          "reasoning_content": "Use both tools."
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "two",
+          "content": "verified"
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "one",
+          "content": "converted"
+        }
+      ],
+      "tools": [
+        {
+          "type": "function",
+          "function": {
+            "name": "convert",
+            "description": "Convert an original test value",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "value",
+                "unit"
+              ]
+            },
+            "strict": true
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "verify",
+            "description": "Verify nested original values",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "options": {
+                  "type": "object"
+                },
+                "labels": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "controls": {
+        "reasoning_effort": "low",
+        "clear_thinking": false
+      }
+    },
+    {
+      "name": "parallel-low-true",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Use the original converters."
+        },
+        {
+          "role": "assistant",
+          "content": null,
+          "reasoning": "Use both tools.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Use both tools."
+            }
+          ],
+          "tool_calls": [
+            {
+              "id": "one",
+              "type": "function",
+              "function": {
+                "name": "convert",
+                "arguments": "{\"value\":3,\"unit\":\"雨\"}"
+              }
+            },
+            {
+              "id": "two",
+              "type": "function",
+              "function": {
+                "name": "verify",
+                "arguments": "{\"options\":{\"exact\":true},\"labels\":[\"北京\",\"café\"]}"
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "two",
+          "content": "verified"
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "one",
+          "content": "converted"
+        }
+      ],
+      "native_messages": [
+        {
+          "role": "user",
+          "content": "Use the original converters."
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "one",
+              "type": "function",
+              "function": {
+                "name": "convert",
+                "arguments": {
+                  "value": 3,
+                  "unit": "雨"
+                }
+              }
+            },
+            {
+              "id": "two",
+              "type": "function",
+              "function": {
+                "name": "verify",
+                "arguments": {
+                  "options": {
+                    "exact": true
+                  },
+                  "labels": [
+                    "北京",
+                    "café"
+                  ]
+                }
+              }
+            }
+          ],
+          "reasoning_content": "Use both tools."
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "two",
+          "content": "verified"
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "one",
+          "content": "converted"
+        }
+      ],
+      "tools": [
+        {
+          "type": "function",
+          "function": {
+            "name": "convert",
+            "description": "Convert an original test value",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "value",
+                "unit"
+              ]
+            },
+            "strict": true
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "verify",
+            "description": "Verify nested original values",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "options": {
+                  "type": "object"
+                },
+                "labels": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "controls": {
+        "reasoning_effort": "low",
+        "clear_thinking": true
+      }
+    },
+    {
+      "name": "parallel-high-false",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Use the original converters."
+        },
+        {
+          "role": "assistant",
+          "content": null,
+          "reasoning": "Use both tools.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Use both tools."
+            }
+          ],
+          "tool_calls": [
+            {
+              "id": "one",
+              "type": "function",
+              "function": {
+                "name": "convert",
+                "arguments": "{\"value\":3,\"unit\":\"雨\"}"
+              }
+            },
+            {
+              "id": "two",
+              "type": "function",
+              "function": {
+                "name": "verify",
+                "arguments": "{\"options\":{\"exact\":true},\"labels\":[\"北京\",\"café\"]}"
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "two",
+          "content": "verified"
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "one",
+          "content": "converted"
+        }
+      ],
+      "native_messages": [
+        {
+          "role": "user",
+          "content": "Use the original converters."
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "one",
+              "type": "function",
+              "function": {
+                "name": "convert",
+                "arguments": {
+                  "value": 3,
+                  "unit": "雨"
+                }
+              }
+            },
+            {
+              "id": "two",
+              "type": "function",
+              "function": {
+                "name": "verify",
+                "arguments": {
+                  "options": {
+                    "exact": true
+                  },
+                  "labels": [
+                    "北京",
+                    "café"
+                  ]
+                }
+              }
+            }
+          ],
+          "reasoning_content": "Use both tools."
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "two",
+          "content": "verified"
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "one",
+          "content": "converted"
+        }
+      ],
+      "tools": [
+        {
+          "type": "function",
+          "function": {
+            "name": "convert",
+            "description": "Convert an original test value",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "value",
+                "unit"
+              ]
+            },
+            "strict": true
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "verify",
+            "description": "Verify nested original values",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "options": {
+                  "type": "object"
+                },
+                "labels": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "controls": {
+        "reasoning_effort": "high",
+        "clear_thinking": false
+      }
+    },
+    {
+      "name": "parallel-high-true",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Use the original converters."
+        },
+        {
+          "role": "assistant",
+          "content": null,
+          "reasoning": "Use both tools.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Use both tools."
+            }
+          ],
+          "tool_calls": [
+            {
+              "id": "one",
+              "type": "function",
+              "function": {
+                "name": "convert",
+                "arguments": "{\"value\":3,\"unit\":\"雨\"}"
+              }
+            },
+            {
+              "id": "two",
+              "type": "function",
+              "function": {
+                "name": "verify",
+                "arguments": "{\"options\":{\"exact\":true},\"labels\":[\"北京\",\"café\"]}"
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "two",
+          "content": "verified"
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "one",
+          "content": "converted"
+        }
+      ],
+      "native_messages": [
+        {
+          "role": "user",
+          "content": "Use the original converters."
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "one",
+              "type": "function",
+              "function": {
+                "name": "convert",
+                "arguments": {
+                  "value": 3,
+                  "unit": "雨"
+                }
+              }
+            },
+            {
+              "id": "two",
+              "type": "function",
+              "function": {
+                "name": "verify",
+                "arguments": {
+                  "options": {
+                    "exact": true
+                  },
+                  "labels": [
+                    "北京",
+                    "café"
+                  ]
+                }
+              }
+            }
+          ],
+          "reasoning_content": "Use both tools."
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "two",
+          "content": "verified"
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "one",
+          "content": "converted"
+        }
+      ],
+      "tools": [
+        {
+          "type": "function",
+          "function": {
+            "name": "convert",
+            "description": "Convert an original test value",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "value",
+                "unit"
+              ]
+            },
+            "strict": true
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "verify",
+            "description": "Verify nested original values",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "options": {
+                  "type": "object"
+                },
+                "labels": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "controls": {
+        "reasoning_effort": "high",
+        "clear_thinking": true
+      }
+    },
+    {
+      "name": "parallel-max-false",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Use the original converters."
+        },
+        {
+          "role": "assistant",
+          "content": null,
+          "reasoning": "Use both tools.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Use both tools."
+            }
+          ],
+          "tool_calls": [
+            {
+              "id": "one",
+              "type": "function",
+              "function": {
+                "name": "convert",
+                "arguments": "{\"value\":3,\"unit\":\"雨\"}"
+              }
+            },
+            {
+              "id": "two",
+              "type": "function",
+              "function": {
+                "name": "verify",
+                "arguments": "{\"options\":{\"exact\":true},\"labels\":[\"北京\",\"café\"]}"
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "two",
+          "content": "verified"
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "one",
+          "content": "converted"
+        }
+      ],
+      "native_messages": [
+        {
+          "role": "user",
+          "content": "Use the original converters."
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "one",
+              "type": "function",
+              "function": {
+                "name": "convert",
+                "arguments": {
+                  "value": 3,
+                  "unit": "雨"
+                }
+              }
+            },
+            {
+              "id": "two",
+              "type": "function",
+              "function": {
+                "name": "verify",
+                "arguments": {
+                  "options": {
+                    "exact": true
+                  },
+                  "labels": [
+                    "北京",
+                    "café"
+                  ]
+                }
+              }
+            }
+          ],
+          "reasoning_content": "Use both tools."
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "two",
+          "content": "verified"
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "one",
+          "content": "converted"
+        }
+      ],
+      "tools": [
+        {
+          "type": "function",
+          "function": {
+            "name": "convert",
+            "description": "Convert an original test value",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "value",
+                "unit"
+              ]
+            },
+            "strict": true
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "verify",
+            "description": "Verify nested original values",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "options": {
+                  "type": "object"
+                },
+                "labels": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "controls": {
+        "reasoning_effort": "max",
+        "clear_thinking": false
+      }
+    },
+    {
+      "name": "parallel-max-true",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Use the original converters."
+        },
+        {
+          "role": "assistant",
+          "content": null,
+          "reasoning": "Use both tools.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Use both tools."
+            }
+          ],
+          "tool_calls": [
+            {
+              "id": "one",
+              "type": "function",
+              "function": {
+                "name": "convert",
+                "arguments": "{\"value\":3,\"unit\":\"雨\"}"
+              }
+            },
+            {
+              "id": "two",
+              "type": "function",
+              "function": {
+                "name": "verify",
+                "arguments": "{\"options\":{\"exact\":true},\"labels\":[\"北京\",\"café\"]}"
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "two",
+          "content": "verified"
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "one",
+          "content": "converted"
+        }
+      ],
+      "native_messages": [
+        {
+          "role": "user",
+          "content": "Use the original converters."
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "one",
+              "type": "function",
+              "function": {
+                "name": "convert",
+                "arguments": {
+                  "value": 3,
+                  "unit": "雨"
+                }
+              }
+            },
+            {
+              "id": "two",
+              "type": "function",
+              "function": {
+                "name": "verify",
+                "arguments": {
+                  "options": {
+                    "exact": true
+                  },
+                  "labels": [
+                    "北京",
+                    "café"
+                  ]
+                }
+              }
+            }
+          ],
+          "reasoning_content": "Use both tools."
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "two",
+          "content": "verified"
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "one",
+          "content": "converted"
+        }
+      ],
+      "tools": [
+        {
+          "type": "function",
+          "function": {
+            "name": "convert",
+            "description": "Convert an original test value",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "value",
+                "unit"
+              ]
+            },
+            "strict": true
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "verify",
+            "description": "Verify nested original values",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "options": {
+                  "type": "object"
+                },
+                "labels": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "controls": {
+        "reasoning_effort": "max",
+        "clear_thinking": true
+      }
+    },
+    {
+      "name": "clear-prior-false",
+      "messages": [
+        {
+          "role": "user",
+          "content": "First original turn"
+        },
+        {
+          "role": "assistant",
+          "content": "OK",
+          "reasoning_content": "Prior step."
+        },
+        {
+          "role": "user",
+          "content": "Second original turn"
+        }
+      ],
+      "native_messages": [
+        {
+          "role": "user",
+          "content": "First original turn"
+        },
+        {
+          "role": "assistant",
+          "content": "OK",
+          "reasoning_content": "Prior step."
+        },
+        {
+          "role": "user",
+          "content": "Second original turn"
+        }
+      ],
+      "controls": {
+        "clear_thinking": false
+      }
+    },
+    {
+      "name": "clear-prior-true",
+      "messages": [
+        {
+          "role": "user",
+          "content": "First original turn"
+        },
+        {
+          "role": "assistant",
+          "content": "OK",
+          "reasoning_content": "Prior step."
+        },
+        {
+          "role": "user",
+          "content": "Second original turn"
+        }
+      ],
+      "native_messages": [
+        {
+          "role": "user",
+          "content": "First original turn"
+        },
+        {
+          "role": "assistant",
+          "content": "OK",
+          "reasoning_content": "Prior step."
+        },
+        {
+          "role": "user",
+          "content": "Second original turn"
+        }
+      ],
+      "controls": {
+        "clear_thinking": true
+      }
+    },
+    {
+      "name": "deferred-definition",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Only visible tools"
+        }
+      ],
+      "native_messages": [
+        {
+          "role": "user",
+          "content": "Only visible tools"
+        }
+      ],
+      "tools": [
+        {
+          "type": "function",
+          "function": {
+            "name": "convert",
+            "description": "Convert an original test value",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "value",
+                "unit"
+              ]
+            },
+            "strict": true
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "verify",
+            "description": "Verify nested original values",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "options": {
+                  "type": "object"
+                },
+                "labels": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "later",
+            "parameters": {
+              "type": "object"
+            },
+            "defer_loading": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "literal-markers",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Literal [gMASK] <sop> <|user|> and <tool_call> 雨"
+        }
+      ],
+      "native_messages": [
+        {
+          "role": "user",
+          "content": "Literal [gMASK] <sop> <|user|> and <tool_call> 雨"
+        }
+      ]
+    },
+    {
+      "name": "text-pieces",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            "original ",
+            {
+              "type": "text",
+              "text": "日本語"
+            },
+            "\t\"quoted\""
+          ]
+        }
+      ],
+      "native_messages": [
+        {
+          "role": "user",
+          "content": [
+            "original ",
+            {
+              "type": "text",
+              "text": "日本語"
+            },
+            "\t\"quoted\""
+          ]
+        }
+      ]
+    }
+  ]
+}

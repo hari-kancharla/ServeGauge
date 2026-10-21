@@ -1,0 +1,5 @@
+monthly_usd: 0
+per_run_usd: 0
+dev_live_usd: 0
+selfhost_usd_per_session: 0
+stop_at_fraction: 0.9

@@ -1,0 +1,51 @@
+{
+  "concurrency_per_endpoint": 1,
+  "endpoints": [
+    {
+      "api_key_env": "ZAI_API_KEY",
+      "base_url": "https://api.z.ai/api/paas/v4",
+      "claimed_profile": "glm-5.3",
+      "defaults": {
+        "reasoning_effort": "low",
+        "thinking": {
+          "type": "enabled"
+        }
+      },
+      "id": "glm-5.3-maker-standard",
+      "kind": "openai_compat",
+      "metadata": {
+        "observed_date": "2026-10-21",
+        "owner_review_required": [
+          "account and endpoint eligibility",
+          "alias to checkpoint mapping",
+          "current price snapshot",
+          "context and completion bounds",
+          "observed capabilities"
+        ],
+        "preparation_only": true,
+        "source_url": "https://docs.z.ai/guides/overview/quick-start"
+      },
+      "model": "glm-5.3"
+    }
+  ],
+  "level": "core",
+  "max_usd": 0,
+  "plan_id": "glm-5.3-owner-reference",
+  "profile": "glm-5.3",
+  "reference": {
+    "tier": "BASELINE"
+  },
+  "requests_per_minute": 30,
+  "retries": 0,
+  "seed": 20261021,
+  "suites": [
+    "S0",
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S6",
+    "S7"
+  ],
+  "timeout_seconds": 120
+}

@@ -1,0 +1,47 @@
+version: offline-lab-v1
+seed: 20261019
+clean_replicates: 60
+fault_replicates: 30
+workers: 4
+minimum_power: 0.8
+maximum_false_positive_rate: 0.05
+minimum_clean_comparative_pass_rate: 0.8
+reference_instances: 3
+replay_batch: 8
+replay_limit: 64
+fingerprint:
+  cells: 40
+  samples: 30
+  fixed_length: 16
+  different_model_controls: [control-a, control-b]
+power:
+  replicates: 60
+  query_sizes: [20, 50, 100, 200]
+  permutations: 1999
+  input_tokens_per_query: 32
+  output_tokens_per_query: 8
+  scenario_input_usd_per_million: 0.15
+  scenario_output_usd_per_million: 0.60
+  rationale: "Illustrative fixed prices, not current provider quotes or incurred spending"
+changepoint:
+  maximum_false_alarms_per_30_days: 1.0
+  calibration_replicates: 5000
+  evaluation_replicates: 2000
+  calibration_budget_fraction: 0.5
+  primary_detector: D-A
+  days: 30
+  streams: 100
+  observations_per_day: 4
+  baseline_size: 64
+  binary_batch: 32
+  shift_day: 10
+  standardized_shift: 1.0
+  binary_baseline: 0.95
+  binary_shift: 0.75
+  gradual_days: 10
+  cusum_slack: 0.5
+  evalue_kappa: 0.5
+  adwin_deltas: [0.01, 0.001, 0.0001, 0.00001]
+  rationale: "100 endpoint-signal streams, four fingerprints/day, one expected false alarm per 30 observatory days; separate calibration and evaluation seeds"
+acceptance:
+  rationale: "Frozen SPEC 13: rates use independent seeded replicates, Wilson intervals; no seed, margin, strength or threshold tuning on acceptance data"

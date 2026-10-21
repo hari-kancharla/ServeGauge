@@ -1,0 +1,74 @@
+{
+  "id": "gpt-oss-120b",
+  "weights": "openai/gpt-oss-120b",
+  "openrouter_slug": "openai/gpt-oss-120b",
+  "family": "gpt-oss",
+  "chat_format": "harmony",
+  "tokenizer": {
+    "kind": "harmony",
+    "package": "openai-harmony",
+    "hf_model": "openai/gpt-oss-120b",
+    "hf_revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+    "template_date": "explicit_per_run",
+    "provider_overhead": "requires_reference_calibration"
+  },
+  "reasoning": {
+    "control": "system_prompt",
+    "levels": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "system_prefix": "Reasoning: ",
+    "api_parameter": "reasoning_effort"
+  },
+  "recommended_sampling": {
+    "temperature": 1.0,
+    "top_p": 1.0
+  },
+  "format_markers": [
+    "<|start|>",
+    "<|end|>",
+    "<|message|>",
+    "<|channel|>",
+    "<|constrain|>",
+    "<|return|>",
+    "<|call|>"
+  ],
+  "immutable_params": {},
+  "tool_id_format": null,
+  "reference_tiers": [
+    {
+      "tier": "R2",
+      "engine": "vllm",
+      "version": "0.10.1+gptoss",
+      "recipe_url": "https://huggingface.co/openai/gpt-oss-120b/blob/main/README.md",
+      "gpu": "1x80GB",
+      "qualification": "pending owner run; not a reference result"
+    }
+  ],
+  "sources": [
+    "https://huggingface.co/openai/gpt-oss-120b/blob/main/README.md",
+    "https://github.com/openai/harmony",
+    "https://huggingface.co/openai/gpt-oss-120b/tree/b5c939de8f754692c1647ca79fbf85e8c1e70f8a"
+  ],
+  "unverified": [
+    "recommended_sampling",
+    "reasoning.api_parameter",
+    "reference_tiers"
+  ],
+  "field_sources": {
+    "id": "https://huggingface.co/openai/gpt-oss-120b/blob/main/README.md",
+    "weights": "https://huggingface.co/openai/gpt-oss-120b/blob/main/README.md",
+    "openrouter_slug": "https://huggingface.co/openai/gpt-oss-120b/blob/main/README.md",
+    "family": "https://huggingface.co/openai/gpt-oss-120b/blob/main/README.md",
+    "chat_format": "https://github.com/openai/harmony",
+    "tokenizer": "https://huggingface.co/openai/gpt-oss-120b/tree/b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+    "reasoning": "https://huggingface.co/openai/gpt-oss-120b/blob/main/README.md",
+    "recommended_sampling": "https://huggingface.co/openai/gpt-oss-120b/blob/main/README.md",
+    "format_markers": "https://github.com/openai/harmony",
+    "immutable_params": "https://huggingface.co/openai/gpt-oss-120b/blob/main/README.md",
+    "tool_id_format": "https://huggingface.co/openai/gpt-oss-120b/blob/main/README.md",
+    "reference_tiers": "https://huggingface.co/openai/gpt-oss-120b/blob/main/README.md"
+  }
+}

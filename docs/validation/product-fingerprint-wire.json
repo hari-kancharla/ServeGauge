@@ -1,0 +1,1843 @@
+{
+  "M10_complete": false,
+  "accepted": true,
+  "actual_clean_text_verdict": "INCONCLUSIVE",
+  "all_current_source_gates_passed": true,
+  "artifact_sha256": {
+    "calibration/pack-00.json": "6d6351088661ab19186ea30617b7bdf298768eb29f7af3fcdb04975f1af7db41",
+    "calibration/pack-01.json": "29a70b40d9995df839c62d5ae49bc8df4b2e4d471d42bb63561f49186245f2b2",
+    "calibration/pack-02.json": "cfa9cbf0ddfbb5a17a728cf76e4db519f184cb5581ba88c83ed89d824ccec15a",
+    "trials/pack-00-clean-0000.json": "e4bba7a65ea37ad0ff830299ea809bca1b24f979df326a962e5bb7a72cd0a628",
+    "trials/pack-00-clean-0001.json": "11666446b0cab8d94d2ebcb2679ae61c7c4026cd46e80b60aff97ba7b208c5d5",
+    "trials/pack-00-clean-0002.json": "eebe39a5c32e7877192653ffafc773c3e0c96c3576452e4672f37839b16b7f8b",
+    "trials/pack-00-clean-0003.json": "cda19e1d7c19b1feeca8d64d2d4dcfdfd8dc204e5c329d61b344ed24a9fe777e",
+    "trials/pack-00-clean-0004.json": "4e5629a1a78b4c90d1169851687ecd836115571652278d4214c14af8615af5e2",
+    "trials/pack-00-clean-0005.json": "11fba480b866701e013de863d8bfe336ee2ff6ecf6445b05863caeb99d593544",
+    "trials/pack-00-clean-0006.json": "450c752720175d490c420b820489ab513cedf93652d08ff7f1c64482da9c9940",
+    "trials/pack-00-clean-0007.json": "ba7226188b41ca29512053fdd7f0fba1f841052763d0696512687b357561f903",
+    "trials/pack-00-clean-0008.json": "44de8188163f879789dc797c57d72a119f2703d1274a896dd433475043d3e0ea",
+    "trials/pack-00-clean-0009.json": "21f7e939c7237e0da80bb748d74e7d0aa2eb22b524558995adfd751a30f274d7",
+    "trials/pack-00-clean-0010.json": "ff9e1ac14c8b965ab324df42d05ccdce97fd60aa8ce9ea6ec170008c739838a1",
+    "trials/pack-00-clean-0011.json": "d0864ed58dc56bacc7a8169c46491c7b1b9f229f0350481b1a29a5a055e98fd8",
+    "trials/pack-00-clean-0012.json": "211dce4cc34979673bc85425ba50ca423dfe0b2d9317eb11e0b6ca850f9f4fcb",
+    "trials/pack-00-clean-0013.json": "dde7c6266fd72e79dd058a868357973dd0c5a183986e5a5460de163b730a5aa2",
+    "trials/pack-00-clean-0014.json": "56be7b1412e7a51cfd09308dff3e786562791e035f14f43e38b65ddc232e90af",
+    "trials/pack-00-clean-0015.json": "f5335b7745c317ebe0c3dbb9c27bb1e22f22d2e73853d285c4ee318c0f50cc88",
+    "trials/pack-00-clean-0016.json": "5a162f58879bf4bbd1855b532b49e66de49828addd8a4de81b2f2959ff8b275b",
+    "trials/pack-00-clean-0017.json": "1b99ca6b10479b4890e9944e4bf825356b164c27138881df68febaa81e9e89d2",
+    "trials/pack-00-clean-0018.json": "a04ff358010ae4ce2965fde2c4695d75fef6aad960a4a854f58613fc0fbbda2f",
+    "trials/pack-00-clean-0019.json": "3e9ed3425bcc4b111647c3adf294ab040cbf320991aa032f3a2b0663dd849d02",
+    "trials/pack-00-clean-0020.json": "70f810dc150b1d9fc10589b48c02fe4466049ca195f125a2487e98efa52c3684",
+    "trials/pack-00-clean-0021.json": "b68f0ca013a52a8482488c04eb6ec8eb38461e99d39e033738d916203857b583",
+    "trials/pack-00-clean-0022.json": "bd8ab92eaefde70e4872bfdbf1969ced8cc96862a86301b4aa799895a23f197c",
+    "trials/pack-00-clean-0023.json": "d8c5dde4709f7fe6fc7fb8c0a4a5263b14d0aec8d183433b0ba4b94b9eff4180",
+    "trials/pack-00-clean-0024.json": "ed0d873e8bbe20b3c9b614504d9460ffa82e3f0004d5929919b25e516b65ddf9",
+    "trials/pack-00-clean-0025.json": "30312be2462b54585f2afa76d464df39f403430cb456ef82fe677d5f0492a101",
+    "trials/pack-00-clean-0026.json": "7021bb173af8e6c007a1b51e762b23b90d98037ce690996b1cbc15f53f8d0d55",
+    "trials/pack-00-clean-0027.json": "718e477dec03340f446cfb0059dcc2fde5133c340dfef17c3487eabfaacce861",
+    "trials/pack-00-clean-0028.json": "9ebf953b2a997572e28f292a784c98c336f3fb5f2a60a5ab039baba47aef88f1",
+    "trials/pack-00-clean-0029.json": "6aba36022fbb433cf3ac1a5c7fb359922f15d61227679b7742bd0441eb88961f",
+    "trials/pack-00-clean-0030.json": "4c3ac6d0605c97c1d2f8e7399bb090b2699b3acb65bef7de185b8ed4e053c44f",
+    "trials/pack-00-clean-0031.json": "1bd9f16531d71dc096eb3fdfff11fdb170588f177717c57d2054f47112a33ab6",
+    "trials/pack-00-clean-0032.json": "483bc0206d1f7e9959aceaed20b01ee3794a3b60b9b56e7e3bbbe657ba5c39ed",
+    "trials/pack-00-clean-0033.json": "bfead7c6a370f5653c686a638e0c57a76515c11eee4ac26a535d5b3afac04ad5",
+    "trials/pack-00-clean-0034.json": "1b50da39a3543a536b1995907044c4eb55b42c9c0b9816b61cb7646df486ce0a",
+    "trials/pack-00-clean-0035.json": "1e9330d1c211fb512dfb79fa2081a383482b5c12d517f6369bd621f6ada96a2a",
+    "trials/pack-00-clean-0036.json": "b48b1eb17a217d62f29d37c83cf5cc95cb6b734ff71e5ec8c1091bbb3ceff0e0",
+    "trials/pack-00-clean-0037.json": "5cbf0ee62c4dd0ca48c40b317d109cbc8fafb4cfdabe32d6c1f4f368f2664f59",
+    "trials/pack-00-clean-0038.json": "075194ce2fd0c61b13c47b91d3719f52b3fef2e13002f426d67ffb5feff57ac5",
+    "trials/pack-00-clean-0039.json": "52a78738abe83b61d16307cd6e76bb74aba4e66ab18437730dd220cbb6450115",
+    "trials/pack-00-clean-0040.json": "5ea5110ab8ee9244fc63d8b47a913e04054e6e0341d4ca601084bc7d45f678af",
+    "trials/pack-00-clean-0041.json": "c0b406b2c39bfa404beda162eaf73b1445a96bc327c9bf9ed564c01b39947173",
+    "trials/pack-00-clean-0042.json": "727bc4a37ce9da9638f4ba414cfeb159b147ff8c56c96fa35554fa724d38d362",
+    "trials/pack-00-clean-0043.json": "5e5ad6c5183d379e8f05bef97e8422c2ff41b4a3d675c809e86255511d0c2199",
+    "trials/pack-00-clean-0044.json": "49cba7d80a207a965daa81dd22c7b5476d616bcb2f35cfd01feff4ba35c52cf8",
+    "trials/pack-00-clean-0045.json": "cd1c90ea2043396eb0939d764342315358050095dac8ab2abc9252ff3bfb9186",
+    "trials/pack-00-clean-0046.json": "15b4a01aa2770283d6875c8ec048899aee6d5a0f36731a2e01dad49582c1b373",
+    "trials/pack-00-clean-0047.json": "0533cb5b43900e9e1fbd2ffe06b2e4c90e91f945b8613d1865f8a9179091d89d",
+    "trials/pack-00-clean-0048.json": "7d11e9eda8fcd6c026ed7f6f3eb2a857aab5ede8ac5dfe677a573000429f1b8e",
+    "trials/pack-00-clean-0049.json": "185ee8fe83461581f243b5065b374fa1265c0da6634b61d223e11277656adac2",
+    "trials/pack-00-clean-0050.json": "2e6d5a49c1b54cb818ce63192cdf895e2d096ec1920c9d0bd6cedf9a9283d0f9",
+    "trials/pack-00-clean-0051.json": "b9432eb6a8e6780a6a604cd7c4b5817b171c8486394bccbd450341fa3792442c",
+    "trials/pack-00-clean-0052.json": "4d88e54cc14d3f5de3dd2296b7f8dd5c40b50486d9aabc4d16ca2d448d1aa970",
+    "trials/pack-00-clean-0053.json": "40a2a21f2ea83608cabc2c73caca42f1f05664c7dee7a3ef38c9ec41dac1136d",
+    "trials/pack-00-clean-0054.json": "6338deb64923bdd96dc82337ecea7ad16a80c4d9774c3a9c71229d6a75e01ad5",
+    "trials/pack-00-clean-0055.json": "9dd39a2ed3c18da14515d50c1b35092f89aca74cb385ddd41da0abfcc28db812",
+    "trials/pack-00-clean-0056.json": "10318198ada9e4d38dd7c10f9a1ab6aca789ec295106818e9c52a91bc687d1c3",
+    "trials/pack-00-clean-0057.json": "cc8dd2b69453d925faedd0c58fe948b2cfef98005635e83156f1a582ff1bd28b",
+    "trials/pack-00-clean-0058.json": "7b87a813cd57d725d04fdfd8fbc58a662e88428cb22e36b0fa33aebea7d95699",
+    "trials/pack-00-clean-0059.json": "bec28a54a78bc0473de9b9e2d3b1b5f4f105e97fca5f6f3ebc75db7b4c7f572c",
+    "trials/pack-00-mix-0000.json": "b2709e255eb554d3fab8eee9a9b687110648de0500f40c9feb2412143c5d2291",
+    "trials/pack-00-mix-0001.json": "6f538b6482a2379778fc8b406d8b70dd5599b03db44cd4425ac3790336506d38",
+    "trials/pack-00-mix-0002.json": "62cfc501e33d8b5fe68c4f80e50dfdd3c1d84f5c32881213ec7aa01511d66f10",
+    "trials/pack-00-mix-0003.json": "0545b326555672165c18cc46db4adb2b839be89eba7942003450ed817357d693",
+    "trials/pack-00-mix-0004.json": "7e057e6702b2d19fcd944c188d55dd46542609b87170fa1d8e140ecf3556d703",
+    "trials/pack-00-mix-0005.json": "7f7fa5540fdcb738b157680a1605054e0d92f609c4736270c83750dc9aa6aa46",
+    "trials/pack-00-mix-0006.json": "87fca8eccd31339c2137de181924fbfa210cd97ee31ae74bb279dc73a9389e6d",
+    "trials/pack-00-mix-0007.json": "48822bd9d09509367397b32636a633bbed33fd04852ed9d7b190b628e15a8e44",
+    "trials/pack-00-mix-0008.json": "68b6281a3186aab8b26f873fde856251ffe46b1872f1397ee4460b2fda768df6",
+    "trials/pack-00-mix-0009.json": "9fe16728199de4f4462b26518b1e7fd322ec90b236c6b0935418ea00edbc0efd",
+    "trials/pack-00-mix-0010.json": "259a6462dc5fe95dcdc7a3fd1ca60840bc093ce8218448e32bf8da1ca6fade91",
+    "trials/pack-00-mix-0011.json": "d12eb13212dfab899d3fd27e28eeaab7a46c1d087b943b4893bac6626a1b2dc8",
+    "trials/pack-00-mix-0012.json": "ef18d93d08ced461802c67421b6ee5bd8d07ab784c6cfc41c609d73238de0072",
+    "trials/pack-00-mix-0013.json": "e2f21f4fdd100628acf08612e1067de1ca06329ad9ac7bf0a5b9f7f879f8d1ff",
+    "trials/pack-00-mix-0014.json": "838026b24d9e07d0a5cca35cef50dd54b6cc4171dfddbdfb671cc7cc714f4925",
+    "trials/pack-00-mix-0015.json": "6d130eee2efd2372abeecf8c8271a4844e6be937a4e646d6c8ab0242b4a868a6",
+    "trials/pack-00-mix-0016.json": "8daa2fd77e019cda4981b6d81a2af9b8e441d96cc3ae8fd130df67c195f2b649",
+    "trials/pack-00-mix-0017.json": "ccf598e5ce5c1bc8743386e8dd1ed440d4fd309334690fd95bdd7fad9c28ca2f",
+    "trials/pack-00-mix-0018.json": "e8ccafd001f58fcadbe1dfb254a6cc6a205fec3c8c95bc643463a7f6d162476f",
+    "trials/pack-00-mix-0019.json": "5964120ad62cb4d7d55d9d0f121685483e5fb131d91f53510efa37492468fac2",
+    "trials/pack-00-mix-0020.json": "859d91b1deb7bf6ee7713502bdb412d4fff7e0369af7262fe7fa1edf6e9a3b24",
+    "trials/pack-00-mix-0021.json": "4a105bb89521e4f9a85edaedd2a358124b3edb5a0f184e29bb5dc2663a1b4f77",
+    "trials/pack-00-mix-0022.json": "52790ade5de3ea48ee747cdfd062590ff462f742642d412c6ed4d02d9fc96460",
+    "trials/pack-00-mix-0023.json": "c217676d089ce2ab4502f702ab634e7f84fc407039704b37e5e1107ff071ec4d",
+    "trials/pack-00-mix-0024.json": "3789f155462c05a83720c7fc6c652a09c2e52ddef4e22dfb166651168e2900db",
+    "trials/pack-00-mix-0025.json": "96daf0d103f483add478c64c318a1c9198349bb68155c3dcedb66466c89851f7",
+    "trials/pack-00-mix-0026.json": "632a47d34bd46f773599b7574587b3fd1f249de20270c80401e9a3d7dd710c4b",
+    "trials/pack-00-mix-0027.json": "d008137e1aa3b0082e793bb80c2be22b435844b34f22a0b6464d7a0d777d3d73",
+    "trials/pack-00-mix-0028.json": "fe7e31f50d137b0ca15f06784f83df7492f380984771e938fc43e7da2cd438da",
+    "trials/pack-00-mix-0029.json": "7fad57fd83c8fd20e399b82150e5132c7333c9abffd36b3042444d21ca3a486a",
+    "trials/pack-00-qsim-0000.json": "c5389f2c5c4893362a221d83beccd3e98f0f47d5c704de147496b1494a86c749",
+    "trials/pack-00-qsim-0001.json": "d0569e1ef2ec8959c344d12116232515416e62360ffeacf36c6f911d722db389",
+    "trials/pack-00-qsim-0002.json": "2c099c53173d9e5b9e937023641f950959463c615628a99a87cb2cb7c3dd818b",
+    "trials/pack-00-qsim-0003.json": "c4332ca8d75c74f4ed472236defeefb6f7fa1c299f9c6fd7f1044e9648d561c0",
+    "trials/pack-00-qsim-0004.json": "2e4bd797e4118c9e55a7a154dbdf79f5ff7f39a57e0647df6a64e136091bb975",
+    "trials/pack-00-qsim-0005.json": "e475cfd67c637ae7f035f7ba9a2da1601da299982c9f75d648aa2844312cf676",
+    "trials/pack-00-qsim-0006.json": "53f6b3c1cbcb7b624d5564787aa6f7c4665a9359cccdbfa2052a2a82fd94eba4",
+    "trials/pack-00-qsim-0007.json": "3d270221889602eb7745720bd812fb603c9061646d8c436c19e71074931dc2fd",
+    "trials/pack-00-qsim-0008.json": "3703d0cfad5291ff4fcf576826d7e7fad591ffc5edd2db3ee7a41774d01ba8f3",
+    "trials/pack-00-qsim-0009.json": "e63b5a0c652c1e089a8b3c76f446afae45a42399412c76efb531e8ebfcafad7f",
+    "trials/pack-00-qsim-0010.json": "b8e270fd724d1e5689e92b27234e5d0bfeeb1000053845106a87082e1c36afaa",
+    "trials/pack-00-qsim-0011.json": "f8bc0d5f8e5f528c8c0a12b0c06ab7c481e52b9b96c2f4fd9ed20f2c1858e831",
+    "trials/pack-00-qsim-0012.json": "b49a8c7847f12c98e1091e11e7be358c80bbc7ff507dca50d2106261fa92ab34",
+    "trials/pack-00-qsim-0013.json": "8f4b5cac52b8a14aa192739557f44a9ed26ea2f544da769e188ebb9a03ec3928",
+    "trials/pack-00-qsim-0014.json": "8c4cc60f8c0b6e963c63bdd906881c9dddfe9f1368401ec8b941ef4c747c376e",
+    "trials/pack-00-qsim-0015.json": "6d6ccd1a231a20a9ee36599a78b15ef79c65d2f7e4524176fc3ccd950ae169e8",
+    "trials/pack-00-qsim-0016.json": "2533b6078937921004459b739662296ff66adfce718ef639c0bb32d66685179b",
+    "trials/pack-00-qsim-0017.json": "b1a0b6256b3fd6c3366b1ad2b82b028659c074ab5dc22077b190d5886a32470c",
+    "trials/pack-00-qsim-0018.json": "52451160f195afa0cd3e200b77ee13048277d3da8f9e277b4da0a6a7f30e5be7",
+    "trials/pack-00-qsim-0019.json": "1be92d7929a88b4982d685c792943b8925e7135c1176044d2433b166f49cfd68",
+    "trials/pack-00-qsim-0020.json": "bba0efc9095c89627987859dbb74889a51275d73201bafaa5e0ef885e6fb68bc",
+    "trials/pack-00-qsim-0021.json": "75ecce879dead3fa4e46977277fa85ddbba4d66bce6becc98be7b4ad8fcaeae6",
+    "trials/pack-00-qsim-0022.json": "13601a8e621df674ebba051f0afd84be9c2c49692f2ed080321a768c302e2ed0",
+    "trials/pack-00-qsim-0023.json": "e08b3d4062311e898e9ffdc27a57993e12ce79a8cffaac6d9bed637873fbdc32",
+    "trials/pack-00-qsim-0024.json": "1cdf03d189f341f9f30d251e95897dfb12d5949a8ade69f6b6bd1e2d6dd0d55f",
+    "trials/pack-00-qsim-0025.json": "5a516f620461918fa03d767230551b45367be15f0a08e34873ec55cfff8f0122",
+    "trials/pack-00-qsim-0026.json": "67e9bc65a9aff2a9f985763e092ae237317d63bd2bb29d5f556cfdf279ffd466",
+    "trials/pack-00-qsim-0027.json": "18a1f60a825745cf57699ff145859e5fb439f2dd6b3997c2eaa7a7d80a2a3063",
+    "trials/pack-00-qsim-0028.json": "9bee60af10a81819fe6d95d11ada55682c2e8c5b6ab2e47a5b352868faa5fb2c",
+    "trials/pack-00-qsim-0029.json": "705742f92a125d6d58158e629a154f3d2d22f0b6122618292d6f78378b78613f",
+    "trials/pack-00-swap-0000.json": "eaa3a5554e50ca86bd0e436aa0a2b242e4bc273fe935b2d7aebb6018641cc2e7",
+    "trials/pack-00-swap-0001.json": "e191cc048dfc0883f1353c1d389de7508d80c933d82430eb8c62142ff62669f0",
+    "trials/pack-00-swap-0002.json": "08d7d7b6e38e0c31f3a88ac547b2fa77fd918621790547922b02072a65e41d82",
+    "trials/pack-00-swap-0003.json": "9f4ca3721d4e9f78fa0ce667ac951aaedca60b7089af8b958c9709f5ab6a903b",
+    "trials/pack-00-swap-0004.json": "9ec22069d2ae5cf1d50ca38466b9c3fd749f335d148e8043811ac5f86021b831",
+    "trials/pack-00-swap-0005.json": "d266c00aa03b50b7c0060e5f5b4eb7d3ee589472feb6c94848bb9991d03633cb",
+    "trials/pack-00-swap-0006.json": "91ee6fd930ae9320a7374e87e7df13f6927390b057e90e30b38cd56cc81f4274",
+    "trials/pack-00-swap-0007.json": "657658c719a2ca9b7e8f494eb76d9a99acdf2c43a7e702fd173f12170ade40fb",
+    "trials/pack-00-swap-0008.json": "41857d84a83089f825fe422a281fd658e227965ec201ca5c7160a75f1ead3ea4",
+    "trials/pack-00-swap-0009.json": "bbcd4d493d0f46e0958e60ef269306f376b00cb9a42c79631321680937152331",
+    "trials/pack-00-swap-0010.json": "3895fb933ac9598631d4586089bcf28371bc9847b28b4c6b7db72a7a350ccdd0",
+    "trials/pack-00-swap-0011.json": "e98dce620ce1b9202ed21abca050b263b38b5146b5d6217711ccc9776c61c711",
+    "trials/pack-00-swap-0012.json": "f302c5cbe8817724c3a4332bfb6c9dd86a46118c827e7c6cc4d12a61f04d073b",
+    "trials/pack-00-swap-0013.json": "0866c9b7b9a8347b82f599a2a6a54687b25079ca7cfcbe3ddc5e043bc4d7fcb9",
+    "trials/pack-00-swap-0014.json": "a615d0552ea7b342ed9f83968484b90f796334e99c9a49d2630e3e0e0bc9c76d",
+    "trials/pack-00-swap-0015.json": "ba91ced19f35fcea045f64be992740811d692b1eb7c831235b7fd9fccde372a2",
+    "trials/pack-00-swap-0016.json": "5402f42f591850e0b0fc6d6f3640d4a22db07e00962942d734f55e72a9392d86",
+    "trials/pack-00-swap-0017.json": "93fd69d9953e387ba6decd1d25f87b60d0f9e2b55a768bed881a4d6662c0ea82",
+    "trials/pack-00-swap-0018.json": "ebd756af80107c66230389ec82ad8b5bfa0922cce59f845263e105aee5325958",
+    "trials/pack-00-swap-0019.json": "32614b63ecf68ecafebe30f81c50ac73c7035031839aee05e81c06f05e672efe",
+    "trials/pack-00-swap-0020.json": "ad46f957f93c0858d99886d3a8a5348f5ef20ca2cd2000e7365f66dc8ca6f722",
+    "trials/pack-00-swap-0021.json": "e7bbbe0258257e6a201ce682115ddf4422d1e772046d6a30d307b06d6dca4cca",
+    "trials/pack-00-swap-0022.json": "f15857a74c050a0f3075511474a08f4bc80ad6f34364e42046adcfb046a9271b",
+    "trials/pack-00-swap-0023.json": "f6c8984736e7e6515b51e6820140b32c02840726b0200d28d12d9009ee226416",
+    "trials/pack-00-swap-0024.json": "e7d56c6d3e8b8fd5c78e7e977155317749c5f62b50b5137c74e31c0e9da25518",
+    "trials/pack-00-swap-0025.json": "4ef28f103d973d15e11e83ed2f053da42743cd6accddc0091699bd0e9f8205c7",
+    "trials/pack-00-swap-0026.json": "14456b5292ecc0d17556acb47c55d3e33cf55a4767a36b0b6e32f7c4d1705b65",
+    "trials/pack-00-swap-0027.json": "d5a764fa07663e9c7b6c85314b86e5dfdc170a4c44dfa0d9e29ff50773d720f6",
+    "trials/pack-00-swap-0028.json": "179b8d4b7ceeccec9477c8f21071e336fdecb2ceea67caae992e943768e97901",
+    "trials/pack-00-swap-0029.json": "14f03fee13722c5389ad9021d09f9babded149ddd1333bd6d4063e8e15bbc5f1",
+    "trials/pack-01-clean-0000.json": "9715ee93ef794084fcfb32dc7a79affbfc91fdd9dcbefb1f790edffcbcf0baad",
+    "trials/pack-01-clean-0001.json": "125556bbdddc9823ea16a86527fa836a98a82da7c0b6eaa9fa1c7e547515b831",
+    "trials/pack-01-clean-0002.json": "7d758143f77e8a2c36492bc31e0ecbb482b6c201ce678c4a9e3d3bd7c6d87c8c",
+    "trials/pack-01-clean-0003.json": "23e9ec7bef7af45196f49cb9d84366222d14ef8a622a9afbd45342e9f3d4c743",
+    "trials/pack-01-clean-0004.json": "e4a1d03eb59b6fd73bdde0db67d8b9d4703787211c942f2ce6c89d0d88137c99",
+    "trials/pack-01-clean-0005.json": "8d3576289baf15e05e29d999248d1ef48cfa0318a2f5d4c76484c39fda80c60d",
+    "trials/pack-01-clean-0006.json": "f2f8ffd37e7db014c722f7b13a8ec952c302eef6292e7fadc8df66a429f47480",
+    "trials/pack-01-clean-0007.json": "b3e6e9d583c2c52b5f25d9239e90d69545fae4593d666881625a601ee57aaf3f",
+    "trials/pack-01-clean-0008.json": "14ddb0550483225e34ccd708f7081dedb71aa6868b6f2c4c90ecf99ac7604a67",
+    "trials/pack-01-clean-0009.json": "177b9db50b5e399b6b7c6650eb79cbd471dc708737dcb7a56612fbfa58880488",
+    "trials/pack-01-clean-0010.json": "2157d8118de7f8652c33f3378c90fe6a5836b8d0f82d5e46ba06e8fdca22574a",
+    "trials/pack-01-clean-0011.json": "fa58cb7963333dc702df81b1de6a910a63ff4171d22955a3fb7e163b9e8f2c88",
+    "trials/pack-01-clean-0012.json": "9c43be38336dc495f5b63b2b1b004519fb1398c301cabcfc4261ca1587968627",
+    "trials/pack-01-clean-0013.json": "1879036afa452c0f79197aea21b248fcfceca32d25443f695eb31977701d8f30",
+    "trials/pack-01-clean-0014.json": "783755b8dfdf30cc2fd45d51751ac4b39bd642031433df0b8f35f928ed0e82e1",
+    "trials/pack-01-clean-0015.json": "37192d3fd3e51108b47a349e3796652b84043bcafaa6ce3c3808943ed48fad54",
+    "trials/pack-01-clean-0016.json": "c4ddd9a902405abed6d56b0f981d371e3f64fc6ee97530eef54c1c7e0ee2e71a",
+    "trials/pack-01-clean-0017.json": "c847d3b9375a477bbd0e1f1cb8fa681afff226cb87247d5938d04eff6133f9f9",
+    "trials/pack-01-clean-0018.json": "fd2cf7df620e76fd1ce7c4d3376ae8384a7885082f4bdbe45ba9dca5df3b8e8f",
+    "trials/pack-01-clean-0019.json": "de213f7f26e2e7910e57d5fa1925bef3b327e914bfafd170f9891b2cfd977d71",
+    "trials/pack-01-clean-0020.json": "1ba4e0cd0aff077c874f742df020a227cc5a3ce85956f4e58c07ac3f0753a653",
+    "trials/pack-01-clean-0021.json": "d7c8a6d7ecf2f38f8fdd8a4d9e703b70966d4ffe72731e0b2c586da47633b725",
+    "trials/pack-01-clean-0022.json": "40916775d23f05fcbe0ca7813dd928c875e380027871c36c067bc1f841db42b0",
+    "trials/pack-01-clean-0023.json": "4fc38798690c9dc4ad5793752d374b90101a3880e2ce2c3b40bc61e35c0fdac4",
+    "trials/pack-01-clean-0024.json": "7641b85a654f7bdf408d0c8539e2d6dda20544a549b36939ba1cbd4310addc24",
+    "trials/pack-01-clean-0025.json": "67528cdfbc9e7e5490f4fb0640df1ea7d1db6bb8908c76896702b6e957c199a1",
+    "trials/pack-01-clean-0026.json": "4d7e3aede577d9a76356212c6882e6b6f851b76c1c1969347b576918ddf4fd1e",
+    "trials/pack-01-clean-0027.json": "354c8a267dbefb908c66309bfbfebf085954cd177e68abab036d82366512e3db",
+    "trials/pack-01-clean-0028.json": "f71f8ddf4183fea3c48a193cb537129d9a81746169e8b141c91947d32f5f7ea7",
+    "trials/pack-01-clean-0029.json": "9276b357b8086acf85957b986a463fbc137a392df071e581cd859f74905c6e34",
+    "trials/pack-01-clean-0030.json": "713d6ad36f38a1d4ade6e4cbf0dbb6c06c2379405ab0c03df60586c441c13c08",
+    "trials/pack-01-clean-0031.json": "d292a756dc169d374941dbd9c9ccbe42b9de1725e6cacb5b687979e3fdd21810",
+    "trials/pack-01-clean-0032.json": "08d284d7e4617feb410221e1087a4b3ed9baea2f312777b1deba061614f8816d",
+    "trials/pack-01-clean-0033.json": "d2d73688a27463911b99cfe3438cd2912cfce19f468be502c9e4e698861d5779",
+    "trials/pack-01-clean-0034.json": "105dd96b71575075cfc2d87dbfe61a70203ba73b2b5a14b2cc171b7cc9085703",
+    "trials/pack-01-clean-0035.json": "de7c7fb2b99880ed3d182b335053026ec641f93fb402ed9ddd4448e1af2d43bb",
+    "trials/pack-01-clean-0036.json": "11882663ad764dc297c0e70add71647b968f760e1b02d7f5f1f9dad54d2d4953",
+    "trials/pack-01-clean-0037.json": "b04bc6e54d0a9bc28040da409dab20d4cb02cbed7effb0c2ad166dfef11ab439",
+    "trials/pack-01-clean-0038.json": "e52f16aaf3a214b5f75b55b4955e818edd0dafc8b5942b36b17c938552951a45",
+    "trials/pack-01-clean-0039.json": "6b58a2ae50f6dad609d0e70d16d6015d5196a9440d7793a8e63944f42b4dfd5e",
+    "trials/pack-01-clean-0040.json": "3a03ef985a5796c1c7d018e0efb7bf77664f6b65df1e5e958b67640c3059b7dc",
+    "trials/pack-01-clean-0041.json": "c528c67c7b5d90fa130cea86fc5af92b3631cbcb702c0559ab88122e4e746cb5",
+    "trials/pack-01-clean-0042.json": "3a6c15620faf0ae0098270d5f8cb427dfb885e2e0659ca0a8b1f299f3d592f02",
+    "trials/pack-01-clean-0043.json": "11352641ff5cee5f18ddd34ebf9be0224f5b6e2c8ac4a86a3405176d8c4a2cd8",
+    "trials/pack-01-clean-0044.json": "486d932598d47e1964d6b4ba9f121d97df4a057ab33574982c9ecb82dac6e3ed",
+    "trials/pack-01-clean-0045.json": "5b7d64780f72dd944705778a18b4d73fe4bb0546887df7ace895ceb5a7a9c172",
+    "trials/pack-01-clean-0046.json": "cc60dfeda7249b6ee5e22e7303265a3ffcb97765b345b0d2fea2801ac7ba038c",
+    "trials/pack-01-clean-0047.json": "b354785ac6612364fd82c445998af42f23de6727c167c3299c9c62fe4e96d211",
+    "trials/pack-01-clean-0048.json": "f112c75563600c2aee08f237e52621ae0b18705ea497df9be7d3ddea8ac60c3a",
+    "trials/pack-01-clean-0049.json": "60411735aa70527d0f8c72c2895098a46622faeb1e537c9c088cf807b939b989",
+    "trials/pack-01-clean-0050.json": "ce2349259bd0bb80c1583a3072c2c640e7f65af42ae92308f4b3970e1865f6d9",
+    "trials/pack-01-clean-0051.json": "54882c488aff03b606453420c08bce3018f89885ca3bfaf0e4c244bdb26b2b13",
+    "trials/pack-01-clean-0052.json": "53b379c39fb232f15e334de7da405aa5148c1dc265572e1bd1e5139f69c20d1b",
+    "trials/pack-01-clean-0053.json": "4d2c28c12d4d77901b7054ba8a40cb0d1f616f932a326818abea3f7992def2fd",
+    "trials/pack-01-clean-0054.json": "b54a5b31ffbefe0cc93e27c7a1ef161c596096419bcbdf29400e6020d53dc52e",
+    "trials/pack-01-clean-0055.json": "9d5bc5827179136616809756f6effcdfcc9e5e75b6a14de45ce9d5f768fb74aa",
+    "trials/pack-01-clean-0056.json": "cf12e55ce9201930e6662b4d0d877e426edf8a68f340cd7b264d49ad76282c7a",
+    "trials/pack-01-clean-0057.json": "d2dedec1436b3a1164339d83223b771b52126341b0a251a39a1efb660d88d9a7",
+    "trials/pack-01-clean-0058.json": "ca781e854055923a9a88e62f3dc95ee15d57ffecf90c4058a8d79efea0268bf1",
+    "trials/pack-01-clean-0059.json": "97f0a661c17e7596722d924c9c771e6eb2a62f5aaaa425b335f75fac30110209",
+    "trials/pack-01-mix-0000.json": "3a68d291bfbf81d1dab4206489de5a291426581ad58c44fe6a3e8c096a172b5c",
+    "trials/pack-01-mix-0001.json": "f54ea68d1f04d3992275c915d0b9f784689c56e58fe8a45f11e8c6413e66fb4d",
+    "trials/pack-01-mix-0002.json": "7965b81e2031061dd50e8e8c375cbd507ea589bdbcb7d11ba89498c02275ba56",
+    "trials/pack-01-mix-0003.json": "a3d764adc7b973449e73c5f15a49c8398bb84aa98f797f9b9257ba356105787b",
+    "trials/pack-01-mix-0004.json": "807e111a5bc172bb5fc19bd92875f1b35186abca219f2bd360ad4f8e1feb9d05",
+    "trials/pack-01-mix-0005.json": "217ad91db768d23692116e309e8a15bbc7130bea990d9e4e15bb6b509eac58a4",
+    "trials/pack-01-mix-0006.json": "6d85db7002d2d0a4fc62777b17cf26fd83349fc49d4eebea6bf0b37082ea7802",
+    "trials/pack-01-mix-0007.json": "8167c40e62719d35ed4bd7ef194262412e21f6ca80164d32cdb1f3989ad206c4",
+    "trials/pack-01-mix-0008.json": "3c71c706c3396f0e96471739e8f89faeba40d354853fcda580796506ecca9b4b",
+    "trials/pack-01-mix-0009.json": "af3930d353d8cf9588cd92b6f9e3214d11cbb0e105917d8e4809136ad03bcdca",
+    "trials/pack-01-mix-0010.json": "e40d1297d2376c8111f0fe2c0cf4b08616c5d836ee0dbffaa6ed74d318f2b3e2",
+    "trials/pack-01-mix-0011.json": "7298ba6ce7f1ccd63ecbe949dc0304d9b69e2d4dd1b2f8425cad51e3582ccfec",
+    "trials/pack-01-mix-0012.json": "b13a5fbbc6dc357f94d0da948b3ce5ac55bd0475a78906ef36ccae418a85deae",
+    "trials/pack-01-mix-0013.json": "20397a467b930403c58d4e8326099ae41020c7dbf6c770e3df905277b7b553dc",
+    "trials/pack-01-mix-0014.json": "bbbecd3cfb8d6d8ef5cfba0ca4a1990ad1aaa78e2dc942784b44b0324be51a51",
+    "trials/pack-01-mix-0015.json": "307c4ed734e13b649ed7b84c6b735a851c5f968e3d90e09442b2727bf5d01388",
+    "trials/pack-01-mix-0016.json": "e56d4a92168242d2c640703ff4c72fc06a15273a82a49747b6b499bc6f712820",
+    "trials/pack-01-mix-0017.json": "f1f739bbce03ac25c81b9e97e1cf2d8e6ccc3ba1cccadb69d20c0470acdec5aa",
+    "trials/pack-01-mix-0018.json": "6e26e8090019a3baedb0a5cf54020a3d5f6a1ab4c7e2dd63a7a6331004cf2bd3",
+    "trials/pack-01-mix-0019.json": "74a7f9d1243c3af99107495a0938da43ac7ae6ac2a155e2b49ab8e347a720a2a",
+    "trials/pack-01-mix-0020.json": "11801745bcd5e9fe889013e3ba3c263af2dea5caee70a5518fff2c21688f9668",
+    "trials/pack-01-mix-0021.json": "4a083a7ec04884740754905bd86557037bcf1a200c96847d1e4f8fe6e6683e30",
+    "trials/pack-01-mix-0022.json": "72e282dae3dff7b4e7ca1d98d6efc5c862f3e275f178d582bb5bbb93a86402d6",
+    "trials/pack-01-mix-0023.json": "9f2eec81f4af2344b743036b16b44a2ef46491cacf49ba1d32cb3e61a77813cf",
+    "trials/pack-01-mix-0024.json": "1f94fd50d0f0299a60f810caf5bd7ecbeae416b4cf0a08cb165afd31228dff26",
+    "trials/pack-01-mix-0025.json": "d87d9c44e0274fe4f519c0b5cdb9b064c51a03b95ff33e6ebe28778f82eeee42",
+    "trials/pack-01-mix-0026.json": "f65eb304f3e42305a815ae7c7e232bceba6d554d22482f585cdbba5518eda224",
+    "trials/pack-01-mix-0027.json": "550c9a80cb04dbdbd734c1813e1155c4a6e5ca981b63f2e14a2876b038ea9aa7",
+    "trials/pack-01-mix-0028.json": "c8fbf41de5a990192b642a698201e8bcd7c72800bcbe493b64b7bc1a5c567a19",
+    "trials/pack-01-mix-0029.json": "4cbb6c6a0580739ecc2a6f7eb6978cc97c678e02a0a6362c2f5ac6cd31b497a8",
+    "trials/pack-01-qsim-0000.json": "19176a5b797e6fe698771a7fea02479e36e888c4fed4f0479176e00859a91e96",
+    "trials/pack-01-qsim-0001.json": "f1f1d64ef43e531bce1a52514c553844d8262f41cbac7e3050d66c1d92dbe3a1",
+    "trials/pack-01-qsim-0002.json": "1e3c90dcea7bd4ea8b91f8e009d3ea6d018fc63b4634c9ee32ff653620994f5c",
+    "trials/pack-01-qsim-0003.json": "7f2fce4f965a034c30665440d095bd81b582d9c8631b6e851458ec5b30976117",
+    "trials/pack-01-qsim-0004.json": "1e8a9b97f7ac46c7b39a900d16c989bf7eeac56a7d452287bdeef4057cc73c18",
+    "trials/pack-01-qsim-0005.json": "7d95f0f9effb4af88ebca4bf4d06acd84c47f7fa0461abb3060b3ca796255623",
+    "trials/pack-01-qsim-0006.json": "5e4286d60e5b0c98d063450364e47d8ee46d0f54cd16006f82abd6e2dcf2ebd1",
+    "trials/pack-01-qsim-0007.json": "52fee1405db79a0838d1e963f468ec5c6eb694a964a03493f9a4e31e74ea9ff2",
+    "trials/pack-01-qsim-0008.json": "5323362663e04de93eac3af0654858e5fa89704175fda129b603a5f4bad2c7da",
+    "trials/pack-01-qsim-0009.json": "8461581b398dad5f9b884590e9b4506db2a276728ebbad0e4e57258d914e7612",
+    "trials/pack-01-qsim-0010.json": "eda57323a262aadd247a62130e3074ec103795221cf0f6de958609aea10cafd9",
+    "trials/pack-01-qsim-0011.json": "603825d8b7877c8e89f9ef57d910792d8751f51e6f5bd4066fb606bb46b888eb",
+    "trials/pack-01-qsim-0012.json": "b78e4e5ff8ddbfbe940df13970608a651a43f4095aeb08254ee28bb742996e85",
+    "trials/pack-01-qsim-0013.json": "8adf324d677beeef28e01cde9c7943c334472a37e12f7dd2fd60b9616393e6e3",
+    "trials/pack-01-qsim-0014.json": "757cfcbc43d3fdaa4fbfac47ac8a04bf885c1e36c97b15234c287d0f1aeac9ef",
+    "trials/pack-01-qsim-0015.json": "26f0ec311baad54f918960fc8f0f1a673321292a9c2347cb1b9b73e95f7fe267",
+    "trials/pack-01-qsim-0016.json": "9f95debb0a6b74dd67b2eb040b01824e671983941ac1d99bde3f8d393fe9f1ec",
+    "trials/pack-01-qsim-0017.json": "a5ec461d1ca0a59e2b1e8957c81824aa9dc832f4d6ea86d2c384353f01eafa84",
+    "trials/pack-01-qsim-0018.json": "21e735064d033631ead42bcf3d7e1aa95863662ab6ba485dee6197d84edcd91c",
+    "trials/pack-01-qsim-0019.json": "06a9e4f476699243b37fa9ae8bced85f04c2725f44133247ccc22c0b00459f28",
+    "trials/pack-01-qsim-0020.json": "7ca0d51d401d7a085ff5829d60e3da17b7f1605c9d7e1620f742a53696c01f7e",
+    "trials/pack-01-qsim-0021.json": "5bf4f07d732c10fac48e258985c47642fd7fc8cbb1490969796324121b7457d8",
+    "trials/pack-01-qsim-0022.json": "091dcb1905cb3043251a5aed8609d02b9ce81d1be2d691d7314cfb738ddff27b",
+    "trials/pack-01-qsim-0023.json": "bca969c80fb673835553c2bf03821fb21f8ffc3d8f519af28a7b8f99fb49250c",
+    "trials/pack-01-qsim-0024.json": "9c7a953b04c8793491525a997c9b6f4f3ca079bc899e4e20c7923eb60dd8b388",
+    "trials/pack-01-qsim-0025.json": "0ff0c3fccfdb8205c75599cd6f0b721461f7bd5c703649303cc9329f745916cb",
+    "trials/pack-01-qsim-0026.json": "6320832933f0d879292077a2f2a0b51eeb37872672b496aa1d1dd7a096992190",
+    "trials/pack-01-qsim-0027.json": "538cc1210b459d814b66174799578cecd9b4d620cf4525d4d041b051e5b76e65",
+    "trials/pack-01-qsim-0028.json": "982aa36d5065102fe6329d05152e3767cd689be2eaedbbb0455ee518ddaa245d",
+    "trials/pack-01-qsim-0029.json": "24eaa43b1365e4b561a676b33af5ff2bf3f60c9e2296651700757b9f841798e8",
+    "trials/pack-01-swap-0000.json": "3dbc3340d4987b38a97b7e0bae3bf099465e1e774254eef64e5b29ecda67ff30",
+    "trials/pack-01-swap-0001.json": "8e52b7da7eaec4a9280d3d772ab652de06eed2aec7873d15160645be0b6e6bdf",
+    "trials/pack-01-swap-0002.json": "6f5d173fe8ee1a6c8d4d1c6f31d5f611ce34e4425ea307b7065bcbecb763da50",
+    "trials/pack-01-swap-0003.json": "d8c417824065023e384f81a3f4262a804940695ec0596d97e679e13ee375d96f",
+    "trials/pack-01-swap-0004.json": "7f1894533af42a720478ab4f75370e41f4052fecbd008609d4ce0be760422702",
+    "trials/pack-01-swap-0005.json": "3fb550c61ec7786e00c47720c42e68a3a84f5f6750c9884dd4beb5f1bc54975a",
+    "trials/pack-01-swap-0006.json": "d62dd6a2541e844d0caab9e2562da4f153430828e46993b15421da0cce819554",
+    "trials/pack-01-swap-0007.json": "63edb799cd534407f89f33874dff1cd708acde4daa37d2be712743ebd5d0f40d",
+    "trials/pack-01-swap-0008.json": "9227bcdde2bf6ce4a85a36e71b76410eb7219b69310cfc14d488749c6491acf7",
+    "trials/pack-01-swap-0009.json": "3d1933a2f3360af532d2016819854165bd0f5abfefdf7ad577115d8c61bfb383",
+    "trials/pack-01-swap-0010.json": "b479a6f5450586b5b30329433ad9e665421a706ad56b739b208b896ab74ec14d",
+    "trials/pack-01-swap-0011.json": "5cfc7d673d090fab5d11304b6b170bdd581c6d458f726fe153f41b2911e3dded",
+    "trials/pack-01-swap-0012.json": "af425a0eb1c8039461ba49e8540fbe54056c8f08ce7fc514c9a914839a786954",
+    "trials/pack-01-swap-0013.json": "47421386c7f745e8158ca9bc01130bca2d1e594827d1e9086aafc1b323a3ac80",
+    "trials/pack-01-swap-0014.json": "a92324c5e2e6e988ed527e7b011761291412362a1c961351b71168c71a36bf5e",
+    "trials/pack-01-swap-0015.json": "72aac93005fd785088289cbbf6533138452a6f82503d4ea141b4e13fd2d1ceee",
+    "trials/pack-01-swap-0016.json": "fbe4ed4ae1de02a31c6ca24fda9f303f2c870c040d2c4ea77bbdeef7dcb1c27d",
+    "trials/pack-01-swap-0017.json": "34bde19416420ccb37fe8d04e0ce5f109e530cf8ae317e9f4bd85bc3b07e7d63",
+    "trials/pack-01-swap-0018.json": "559a81a72d00eeb7a3c307057ddee46991c799ca6a25345eaa39cb5edaeb9bd5",
+    "trials/pack-01-swap-0019.json": "073fe232b4ddb7c01e4bdf9bbfd88dd608f97c5b0c2030664162285d6af0b5c7",
+    "trials/pack-01-swap-0020.json": "2a608996145ccf1a7bad6c66d4c384bb2bda604a91ef33c942de15170e4c12e5",
+    "trials/pack-01-swap-0021.json": "4c7a9b1e49db459a6e1327810144a211cfb0e734122c40a6701e445dce141e0d",
+    "trials/pack-01-swap-0022.json": "6e24cdaec828c0cc27902d73d4b820d192f718b1268c08d1a59f7cf6e32c855b",
+    "trials/pack-01-swap-0023.json": "db99a15060367549f3fcbde4712de88d4130473fd1c38ccf00d21c22d7909bdc",
+    "trials/pack-01-swap-0024.json": "09a86e3cfc82de8a744c82e63939869b7a9b1786c3927e8bcfcccb1acbdfe121",
+    "trials/pack-01-swap-0025.json": "1da33cd66ba63052093733cc3126a0bd1072979e5f8f12e15da876413e6ad4c5",
+    "trials/pack-01-swap-0026.json": "f55fc8ae1ebe9448ee001f7819dc25bb1381d44900cc1f3ec5494cdf30adf9a6",
+    "trials/pack-01-swap-0027.json": "e597a33af598cb491ce07f06220569ee6803cd7344d699f6394ea142b7c63065",
+    "trials/pack-01-swap-0028.json": "19e2d23224983fedbebd8cddc33f425fca568a9818d5f91a2de4c890a29c7d82",
+    "trials/pack-01-swap-0029.json": "84ab75e9cc87ec27c565e383188a8c9f082c4292a48e55c86a67a454a5279cd0",
+    "trials/pack-02-clean-0000.json": "a2657f63adf115863ddca2c00f0e2d70ecdba4379f8e4cf3a4833a5ad7aed8d3",
+    "trials/pack-02-clean-0001.json": "7729e63d1540af7245f5a3a3f023bf0d76d5f1f5d3f81535b3bb510008b3ddf2",
+    "trials/pack-02-clean-0002.json": "a166d80031a507440a432614a513e1a36079af7965b147181a2c287293ff0a35",
+    "trials/pack-02-clean-0003.json": "db15477b4ae9c3e4a6eba4c87b415e148bfb296972c4720c925f788fccb82f78",
+    "trials/pack-02-clean-0004.json": "2e8fcda5e2509f1c91b1fbd546a12004e24522ac14f5a271006ae09f2e713de7",
+    "trials/pack-02-clean-0005.json": "2af7049a0859d2f3b49a34401d2e07b0846c36f79d610d4e8bb5f9fec7863de8",
+    "trials/pack-02-clean-0006.json": "2d1ce0d12fd77d8b708d4c5ab78697edbd2b5d91bbaff239fde6f27c672bdda9",
+    "trials/pack-02-clean-0007.json": "a2fecd0a05a5f980a25a5e6778da9fec0af3fe26947a4e13033e230206d01816",
+    "trials/pack-02-clean-0008.json": "613ec8d466be2b0b9579a36e8997694ba39dc1f9d6eb5caae15725512e16b3ad",
+    "trials/pack-02-clean-0009.json": "c79d9eb13cc2b4881c881db8b344dfc96fd62e242adbfcf24292962b750751be",
+    "trials/pack-02-clean-0010.json": "928103eb876db98d26ebf42388a30fdd8ec6256e98f5c0a4bedf20c1642e7bdf",
+    "trials/pack-02-clean-0011.json": "8e43c28f54284ae3dbd9479d50c9f2b7a7cfed02c0c86998c880ade1a35c3717",
+    "trials/pack-02-clean-0012.json": "b0c424ae6fe41526ce787fa0ec073da2c12819237919e271ea22c3cbd4859587",
+    "trials/pack-02-clean-0013.json": "205547e06b14d676c78829a67a5bd157eba7fc318c37756345e35ca178f0b5a3",
+    "trials/pack-02-clean-0014.json": "d6ca1f16317247333cdeb6c7174df251a5a17c50f5247aaf4f7023cc2150d44b",
+    "trials/pack-02-clean-0015.json": "ac307299ba6a0bde4c080974e9f400ce419f6fccdcf82b6b071478a6aa5dc3d8",
+    "trials/pack-02-clean-0016.json": "d2da4727a1f727be2ff148c89eb8772eb44f581fcf1f751599459fd45e0b512b",
+    "trials/pack-02-clean-0017.json": "61c0fbc9bb28e7643f29de2e319074f97e5e244386f11b1d003aafce104dac6a",
+    "trials/pack-02-clean-0018.json": "f528cfa16a103df2fcbe2256a0771ef26e97ba04768c3b14f29632f48164cd31",
+    "trials/pack-02-clean-0019.json": "b33c3323e8cd13d3c7dd17733cf51c5a8ee5d5e03880f1192423b56bff32edaa",
+    "trials/pack-02-clean-0020.json": "9b5db2413f6585ba79bbf8cdedcce2cd3f5a95f9b253cb2b874cd4d2455069a6",
+    "trials/pack-02-clean-0021.json": "093ee4407d95c4852594041e125bb446c0764f1d966aab8c2667997a380cd757",
+    "trials/pack-02-clean-0022.json": "64d2dea7a5c7192940b6f33cdb0b0dacffef4e8e9426749ab2bb64e97a5178e3",
+    "trials/pack-02-clean-0023.json": "db621ff5e970f8553f39d59f3f9c3453c043fc723c4794081871fee76fb0c881",
+    "trials/pack-02-clean-0024.json": "b11eb0b8a740159176d4300cb9d0007fdeae306e9d99284ce88937cb8535ab82",
+    "trials/pack-02-clean-0025.json": "11d01301997adfcd8f9cc9801e9b17eae3b3735018e6404fd18bb54ee8cf4b6b",
+    "trials/pack-02-clean-0026.json": "6d6994d35705d55852357c284e51563bfc26204ea21485361135b13bb7928d79",
+    "trials/pack-02-clean-0027.json": "65bd1aab2e538c94bc48e16847779b5409ceb87fef22b3982a44dbf45ebe6157",
+    "trials/pack-02-clean-0028.json": "3ac1a1437e51e225ba22c3bfa6c6430b0a9ec79613dfab32c869f48ba612cef1",
+    "trials/pack-02-clean-0029.json": "e7b28882e5c1ad8cccb190a6d9ddc5a4dcdf6311aa05608f4b8c81a31dac2699",
+    "trials/pack-02-clean-0030.json": "674547efcf90570900f3b5996f80339b2aa5fd9cfdc1d8cffb27296d3c539754",
+    "trials/pack-02-clean-0031.json": "209ead0ff00570ffe1ee3451167404b2dd7c0c0340710b44eceff5db75b0bab1",
+    "trials/pack-02-clean-0032.json": "68af7502bd81fd74c529fcc6f37bba0fcdb1472f3a02d81c7031b30e894cd9f3",
+    "trials/pack-02-clean-0033.json": "fa1060a78b6788ffd560d0423d982dd4069c4422d6cd2241fa58ab4b83598171",
+    "trials/pack-02-clean-0034.json": "a02de708cf7d2563e6d2df073f3be843aa12b8f476b4f88932707993378fa27d",
+    "trials/pack-02-clean-0035.json": "cb67f75e78ae1b048e837f70408cfd20120c3f8cff9352df469c3f8796c14cd4",
+    "trials/pack-02-clean-0036.json": "37324a2c33848df830abc57246b733233b55f4635f8cfaa2d2820e9b8c80e75f",
+    "trials/pack-02-clean-0037.json": "3690ebbea9af6028a1ad8721f458e4a505e04f577aee193c38e4796f2ce4152f",
+    "trials/pack-02-clean-0038.json": "7f2051798772b8726b6c2aaa6bf0316ed93f8deafa52b99653513aa2077dcb07",
+    "trials/pack-02-clean-0039.json": "e43754b8a1cc187605df9a982b4493f31998de9bf72fa1d3a8e2e65974f6a182",
+    "trials/pack-02-clean-0040.json": "186765bcf84ae7242b536913f7f6e81889222cdffc7d816409565c1cfdfc32dd",
+    "trials/pack-02-clean-0041.json": "77f600567e86588f31a2c45dc69b56ae5cdf9ac815b2db23af9bd3a41845c8b3",
+    "trials/pack-02-clean-0042.json": "082f4b681dbf896ca16088b7d64e3dd6e8d50f2a4e16e31021933b6334d34fd7",
+    "trials/pack-02-clean-0043.json": "394af78cdae727efa38a015db3de50ac7ea11dd513b65e7301245d60e8d3b74d",
+    "trials/pack-02-clean-0044.json": "79003821d620cdf4ca6930787df28494d2a29c250d4e19af536228bcd2036b20",
+    "trials/pack-02-clean-0045.json": "ea8d26d73eb1b039046ac50b88c5e3411a6155cb9d866150ea65d48b18d2240d",
+    "trials/pack-02-clean-0046.json": "ef88edccd9692d808b6068f80e85803cf7102fc111049f2f32360f0cc8240afe",
+    "trials/pack-02-clean-0047.json": "d71bb80ecbfeeeef32268e917e7ef70a44054192c212a1f5f6e06df8b4084b66",
+    "trials/pack-02-clean-0048.json": "9dcfd3c16ed4bc960e681bb4b3eae0551324206a43ce0fd157197b50059eb26b",
+    "trials/pack-02-clean-0049.json": "824f5741d6c14db3473a56a6f37875c4ca8b022daaae3546e555c588062f83eb",
+    "trials/pack-02-clean-0050.json": "884f47da8be97aa6276e4b66f7ceb94362505b3d33bd5319cbb902b317810242",
+    "trials/pack-02-clean-0051.json": "c8036de699d5d07d6234833763b80c9a4b67024dd3e52ce5ddddcefa13babc7a",
+    "trials/pack-02-clean-0052.json": "b3b4e88504a64741e0a9911bea39449d0f4e08efa4f2bbe9048f6e8555d109d0",
+    "trials/pack-02-clean-0053.json": "399e4cf6924941e24bf2b99f252884f434a3997246528202f0676837cb516a69",
+    "trials/pack-02-clean-0054.json": "94a108118cbf23babbe520f7128e5bc016652c50d12d758de02fd034aebc03b0",
+    "trials/pack-02-clean-0055.json": "204de14672cdaf257646f1c61cba4801459497577d1d309887487f8114c7b1c8",
+    "trials/pack-02-clean-0056.json": "ba876fd42184fd3c88d68d4ce26bc6e79d2d2d5bb0d54237b9c74b75bb0b424b",
+    "trials/pack-02-clean-0057.json": "654104fab4db78e98d3b58a9394a041b3ed76545d87653b1536b5a859e56a129",
+    "trials/pack-02-clean-0058.json": "c759fdc6291732b3f88ccbeae5198230a1d9c40dc1e433999c1f41ecf9139ba6",
+    "trials/pack-02-clean-0059.json": "1d653b13c0874ba512706256d23d2fed75d8b5bfd8c2212dc48555df2ee5657e",
+    "trials/pack-02-mix-0000.json": "04cfb6a4bde753bfcff5937a4575bb6f13a0495d2bcbe1430f5f45bede8d85b0",
+    "trials/pack-02-mix-0001.json": "23b03f2aa582298f16499805892b4ce410dda2afa3d0a0ec05735b5199457d65",
+    "trials/pack-02-mix-0002.json": "0d0766e640aa85513641a8aad4edc25d7b3f6b2b24d188f8cafa9f42e3b39976",
+    "trials/pack-02-mix-0003.json": "6fcdc3489f5933fc975b5bb390f79ebf407a55009e9655f06941864eee8ec275",
+    "trials/pack-02-mix-0004.json": "6e197c3654f91c071531ed6f58370c462f7602ce36494f195ded641f9701c914",
+    "trials/pack-02-mix-0005.json": "d7358795353335b5487db9f732dff9ba36ef2d0bfef773deb673338a52ac7c0b",
+    "trials/pack-02-mix-0006.json": "373b3cdeb1e26191815b91a911e7289a4de3b7677b8a592a67cb911835afabc1",
+    "trials/pack-02-mix-0007.json": "4c9d832444ef0c40f301790f0d49657c080d97a44b146f16a8452a18ad21407c",
+    "trials/pack-02-mix-0008.json": "ae0241648681b92a0f66cd0330e2eb9cea3f39ec33ce551f5ed9b14cb74c3438",
+    "trials/pack-02-mix-0009.json": "4247c68e5748a9636d5a6a0fc5d74c85437edd90d190f11886b95fad8565379c",
+    "trials/pack-02-mix-0010.json": "2a18f7c089a52ad3607343870c6b531920ac2921643cc7d703c2a74d53c74961",
+    "trials/pack-02-mix-0011.json": "e90d39c5872bca2b9bab0066e1f7095a18cf1f8b35af8a7503ee28d8a58aadea",
+    "trials/pack-02-mix-0012.json": "d7a0f965e6ab1a70cf306784afbf1ae4c6cb3a035968a80e1b5df5a78c7cdf29",
+    "trials/pack-02-mix-0013.json": "64fb62a06e79d5ecf6054132e5c6c15b43a9e4758fff7539f08949fd93ce16e2",
+    "trials/pack-02-mix-0014.json": "1b53c2101d9ebab714ac44cbfe02f7141e999c1bb0f58644761f6d5852fdcf2d",
+    "trials/pack-02-mix-0015.json": "5128d712ce0bff76d7fcac7b2625be5756662dbdec351a06888600ea0c5f23dc",
+    "trials/pack-02-mix-0016.json": "3a9b1eb64881cdd7a5fc2ca450732925ff8c713b7b0ff67ad1b77247d035f106",
+    "trials/pack-02-mix-0017.json": "76bbfb37ecdce615e29d4bf8b5f7d51d3ddeb2c9a042e81d40fab57bb9a67408",
+    "trials/pack-02-mix-0018.json": "cd7457d9ff22882e29bec5ea898b2e28c2b6d6412e8d026086caefe540b21fb9",
+    "trials/pack-02-mix-0019.json": "c192cbec968f9a59231f9cf6b84bda08a7dbf8a101715ec636b6294d72b1775c",
+    "trials/pack-02-mix-0020.json": "44c5db99cf6b7cf6b3f7f676d5fcb88ccd206801d030c58366151cd914a073f2",
+    "trials/pack-02-mix-0021.json": "eefdc0e2bc372eee0cdfa32d27e50f68cbb8c177281df9021ce9bc26ac361b93",
+    "trials/pack-02-mix-0022.json": "1905fde10ad91b73eaccd95c49435e87ec420eb3d2c10fa5c43012ff5ee74fd0",
+    "trials/pack-02-mix-0023.json": "7db8a96b5bf229f8742a7a421b2a176492b046471cee3546ec83a0b0e8618fa2",
+    "trials/pack-02-mix-0024.json": "951378994442aef7aa215578b1875fbe39bc76bb7e7fc8ea3faf1b18adfa1a7d",
+    "trials/pack-02-mix-0025.json": "f40fee288699256513b6d79a0a5f438a4ddd577ef709005fbb0eec69dbbb930a",
+    "trials/pack-02-mix-0026.json": "4fd7e06830534b063b5b4c309d089ac05b657400805e82f57c663d2cd0e03a56",
+    "trials/pack-02-mix-0027.json": "6501639b52299430755c9cd93616f560a2b2eea159e2ddbefd189b288a3c70f0",
+    "trials/pack-02-mix-0028.json": "bd5638c2855b403c6e60a2f0cb22dce54faf8cb278234f8980a7d9fec7769960",
+    "trials/pack-02-mix-0029.json": "e5d3a665caa7845cbb1a94b509df1904b744787ce501512954784fcbe78b5144",
+    "trials/pack-02-qsim-0000.json": "24fd3aad3941d1e3bf3aa2c2ff35d58e1d47f4cee6bf4d4dd56866128ba536d3",
+    "trials/pack-02-qsim-0001.json": "3146809d978f86a3a9a7ffb9e4d66caf3022983fb6bb65d324ba43c0a961e27d",
+    "trials/pack-02-qsim-0002.json": "09c3c4a362f92801942193ed4f9a1d68bd2f5607905eb14b029b829f47b6ac02",
+    "trials/pack-02-qsim-0003.json": "5656a95cdaa00c9d3fffa883b7a06cc67892913c01c8a68e46173152856cd012",
+    "trials/pack-02-qsim-0004.json": "647d8b0258cc3d56460b2fa3a2ae3d3547b7ec6c6087ac429d904c4ecc14a52d",
+    "trials/pack-02-qsim-0005.json": "ce96827c64f08560a21ba465259ea1869cd904aa215ac3b607172841214276c8",
+    "trials/pack-02-qsim-0006.json": "2dd8ab260c81e172634057de808911acac19ac9e9479188c4902623e32cbbcf7",
+    "trials/pack-02-qsim-0007.json": "158e45ed6fa54662ebe04f55a38e4fee51c234e7f38ddbd651678653200a70f0",
+    "trials/pack-02-qsim-0008.json": "d1b5dfbc790cf82b1b1e33426417dbf645b498ba913a8ec2192cd509bbf2bb8d",
+    "trials/pack-02-qsim-0009.json": "83db594bac4fce9e96b6f34e657372b258c2d7b636cf6bfcaf59900ba8ab8756",
+    "trials/pack-02-qsim-0010.json": "a48fca9aeb309bb6071df972398cfb75c2df075334542066d6d14f1c418ae5c6",
+    "trials/pack-02-qsim-0011.json": "b177b24c7ece9102dc926e8a314a8a092d5fb9138e3b6867ad5501439b21fd83",
+    "trials/pack-02-qsim-0012.json": "137c1d207e7f3b26f818cfe0f4f226cda9776f8c22064c62da2f3718fbd9cc47",
+    "trials/pack-02-qsim-0013.json": "0bb83d8e0cdb3c48c0f653865886488d6ee77df2a42da049f805addffb12e4d8",
+    "trials/pack-02-qsim-0014.json": "c1388d00315a00adb5ef5f897ed28295fb6f009f28c1a5e9b46b5b54fbd18c9a",
+    "trials/pack-02-qsim-0015.json": "d8ef625c1ccc28d07dce4088e412009caa4e488cdc34a748a6c5b11232465fb1",
+    "trials/pack-02-qsim-0016.json": "140646f51baff0ca2d9231fdb56ca11c273105186f03c7359ca35d8cfbb69a5e",
+    "trials/pack-02-qsim-0017.json": "bb1a9f7a8878eba8b83b408d0844ee2db949f63cd839dd49f03a525f31ffd186",
+    "trials/pack-02-qsim-0018.json": "d877e90e9b6dfad8c2fb9346e1dbd3f591041afa837fbae97e1df1c0a15b2f86",
+    "trials/pack-02-qsim-0019.json": "f5a51e28064df9ff02a47fd4f87421c8e6c636fd7d2ae44c4d60be360b69296b",
+    "trials/pack-02-qsim-0020.json": "b5b250c34bd66c1e058719d65ed2d36e229d686fdcd5c1de1c2e3bac92e73377",
+    "trials/pack-02-qsim-0021.json": "2ab48b1ebb7c1463774aa92882f61ecdbfe696318573f9f0b39ddae03bba8ff3",
+    "trials/pack-02-qsim-0022.json": "adfe88fd8f721a9bc1256a185883dfef21176f31ccd63486735c71c8e9be5512",
+    "trials/pack-02-qsim-0023.json": "d36310c4d359c486805713850cc8f8a74d763ec5fea01a526a411593a903c043",
+    "trials/pack-02-qsim-0024.json": "1d5f85bc2a3d1c16a86d0d5d53c815b5c1a205bdd07d89356ca7e53fe6870541",
+    "trials/pack-02-qsim-0025.json": "a1fc03305562bc62066438972fa2118b7f1fc698a8968b26aa54408e872afb1d",
+    "trials/pack-02-qsim-0026.json": "edefcb9d9791f946ea467568fd0b0a07e38929715e18adb22e607aa6649917b9",
+    "trials/pack-02-qsim-0027.json": "d65ef3606bc0a238ba3988e2edd25dbafdd9f54e8e511b2b02e8a9f9f884a0ab",
+    "trials/pack-02-qsim-0028.json": "7eb7d07fb2e3835245042db736386dd35dc592d92f7f7984bbb152415b4db8f2",
+    "trials/pack-02-qsim-0029.json": "8b2c709259f9a693d6786022708d72c847469dd1a2584cfd489d4db757c8c99c",
+    "trials/pack-02-swap-0000.json": "9cc5c6968548b6833fd4f398ba3ec508e1d7bf166c73259b756178c677a47858",
+    "trials/pack-02-swap-0001.json": "e3646131aaa37d68dc09b370d9c85ea29b02c0fd46bc3562f279fad8e1e903ba",
+    "trials/pack-02-swap-0002.json": "6d4d70fe1a31cd5b6bf1e916b7d334f15fe517198b56b0e726955314e5ccc19e",
+    "trials/pack-02-swap-0003.json": "45d87c18b5874b9f3dc5a32d218cd35c73c154093559441ac495b2c1530fd061",
+    "trials/pack-02-swap-0004.json": "b19962951d8fd5b0797e6f40b03ea43a3066fdab6ab7b3f71e4f18c5ce4f9d5d",
+    "trials/pack-02-swap-0005.json": "5569e00d88f3ed96d3e1c4dc8d474a4c9207f93f2c980f24fd3af5e70a619ca9",
+    "trials/pack-02-swap-0006.json": "ce1df82146e03ba9a60cbe13c27036c97b45f673b88fc844a80f374279e24e5d",
+    "trials/pack-02-swap-0007.json": "780775cffc0f95d221a73c758df4ba31421349348a58837c466bad3d2f460050",
+    "trials/pack-02-swap-0008.json": "0d618aea950bba15258d5ff4677ff3cd5d1b7a8fde8dd22556a08504b7505fa5",
+    "trials/pack-02-swap-0009.json": "66286901f1ea97d3dfeb464497bc350063aa78d248718b75cfe973ca6b7b323b",
+    "trials/pack-02-swap-0010.json": "c580e6af9327275b3a4513cfae0c25d04bced6298c0b512055dfb3ab4b081e70",
+    "trials/pack-02-swap-0011.json": "42a6a6f63ca7853eb14ebf9fc3a33136519db6845e8a4a407813a6bfa56659fc",
+    "trials/pack-02-swap-0012.json": "e848ec61ba7dcc183006454eae4125ebdd2115d91cdce6dc804b6abcb0a155ca",
+    "trials/pack-02-swap-0013.json": "216428f7681c6489bf0ec7c624c71204e35c52cf1fb7348044f95949c9152352",
+    "trials/pack-02-swap-0014.json": "9b4d6b81b5a8ecb3508a3ef05aa27056270d3655232247eff8654d6d45d62f79",
+    "trials/pack-02-swap-0015.json": "bf2d216f160957cd267d43c0ca762546f7b960f587e8b4f611e45fc9e0f1bb05",
+    "trials/pack-02-swap-0016.json": "0f2905713420e6faa76f9dbb1f1bb60147f8aff5b85920f940d357bd1788bc9d",
+    "trials/pack-02-swap-0017.json": "600a0ebdea806a58849f5c7f84cf4989be9459807d63d39b660a3df50feaad10",
+    "trials/pack-02-swap-0018.json": "9e5242b69ba24b5218bd98475aa7f123c30e861919bd729680ec204c80fa8e7f",
+    "trials/pack-02-swap-0019.json": "816b40318306e6e86d96b0185698d918fe8401098bdbdf00315547f43f48d316",
+    "trials/pack-02-swap-0020.json": "81b8448fa4f54d2f379eeb0452e8449f61960c26a684e7f38e7d67e9f9a5b909",
+    "trials/pack-02-swap-0021.json": "0765f46dbfe11fa6a3397d849e2f9566708373a9de2c51e3904f5ca1b57b4945",
+    "trials/pack-02-swap-0022.json": "c2bb193d013ec63bdd1c2865a376bdb6480b1b02c359800bb8b3b0233a2a9377",
+    "trials/pack-02-swap-0023.json": "34e376bc9fd6e2f15194fd61eef0d611af0460d72409445e2b76891bf69763da",
+    "trials/pack-02-swap-0024.json": "ad9ff492c15466ad74011a4d892908d0ab30432010d480a8a1d4a8eeb002f2f0",
+    "trials/pack-02-swap-0025.json": "7d59e33b96bf14b16707b91089a99991d62b4b4a658625824cf3aeb96fa288b9",
+    "trials/pack-02-swap-0026.json": "c5131c09ae99defc02d5e39fcc74e10a54b806dadeacd5a789ec0655eeae592c",
+    "trials/pack-02-swap-0027.json": "2f885e45c9788bd0465b446b078322fb5e0826e0c24922d427ae0c25a4b0e8fc",
+    "trials/pack-02-swap-0028.json": "9204e4cb8e6d4db5d86d7f2e8b12995f155d7876c8011ce6069035931da7b610",
+    "trials/pack-02-swap-0029.json": "69f145128e0035b187c837875f9c9ff7290cef38552d11ca257348cf96516d14"
+  },
+  "audit_source_hash": "3cd7186eb4f11a3c57fc33f541e0318bb1ddf7db853fa899373ee73a5d0b1238",
+  "calibration_packs_rebuilt": 3,
+  "checks_independently_holm_audited": 1350,
+  "current_check_log_sha256": "ccb412be63c0cc1b8c2eb25048a5f3c58e837b92628ed2204410e7ac47dfa3fd",
+  "current_compatibility_audit": {
+    "audit_source_hash": "00f62102d36d872406fb0af5649bf6abb829ad56b5bf6f356e78c29eca37e48b",
+    "calibration_packs_rebuilt": 3,
+    "exact_original_source": false,
+    "replayed_targets": [
+      {
+        "capture_hash": "5aabce378165819baf7a9d64d7dae612a0898fec8bda4553ea4d6ab4b3bbcdaa",
+        "case": "clean",
+        "index": 0,
+        "pack_index": 0,
+        "seed": 884069111353170652
+      },
+      {
+        "capture_hash": "64e333bd5c844382673d2b08ff89e56e503d284649241f2966dd9e01a2a40aed",
+        "case": "swap",
+        "index": 0,
+        "pack_index": 0,
+        "seed": 56339210543303511
+      },
+      {
+        "capture_hash": "6124fdd4f5a96cdbb322f76dbdab0887d6e05297bbd566f7506f25614c099dca",
+        "case": "mix",
+        "index": 0,
+        "pack_index": 0,
+        "seed": 277399068164200669
+      },
+      {
+        "capture_hash": "021fc16a352990ea073b2be8f44ae1e0182a75281fd1e34c6422102b73994b71",
+        "case": "qsim",
+        "index": 0,
+        "pack_index": 0,
+        "seed": 18340066418313911
+      },
+      {
+        "capture_hash": "f117ce9c4a00f89ab5cefb991d98b404abb860a6ebb2e78a754fe1abab5a2a12",
+        "case": "clean",
+        "index": 59,
+        "pack_index": 2,
+        "seed": 828492371607902697
+      },
+      {
+        "capture_hash": "655f0041286cd0a9787d3311092b8f4a68b247daf8cc31cef446d6fc3e984e39",
+        "case": "swap",
+        "index": 29,
+        "pack_index": 2,
+        "seed": 92440541087762298
+      },
+      {
+        "capture_hash": "6025c502e7ff2f5c7d6266f568b4c919a3370bb6483630eb5a75d95419fa93db",
+        "case": "mix",
+        "index": 29,
+        "pack_index": 2,
+        "seed": 519884982521729271
+      },
+      {
+        "capture_hash": "2f9f931793f130f5b379600075fbf192a4ebfdded109b3a58358013432456d26",
+        "case": "qsim",
+        "index": 29,
+        "pack_index": 2,
+        "seed": 898865856053788202
+      }
+    ]
+  },
+  "current_source_hash": "00f62102d36d872406fb0af5649bf6abb829ad56b5bf6f356e78c29eca37e48b",
+  "current_source_tests_passed": 547,
+  "exact_original_source": true,
+  "frozen_audit_log_sha256": "a3435d88fcf086d51d2c11e0b9d9086224d275108e47353a808664c66ea0902d",
+  "full_pilot_audit_equal": true,
+  "independent_audit_script_sha256": "26d41ae2f7b9e923473804c81e75b9cc50482bb2952336a26d610a417c1247f9",
+  "limitations": [
+    "Only the predeclared scripted model family, fault strengths and three captured packs",
+    "All target receipt hashes/arithmetic audited; eight selected complete target replays on each source, not all 450 raw-body replays",
+    "Text margins also contain logit-noise targets while FP3 signals; mixtures also trigger the noise signature",
+    "No provider, hardware, physical quantization, production or near-margin guarantee",
+    "Runtime equivalence remains disabled pending separate scoped policy integration"
+  ],
+  "model_api_calls": 0,
+  "no_actual_clean_text_pass": true,
+  "not_a_unique_fault_classifier": true,
+  "optional_FP4_not_in_this_study": true,
+  "original_runner_source_tests_passed": 501,
+  "per_pack": [
+    {
+      "accepted": true,
+      "calibration_eligible": true,
+      "cases": {
+        "clean": {
+          "accepted": true,
+          "actual_verdict_counts": {
+            "FP1": {
+              "INCONCLUSIVE": 60
+            },
+            "FP2": {
+              "INCONCLUSIVE": 60
+            },
+            "FP3": {
+              "INFO": 60
+            }
+          },
+          "criterion": "text_equivalence_candidate",
+          "signature_rates": {
+            "any_comparative_fail": {
+              "ci_high": 0.060171852142089886,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 60,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "logprob_signal": {
+              "ci_high": 0.060171852142089886,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 60,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "mixture_signature": {
+              "ci_high": 0.060171852142089886,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 60,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "noise_signature": {
+              "ci_high": 0.060171852142089886,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 60,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "swap_signature": {
+              "ci_high": 0.060171852142089886,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 60,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "text_equivalence_candidate": {
+              "ci_high": 1.0,
+              "ci_low": 0.9398281478579099,
+              "estimate": 1.0,
+              "n": 60,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 60
+            }
+          },
+          "success": {
+            "ci_high": 1.0,
+            "ci_low": 0.9398281478579099,
+            "estimate": 1.0,
+            "n": 60,
+            "reference_estimate": null,
+            "reference_tier": "MOCK",
+            "successes": 60
+          }
+        },
+        "mix": {
+          "accepted": true,
+          "actual_verdict_counts": {
+            "FP1": {
+              "FAIL": 30
+            },
+            "FP2": {
+              "INCONCLUSIVE": 30
+            },
+            "FP3": {
+              "INFO": 30
+            }
+          },
+          "criterion": "mixture_signature",
+          "signature_rates": {
+            "any_comparative_fail": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "logprob_signal": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "mixture_signature": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "noise_signature": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "swap_signature": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "text_equivalence_candidate": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            }
+          },
+          "success": {
+            "ci_high": 1.0,
+            "ci_low": 0.8864866068260311,
+            "estimate": 1.0,
+            "n": 30,
+            "reference_estimate": null,
+            "reference_tier": "MOCK",
+            "successes": 30
+          }
+        },
+        "qsim": {
+          "accepted": true,
+          "actual_verdict_counts": {
+            "FP1": {
+              "INCONCLUSIVE": 30
+            },
+            "FP2": {
+              "INCONCLUSIVE": 30
+            },
+            "FP3": {
+              "INFO": 30
+            }
+          },
+          "criterion": "noise_signature",
+          "signature_rates": {
+            "any_comparative_fail": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "logprob_signal": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "mixture_signature": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "noise_signature": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "swap_signature": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "text_equivalence_candidate": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            }
+          },
+          "success": {
+            "ci_high": 1.0,
+            "ci_low": 0.8864866068260311,
+            "estimate": 1.0,
+            "n": 30,
+            "reference_estimate": null,
+            "reference_tier": "MOCK",
+            "successes": 30
+          }
+        },
+        "swap": {
+          "accepted": true,
+          "actual_verdict_counts": {
+            "FP1": {
+              "FAIL": 30
+            },
+            "FP2": {
+              "FAIL": 30
+            },
+            "FP3": {
+              "INFO": 30
+            }
+          },
+          "criterion": "swap_signature",
+          "signature_rates": {
+            "any_comparative_fail": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "logprob_signal": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "mixture_signature": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "noise_signature": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "swap_signature": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "text_equivalence_candidate": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            }
+          },
+          "success": {
+            "ci_high": 1.0,
+            "ci_low": 0.8864866068260311,
+            "estimate": 1.0,
+            "n": 30,
+            "reference_estimate": null,
+            "reference_tier": "MOCK",
+            "successes": 30
+          }
+        }
+      },
+      "pack_hash": "6ff98769fdd5661d5393b887f548c0ca8f15fb40a87c609a73e19157b6946ccd",
+      "pack_index": 0
+    },
+    {
+      "accepted": true,
+      "calibration_eligible": true,
+      "cases": {
+        "clean": {
+          "accepted": true,
+          "actual_verdict_counts": {
+            "FP1": {
+              "INCONCLUSIVE": 60
+            },
+            "FP2": {
+              "INCONCLUSIVE": 60
+            },
+            "FP3": {
+              "INFO": 60
+            }
+          },
+          "criterion": "text_equivalence_candidate",
+          "signature_rates": {
+            "any_comparative_fail": {
+              "ci_high": 0.060171852142089886,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 60,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "logprob_signal": {
+              "ci_high": 0.060171852142089886,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 60,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "mixture_signature": {
+              "ci_high": 0.060171852142089886,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 60,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "noise_signature": {
+              "ci_high": 0.060171852142089886,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 60,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "swap_signature": {
+              "ci_high": 0.060171852142089886,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 60,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "text_equivalence_candidate": {
+              "ci_high": 1.0,
+              "ci_low": 0.9398281478579099,
+              "estimate": 1.0,
+              "n": 60,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 60
+            }
+          },
+          "success": {
+            "ci_high": 1.0,
+            "ci_low": 0.9398281478579099,
+            "estimate": 1.0,
+            "n": 60,
+            "reference_estimate": null,
+            "reference_tier": "MOCK",
+            "successes": 60
+          }
+        },
+        "mix": {
+          "accepted": true,
+          "actual_verdict_counts": {
+            "FP1": {
+              "FAIL": 30
+            },
+            "FP2": {
+              "INCONCLUSIVE": 30
+            },
+            "FP3": {
+              "INFO": 30
+            }
+          },
+          "criterion": "mixture_signature",
+          "signature_rates": {
+            "any_comparative_fail": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "logprob_signal": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "mixture_signature": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "noise_signature": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "swap_signature": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "text_equivalence_candidate": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            }
+          },
+          "success": {
+            "ci_high": 1.0,
+            "ci_low": 0.8864866068260311,
+            "estimate": 1.0,
+            "n": 30,
+            "reference_estimate": null,
+            "reference_tier": "MOCK",
+            "successes": 30
+          }
+        },
+        "qsim": {
+          "accepted": true,
+          "actual_verdict_counts": {
+            "FP1": {
+              "INCONCLUSIVE": 30
+            },
+            "FP2": {
+              "INCONCLUSIVE": 30
+            },
+            "FP3": {
+              "INFO": 30
+            }
+          },
+          "criterion": "noise_signature",
+          "signature_rates": {
+            "any_comparative_fail": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "logprob_signal": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "mixture_signature": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "noise_signature": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "swap_signature": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "text_equivalence_candidate": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            }
+          },
+          "success": {
+            "ci_high": 1.0,
+            "ci_low": 0.8864866068260311,
+            "estimate": 1.0,
+            "n": 30,
+            "reference_estimate": null,
+            "reference_tier": "MOCK",
+            "successes": 30
+          }
+        },
+        "swap": {
+          "accepted": true,
+          "actual_verdict_counts": {
+            "FP1": {
+              "FAIL": 30
+            },
+            "FP2": {
+              "FAIL": 30
+            },
+            "FP3": {
+              "INFO": 30
+            }
+          },
+          "criterion": "swap_signature",
+          "signature_rates": {
+            "any_comparative_fail": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "logprob_signal": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "mixture_signature": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "noise_signature": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "swap_signature": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "text_equivalence_candidate": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            }
+          },
+          "success": {
+            "ci_high": 1.0,
+            "ci_low": 0.8864866068260311,
+            "estimate": 1.0,
+            "n": 30,
+            "reference_estimate": null,
+            "reference_tier": "MOCK",
+            "successes": 30
+          }
+        }
+      },
+      "pack_hash": "5bb7ae57b1d709e4c6b12e09ab1fec6aff53956ed6bb5039f2f14b7520d98c1e",
+      "pack_index": 1
+    },
+    {
+      "accepted": true,
+      "calibration_eligible": true,
+      "cases": {
+        "clean": {
+          "accepted": true,
+          "actual_verdict_counts": {
+            "FP1": {
+              "INCONCLUSIVE": 60
+            },
+            "FP2": {
+              "INCONCLUSIVE": 60
+            },
+            "FP3": {
+              "INFO": 60
+            }
+          },
+          "criterion": "text_equivalence_candidate",
+          "signature_rates": {
+            "any_comparative_fail": {
+              "ci_high": 0.060171852142089886,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 60,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "logprob_signal": {
+              "ci_high": 0.060171852142089886,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 60,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "mixture_signature": {
+              "ci_high": 0.060171852142089886,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 60,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "noise_signature": {
+              "ci_high": 0.060171852142089886,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 60,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "swap_signature": {
+              "ci_high": 0.060171852142089886,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 60,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "text_equivalence_candidate": {
+              "ci_high": 1.0,
+              "ci_low": 0.9398281478579099,
+              "estimate": 1.0,
+              "n": 60,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 60
+            }
+          },
+          "success": {
+            "ci_high": 1.0,
+            "ci_low": 0.9398281478579099,
+            "estimate": 1.0,
+            "n": 60,
+            "reference_estimate": null,
+            "reference_tier": "MOCK",
+            "successes": 60
+          }
+        },
+        "mix": {
+          "accepted": true,
+          "actual_verdict_counts": {
+            "FP1": {
+              "FAIL": 30
+            },
+            "FP2": {
+              "INCONCLUSIVE": 30
+            },
+            "FP3": {
+              "INFO": 30
+            }
+          },
+          "criterion": "mixture_signature",
+          "signature_rates": {
+            "any_comparative_fail": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "logprob_signal": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "mixture_signature": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "noise_signature": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "swap_signature": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "text_equivalence_candidate": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            }
+          },
+          "success": {
+            "ci_high": 1.0,
+            "ci_low": 0.8864866068260311,
+            "estimate": 1.0,
+            "n": 30,
+            "reference_estimate": null,
+            "reference_tier": "MOCK",
+            "successes": 30
+          }
+        },
+        "qsim": {
+          "accepted": true,
+          "actual_verdict_counts": {
+            "FP1": {
+              "INCONCLUSIVE": 30
+            },
+            "FP2": {
+              "INCONCLUSIVE": 30
+            },
+            "FP3": {
+              "INFO": 30
+            }
+          },
+          "criterion": "noise_signature",
+          "signature_rates": {
+            "any_comparative_fail": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "logprob_signal": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "mixture_signature": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "noise_signature": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "swap_signature": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "text_equivalence_candidate": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            }
+          },
+          "success": {
+            "ci_high": 1.0,
+            "ci_low": 0.8864866068260311,
+            "estimate": 1.0,
+            "n": 30,
+            "reference_estimate": null,
+            "reference_tier": "MOCK",
+            "successes": 30
+          }
+        },
+        "swap": {
+          "accepted": true,
+          "actual_verdict_counts": {
+            "FP1": {
+              "FAIL": 30
+            },
+            "FP2": {
+              "FAIL": 30
+            },
+            "FP3": {
+              "INFO": 30
+            }
+          },
+          "criterion": "swap_signature",
+          "signature_rates": {
+            "any_comparative_fail": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "logprob_signal": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "mixture_signature": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "noise_signature": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            },
+            "swap_signature": {
+              "ci_high": 1.0,
+              "ci_low": 0.8864866068260311,
+              "estimate": 1.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 30
+            },
+            "text_equivalence_candidate": {
+              "ci_high": 0.1135133931739688,
+              "ci_low": 0.0,
+              "estimate": 0.0,
+              "n": 30,
+              "reference_estimate": null,
+              "reference_tier": "MOCK",
+              "successes": 0
+            }
+          },
+          "success": {
+            "ci_high": 1.0,
+            "ci_low": 0.8864866068260311,
+            "estimate": 1.0,
+            "n": 30,
+            "reference_estimate": null,
+            "reference_tier": "MOCK",
+            "successes": 30
+          }
+        }
+      },
+      "pack_hash": "e604940ef568d64f3f0fa5d59a9447297b748a95a8e94b75f9ef6ecf1abd7f64",
+      "pack_index": 2
+    }
+  ],
+  "protected_hashes": {
+    "AGENTS.md": "9970db879ca0d985ab6e6cd767540fa9b7ff683eb78ba4cd59cec7d1649904fb",
+    "KICKOFF_PROMPT.md": "9f6e685ca32db7e620577b859d2bc5829eb5c2151f835c6d8159f9c9d19deb72",
+    "README_FIRST.md": "f1fe7e8f594c91364a61d9d332f12cfc3bdd96b22c8bcfec9ba5a2e1e56849c3",
+    "budget/dev_spend.json": "a9f5d436265e5344286932554d4f3071b235592b12245d9d6b8f140443c49aca",
+    "configs/budgets.yaml": "bcff700d1f6b9f3efe900c8fe05bf5e6994841869b2add1bffe63d78540b3824",
+    "configs/changepoint_defaults.yaml": "56b305e6e06720f2ba3938284d028f23f68e03f269763b9a8ae090df86c47051",
+    "configs/faults/cache.yaml": "17831386f99d6ff12509a74c4ca7578cab85862cade727abfb0573405bef49ca",
+    "configs/faults/corrupt_arguments.yaml": "d57055679e985805bc4d87307860fdf8793e4290f30b4b3fc708944a719f75a7",
+    "configs/faults/errors.yaml": "9a0e9e83224ba1e2ea11604802a476bd908a1b7c363089f32d7373bab9656822",
+    "configs/faults/headtrunc.yaml": "22b7c7bdbe40c48b135c38ecc97f81718fc38981ed3d19c938d9749161a368d4",
+    "configs/faults/ignore_max_tokens.yaml": "072f7b79bd24dec77665ebdf250cbcb2282650eba23c764fd756be48a2198b73",
+    "configs/faults/ignore_reasoning_effort.yaml": "7a89453489b638b3c1326a60947dbbd217ae1db9419628f2aaadfbe94b7c61f1",
+    "configs/faults/ignore_stop.yaml": "265fcc039c07f715a84caed9b3a59dac8d91a335e89a1ca0f332f37800c33836",
+    "configs/faults/ignore_temperature.yaml": "c296f48e57d765a5f7bed9c7c18306b54bcc07447e0b50f870cb039146f76ddd",
+    "configs/faults/ignore_top_p.yaml": "98809a1b32a93a3359afb0defa2db5ff44faf2a7fd8dc17171405a2f37d6aa8f",
+    "configs/faults/leak_markers.yaml": "450980e27aacd4cddb0740830d5d9bc0336b0c29806655c60783db9885da0e71",
+    "configs/faults/mix.yaml": "624e94889125efb5a783170313051f5cff3a0f91fc384ef8ededcd42af6f81ad",
+    "configs/faults/noindex.yaml": "3d2acfad055438d83545ee58d7c9efd3a1e898fafabb6394c905265af83201a0",
+    "configs/faults/outtrunc.yaml": "ed21817959fff4aea973db40c980a7f8576aef619e42519295ef344ab5803190",
+    "configs/faults/qsim.yaml": "179a2c23ed417da20791536be36efe554ed6124bbd01effc2eddf0eedfc400d8",
+    "configs/faults/stale_cache.yaml": "17831386f99d6ff12509a74c4ca7578cab85862cade727abfb0573405bef49ca",
+    "configs/faults/swap.yaml": "f749cbd71607276d341d7ee2b5781c55ca1d6a531b5cffb4a7613a39175ada7f",
+    "configs/faults/template.yaml": "c6ed6d59bea4acbe64acb962091503ff91abe01a23fbc4cabf0bd64a7e87436a",
+    "configs/faults/tool_drop.yaml": "a3878f313a5d5f804d29a88acd8267764df0c968f7044149785e8ebb013101fb",
+    "configs/faults/usage.yaml": "217b551a16f7df00cc6e6a6794172a6f9645c97d6daaefea4ca7affa4acf8a0b",
+    "configs/margins.yaml": "72a5480c72d1eecbf489641e98d65a60490a346a43f70edb390dec9f9926ced1",
+    "configs/suites.yaml": "b8eeea610522274d16a2dd4701388c7aa75e6ace89107bbce3364dac9137da0a",
+    "docs/SPEC.md": "4ad2b0a00dea1321c3ba89d269fd9e59f06cd942e99a3645b9159623078c2dc9",
+    "docs/report/OFFLINE_VALIDATION.md": "1df9cff302a0bc071191c423bb7cb7599fcf0eeb86d059fbcf5a9b9f4419411e",
+    "docs/report/changepoint.csv": "3424c562d2e991aac53ff588dc651cbb739c5e70ab3cc640ade37046073364bb",
+    "docs/report/changepoint.json": "b11758fac04c38d6e6c0cd95a560de63b35524011aa0b976914f1cf77db24857",
+    "docs/report/changepoint.md": "fa89ef1dfe9c1aab2dda72b701f1fde32dab6b2b808d490fe6ae2f5b59131017",
+    "docs/report/detection-v2/README.md": "7c96cfd67d5b91f2c89fb347fcb6718c1bec83b542a165297c47571a057c786e",
+    "docs/report/detection-v2/changepoint-defaults.json": "b388a2bdc7126b4264cdd836a425939d06afa4fb2e5852cc1c9ee52b65ce8e99",
+    "docs/report/detection-v2/changepoint.json": "aaaa9e959777dad1300f11e9c29334ff0ca6016af671fbc8d42e874ea1b8e725",
+    "docs/report/detection-v2/faults/faults.json": "24c143ab0ad3dd283ca3d8c60e61019d491c68a205e2d6c6d8983405ce9abc4d",
+    "docs/report/detection-v2/faults/faults.md": "0d6beb4cbdca114c45013ea63fa53c20715372b84de86d0ff3405f80a00e0690",
+    "docs/report/detection-v2/noise-power.png": "357b4736b318ec424599d46dc6cbfccc352f00dbe7192a69af997f51398afa51",
+    "docs/report/detection-v2/noise.csv": "b8ed229092b3d8b0b158bded4ff5bee3b3e89aafeb37293af1fa3ff053db6964",
+    "docs/report/detection-v2/noise.json": "78c25ac027a6430d3c9132645be8503e7b0ca298af6e63badc043f311537f1d4",
+    "docs/report/detection-v2/tool-audit.json": "082292561da6fedeef08961df9a44f80b5b03942ab000a9c610d189f83d310f5",
+    "docs/report/faults.json": "2768a90d45fb2597d5fc22eb9e960f168155b457cbb5aec13c914a7a54e03a7e",
+    "docs/report/faults.md": "0d6beb4cbdca114c45013ea63fa53c20715372b84de86d0ff3405f80a00e0690",
+    "docs/report/figures/power.csv": "04b9fae4b521949eb3a3bfe81d36c149a9833e392c6ab9eacb093f8b8c3f8e72",
+    "docs/report/figures/power_queries.png": "dcecd50b46418b94785887cbfffc36b35bf6d15cc874374c4b9d5d11dae318cf",
+    "docs/report/figures/power_queries.svg": "bc647f010f40b672574e83e30acb653d11d0f95bde624716e39d81c494d3ddcf",
+    "docs/report/figures/power_usd.png": "9b3b0236aab0c11de29cb5120d0b3106bf1f4a0b0e41adf3e4e438272cbdad42",
+    "docs/report/figures/power_usd.svg": "9d0d4cc0732b7f12daa8766084a401e5a0270c342004e32e477a7ed978db6fe2",
+    "docs/report/fingerprint-control-positions.md": "99b834aa0324325bb82a4f6a723e3b086c1ee394cee8eb545c52a54f01cb7320",
+    "docs/report/fingerprint-core-exploration.md": "a4ea90fcd8f5258d35c46ae8398c88988290d194f7cb82a85fa439727bd30d3e",
+    "docs/report/fingerprint-product-null-v1/README.md": "37eb13715fec6f5ed2412c2c78f4582c537f40a8fc1fb34d65f81a239a010ff9",
+    "docs/report/fingerprint-product-null-v1/chunks/000000-000025.json": "e44d5a64d6f667a2612cdcb91ef634cab0e51efdd36a3013a34291b8a01d9649",
+    "docs/report/fingerprint-product-null-v1/chunks/000025-000050.json": "a104cccc478654a97286c25352b44b543d2549d009cffe89f5ff175fe3e83ec9",
+    "docs/report/fingerprint-product-null-v1/chunks/000050-000075.json": "25eeff697fe5186a1fbff96ba3c38fcfe2726232749f2b670fbb60b4370a612c",
+    "docs/report/fingerprint-product-null-v1/chunks/000075-000100.json": "b95d6214d7889d6b8b27007160895e9e0e304df5bbebd485d451eb208124c4df",
+    "docs/report/fingerprint-product-null-v1/chunks/000100-000125.json": "9761f9391c605882948a50148e010d144b5d1f8a8b56fe20efa37bc4bc87abe5",
+    "docs/report/fingerprint-product-null-v1/chunks/000125-000150.json": "de8c20be9761b4f574bf2f55aeb09965c1b3a9978a7585745f45277f7f1ca55e",
+    "docs/report/fingerprint-product-null-v1/chunks/000150-000175.json": "b22d13aed996b4b3a3d491cab23d06c8670ff0360dc5137a8d49d2ddf5ad0252",
+    "docs/report/fingerprint-product-null-v1/chunks/000175-000200.json": "a78656d84208bc30a99195bba2b04f2608c7c2398b472c1b02ba0cf2e179fac2",
+    "docs/report/fingerprint-product-null-v1/chunks/000200-000225.json": "dcb545ccd5cc809b673cab6e65ce2bcabffd72e9b1514214ffd878ec9ad1eb27",
+    "docs/report/fingerprint-product-null-v1/chunks/000225-000250.json": "c9cc04effd02d94b7dadd2d81a33e39819efc9c8eefad4159cb6ff8eb15dafe0",
+    "docs/report/fingerprint-product-null-v1/chunks/000250-000275.json": "b560367b63a6a104b3f6eda27f67506d3b81347ba43c6260db823a40e47b9792",
+    "docs/report/fingerprint-product-null-v1/chunks/000275-000300.json": "84e6f92f9cda0c7bfe5a3f68277ee0b601052914d620ef6f374f32e206d72e72",
+    "docs/report/fingerprint-product-null-v1/chunks/000300-000325.json": "624117227f740c051ca92a799817dc97db4533bec62607808225799fc6fb780f",
+    "docs/report/fingerprint-product-null-v1/chunks/000325-000350.json": "638104650f68af6135492aa387a46c8350f234fca76313d20c83961abfe8c765",
+    "docs/report/fingerprint-product-null-v1/chunks/000350-000375.json": "8ece09cb5ec491f44cef49ba0e19c498113c0af3c598581394a9883671746e45",
+    "docs/report/fingerprint-product-null-v1/chunks/000375-000400.json": "8e2d2c196bf978f31e28c21048c002f5386303d0168617c31c1df28475100d42",
+    "docs/report/fingerprint-product-null-v1/chunks/000400-000425.json": "836eb445cc2a76fb39bf5ed5ac9536a1ea1425e6d4933cc989d2416a49b48dfd",
+    "docs/report/fingerprint-product-null-v1/chunks/000425-000450.json": "5a81aba1c0d939a385deac8f891fda4b3b0215143d6757bb07cf98a136e4d72d",
+    "docs/report/fingerprint-product-null-v1/chunks/000450-000475.json": "944cb6f54e8806a3387f448904dee0b8d824b3a3500fd0e5e56c09a8222d88b5",
+    "docs/report/fingerprint-product-null-v1/chunks/000475-000500.json": "d7a15ccfeb1c14a9f182345883dd017f25339a33daedac8140776019d73097a2",
+    "docs/report/fingerprint-product-null-v1/chunks/000500-000525.json": "5d0164adc1544aa8141c0758035e86a8a6994a3e7714cf5c441b1734be2cdf4f",
+    "docs/report/fingerprint-product-null-v1/chunks/000525-000550.json": "3558f14ebf57dcf584cf4f4f0d3534b24b6b80a9ebafa769a5c3b05174d6c988",
+    "docs/report/fingerprint-product-null-v1/chunks/000550-000575.json": "58568b09c6d938b2cb931794eaa9aececaf5c914ed4adf4b274b6bb6a42876b5",
+    "docs/report/fingerprint-product-null-v1/chunks/000575-000600.json": "c79ac9204bf282a3b70d5cfc10632f7c1a1a1d9cbb4cecb33cb0494c389f8a97",
+    "docs/report/fingerprint-product-null-v1/chunks/000600-000625.json": "6212b6ffcb1935896cf58f3705935d93fd053d98ec5ccbe30743e2ceb726b011",
+    "docs/report/fingerprint-product-null-v1/chunks/000625-000650.json": "9431805689fd5fbe482bd186d7cf9feb48c2ee00f937d341af850c22aaa980a2",
+    "docs/report/fingerprint-product-null-v1/chunks/000650-000675.json": "c17b008ddb0d9355e66f4f42ade6d69ad00a0b8cd96d3e4c1799b53ebade96b0",
+    "docs/report/fingerprint-product-null-v1/chunks/000675-000700.json": "7073ae016b174870c9a7e6b9ec33068fa90104b87590809cc50653949408fa12",
+    "docs/report/fingerprint-product-null-v1/chunks/000700-000725.json": "b6e96fa45efc96ded878fcf279108f4ce9c345b1e6b95007d08cdd11aed91f38",
+    "docs/report/fingerprint-product-null-v1/chunks/000725-000750.json": "907f0ea949df1e4b473459327729f438c2fc405cbd4dd3bff9e0e530448e540d",
+    "docs/report/fingerprint-product-null-v1/chunks/000750-000775.json": "e148445f5d09dd19e1b749e7f0f238f5f2ff592601c9c87cc540b4407d2a27e8",
+    "docs/report/fingerprint-product-null-v1/chunks/000775-000800.json": "6ecbca09cfad0557c23f305643fa5e7dad0aa5f7d254cfb1474fa0680857efd3",
+    "docs/report/fingerprint-product-null-v1/chunks/000800-000825.json": "f3a0bcc24009d99bbc0c18a616d2479f4f9791b3a993e44b5cdb22b6328202be",
+    "docs/report/fingerprint-product-null-v1/chunks/000825-000850.json": "07450f46ecb43dde9973ca71f008fa7ef4b0c2fe1b9868759e0ce0277593d3ec",
+    "docs/report/fingerprint-product-null-v1/chunks/000850-000875.json": "ea4be4e5cd649f4fe717ac67a5dc32d71bc763c46abcff064ba04a9cc5f17dbc",
+    "docs/report/fingerprint-product-null-v1/chunks/000875-000900.json": "6c5581595606f01f3ba58401fb0aabf02ccdc8281461ed85eaf5663476b520e6",
+    "docs/report/fingerprint-product-null-v1/chunks/000900-000925.json": "1b5b005f491ece6611e6c605f4e12769ddb7b00de14a0ee4be2e967936ac2c8e",
+    "docs/report/fingerprint-product-null-v1/chunks/000925-000950.json": "a4ea945e3e0714e47ce68820e900f989e1bc3c157c0dd3d0e6e189741f8ec4ed",
+    "docs/report/fingerprint-product-null-v1/chunks/000950-000975.json": "ed4fa6c9147db71b7381d2e9d2a4ad421bc5f78767f545dd7132350784cfcc58",
+    "docs/report/fingerprint-product-null-v1/chunks/000975-001000.json": "5aaea54edd4382f7f9cf3be915a6f6820ea6145abdee854a855fc80af207b8eb",
+    "docs/report/fingerprint-product-null-v1/chunks/001000-001025.json": "534a9af4ab7ebd4cfece2ba97222de2a7f4262f723a9d02d78acb8c5cd2f63f1",
+    "docs/report/fingerprint-product-null-v1/chunks/001025-001050.json": "68a0d4c4fa2c75c8dcf2d73673d8c3ce4a4307ff0d1c4b00d6fde493c2ef300d",
+    "docs/report/fingerprint-product-null-v1/chunks/001050-001075.json": "db02e1ce974e534f87eb97c71b55e4f32f5347f9649e8c7a018ab08692fae593",
+    "docs/report/fingerprint-product-null-v1/chunks/001075-001100.json": "93572f6e48c5cbd2457d63085f6a7e6bc3fcbcd4e2c5a8f9a4ba8050b78d6864",
+    "docs/report/fingerprint-product-null-v1/chunks/001100-001125.json": "93abcf7e57a4281767a96e0576753e774db800875271cb3416b9abeefce65a67",
+    "docs/report/fingerprint-product-null-v1/chunks/001125-001150.json": "3e7a8f89b7666cb397d12497d38455fba5d881685c45e7dd395bff99e03231bb",
+    "docs/report/fingerprint-product-null-v1/chunks/001150-001175.json": "354cc1246a1a5c16ba75bcc2e7fe37b44c0d88f2441a41accdbe696f6d4aca1c",
+    "docs/report/fingerprint-product-null-v1/chunks/001175-001200.json": "8cf67127f442895b7b906a7ea3e838dac80aba3e0d9e84d3bf66976481bb4340",
+    "docs/report/fingerprint-product-null-v1/chunks/001200-001225.json": "71e00d49b983534e71be037dce60d993b42a6c549d78083c07d1dc0f444b79e9",
+    "docs/report/fingerprint-product-null-v1/chunks/001225-001250.json": "8cd83d9fc5d82fdaa863a33847c8e18819bccc823b62f699cecbbf02984eeb74",
+    "docs/report/fingerprint-product-null-v1/chunks/001250-001275.json": "31aee6a42ab3a705952837a018c5af311620f19c4d728a3d405f0f17f2978f40",
+    "docs/report/fingerprint-product-null-v1/chunks/001275-001300.json": "98539de143832f782364732c63bcf3f6c2981aad3b618380a396f43d7a30a110",
+    "docs/report/fingerprint-product-null-v1/chunks/001300-001325.json": "c0bfeef1beee1d8e10bd42f970d8f9733ae4ebc525087dea12cfa2ba7793dadf",
+    "docs/report/fingerprint-product-null-v1/chunks/001325-001350.json": "9e3e6b7df53aaa17e3af1878f9bc7c4e97faeded5b817596552d480fa9a7fc98",
+    "docs/report/fingerprint-product-null-v1/chunks/001350-001375.json": "d6e5ba371592b000aa05b8098ef412082d81c71b2eb2f70ca498d6d6ad455406",
+    "docs/report/fingerprint-product-null-v1/chunks/001375-001400.json": "b65b37bb515a7b7274ea90471cdcf77610c2caf96dd38becc039c522e64eb864",
+    "docs/report/fingerprint-product-null-v1/chunks/001400-001425.json": "3b0ae26cbcd31f66d75a5e5523237696a199d8b565163fe8671e3c279f995b1d",
+    "docs/report/fingerprint-product-null-v1/chunks/001425-001450.json": "72599f3579d38298cc694daa7747f51d4acc5c2abb28612b3365e87a7da7e659",
+    "docs/report/fingerprint-product-null-v1/chunks/001450-001475.json": "e3ec46e8ebc0a62e92920ef420be6fdc7f0c1807dc9dc3d7fc5e3437e990cd8b",
+    "docs/report/fingerprint-product-null-v1/chunks/001475-001500.json": "8cbf307be9a6df78b80cffbd5e9db5b4d90bf00e291d58137fb7b5fde7a98666",
+    "docs/report/fingerprint-product-null-v1/chunks/001500-001525.json": "7b94efa71045567ddfae9c9c2dc0021277956c3cd5f40adcc0ce34c6cb2286a1",
+    "docs/report/fingerprint-product-null-v1/chunks/001525-001550.json": "d8153451c4bcc2b28d4630143b24958ad4fbfa923e6d5f06779bdba545a52018",
+    "docs/report/fingerprint-product-null-v1/chunks/001550-001575.json": "47029d33c16c5ac7e200921ad77b1b4daaad4230040eb7a4606beecbea8cce5b",
+    "docs/report/fingerprint-product-null-v1/chunks/001575-001600.json": "3f1392845b4f26d81c8381dfa315b0a616a8f78f7d6a228f618fe83fc5dce66b",
+    "docs/report/fingerprint-product-null-v1/chunks/001600-001625.json": "367bdb379151b1273ae3820b29efe58a566d3c4a2a9ac5e490ba274955b5aa48",
+    "docs/report/fingerprint-product-null-v1/chunks/001625-001650.json": "cfbeb413a887cded828cfa1ad05f84bbed5c95da5a8e82dc11bcb35c09fdd4f2",
+    "docs/report/fingerprint-product-null-v1/chunks/001650-001675.json": "ceef8ba9c9f6efaa78b545f215b7a0fb337c85f3d07ad9f91e5f7dc79daf93d1",
+    "docs/report/fingerprint-product-null-v1/chunks/001675-001700.json": "6b33bd248c385e0700dd463f36826178e95cab24de29a6c6c6511da24876b9cd",
+    "docs/report/fingerprint-product-null-v1/chunks/001700-001725.json": "fa419d30a6e06069e7ac3cb2d904709b659c6098a37b7417d59259800609371c",
+    "docs/report/fingerprint-product-null-v1/chunks/001725-001750.json": "f1f390a07d0113fb2bbd62d58c00c9246ba0d05cd84e133ba9f1e9202d2fb0b7",
+    "docs/report/fingerprint-product-null-v1/chunks/001750-001775.json": "866199330155eaf5591a351b1b990c5cf360f0bc6ff642ae0373d1ba81c80ba8",
+    "docs/report/fingerprint-product-null-v1/chunks/001775-001800.json": "c8227a9b97cf351f0137166ce1ed60fa54dd2614e1ded5e0da21adc93a94ebe3",
+    "docs/report/fingerprint-product-null-v1/chunks/001800-001825.json": "e413eecb1872bad68adb2b291162028d3c3255c1d46c6a20b90af325b3933d0f",
+    "docs/report/fingerprint-product-null-v1/chunks/001825-001850.json": "5f1ca4b10b5e461ae417be5be5b565093e98c84bceaae7c82a4013cb39818f45",
+    "docs/report/fingerprint-product-null-v1/chunks/001850-001875.json": "376652cdf3180d9ea4a3fabbcf64b9c9efffe013d324f29a3f1253a935fc9f88",
+    "docs/report/fingerprint-product-null-v1/chunks/001875-001900.json": "9b887a741f112f9948e2a43a14d89b9ee04f6d17b9138d06e5a84aa38ee3e7d2",
+    "docs/report/fingerprint-product-null-v1/chunks/001900-001925.json": "d0bf9b555d925fbf714edd62864e2be0009a79aabde843d049c83ee5f5c0ee9b",
+    "docs/report/fingerprint-product-null-v1/chunks/001925-001950.json": "ebd575f6fd6d7d3497b5e6a6faacfbc255c0bfe232fd634fea612437cb3b7395",
+    "docs/report/fingerprint-product-null-v1/chunks/001950-001975.json": "aca258ef9e562299d9338d63853c23bcec587895f455b5208ecfaedfd0deac12",
+    "docs/report/fingerprint-product-null-v1/chunks/001975-002000.json": "f4d35034a8a40616982d7d456a25510f077208e417955fd7228cf4c1958b3bb7",
+    "docs/report/fingerprint-product-null-v1/null.json": "9135325776bc9d355f64c1d0e45bef64afacc197ad75699fe09c94c9b741aa03",
+    "docs/report/fingerprint-product-v1/README.md": "2d1d98af5e9968885461f2fb285ba77a35f2e17c42194c637cc5d9b7c3ae5ac0",
+    "docs/report/fingerprint-product-v1/calibration/FP1-p0-boundary-0.8.json": "f597c360317158b1fcf4d5990bab7ef74064481856acc926fa6ba784d230d1b0",
+    "docs/report/fingerprint-product-v1/calibration/FP1-p0-boundary-1.0.json": "49b21bf038ddb47f39ec2fbdff0d002d142faba0bd75f80e3aa055daddd3856b",
+    "docs/report/fingerprint-product-v1/calibration/FP1-p0-boundary-1.2.json": "2f827fea3337523c4649be1d580730894e1c982da7e38c929c1c9e9c086d026e",
+    "docs/report/fingerprint-product-v1/calibration/FP1-p0-null.json": "dfc6324e636162ea75ef1e0d3e5713f47a090acf6837d80eb162741df457f645",
+    "docs/report/fingerprint-product-v1/calibration/FP1-p1-boundary-0.8.json": "7320f1f461ec0bd3d806da887495105898f146c3b03f01f3ffd7db1f9c157749",
+    "docs/report/fingerprint-product-v1/calibration/FP1-p1-boundary-1.0.json": "07e0d9f0ba4d9e4d2b5a33e3c081ee1c89baa9417f9261c91c29e9e8d86545c3",
+    "docs/report/fingerprint-product-v1/calibration/FP1-p1-boundary-1.2.json": "32d650e6dee579123d405102ed179f3e5ef5219653337ab52214b919d7e4c015",
+    "docs/report/fingerprint-product-v1/calibration/FP1-p1-null.json": "84d2b8062344fb3fdd1bc9db7885468f0cfa3dcfdc63eacb03f3cc1c87dea56c",
+    "docs/report/fingerprint-product-v1/calibration/FP1-p2-boundary-0.8.json": "366c228b8f1c503c51919fe31eabfb680bb2a951d0c0ec0d0bf1b09cb4b1077b",
+    "docs/report/fingerprint-product-v1/calibration/FP1-p2-boundary-1.0.json": "11ea1b40bbed20ca97ee57a693b8bb5bde6206fb76836836392b442c4da83b01",
+    "docs/report/fingerprint-product-v1/calibration/FP1-p2-boundary-1.2.json": "f50525fafbe5ce599bbf2f4569b136427b6dead5da2e9041556801ef1fdd14ea",
+    "docs/report/fingerprint-product-v1/calibration/FP1-p2-null.json": "0a89f491e9c4136204805e605ed533da1f4172aca355ff7ac337fd1d8449acaf",
+    "docs/report/fingerprint-product-v1/calibration/FP2-p0-boundary-0.8.json": "734d8b551c43f23c8ddef0d5c81928223974f9546927b92dc705e37843e59495",
+    "docs/report/fingerprint-product-v1/calibration/FP2-p0-boundary-1.0.json": "50e001c42c81f3b68fac03c78ce47806f2a0013ec0dd2ebdd9c1e902b9245abc",
+    "docs/report/fingerprint-product-v1/calibration/FP2-p0-boundary-1.2.json": "b537ce4b7c56c888092a548f18d4933424cb0d1c9dda8fab4ff7355aaed5cbc6",
+    "docs/report/fingerprint-product-v1/calibration/FP2-p0-null.json": "bc8ce9478de2d77e5ab1c6e61fc7fe0bfa85e2271275beef84d1fce2e76cee57",
+    "docs/report/fingerprint-product-v1/calibration/FP2-p1-boundary-0.8.json": "da15bae825dd862c909b9936a05ea62ed7737d16563f1d62e667c31fea0b34f6",
+    "docs/report/fingerprint-product-v1/calibration/FP2-p1-boundary-1.0.json": "a87ac20bc8bfcfdb8095abf8405ee0e7b2d67146e8ce5e51d43aa2e77ad6521a",
+    "docs/report/fingerprint-product-v1/calibration/FP2-p1-boundary-1.2.json": "bbdb11c6bc9e7503062d6cc764fcf0ee1b73a53d2bc5123bb1b1829b521b8b2e",
+    "docs/report/fingerprint-product-v1/calibration/FP2-p1-null.json": "29fadaf731804146c1c4d81f3c1f8b3a56b34f162de1800049ff8cf7d06723bf",
+    "docs/report/fingerprint-product-v1/calibration/FP2-p2-boundary-0.8.json": "091578f1052c5cfc96d81ef3cf05bb11f60d0b1786028c99421dc5f5373c3d64",
+    "docs/report/fingerprint-product-v1/calibration/FP2-p2-boundary-1.0.json": "f7bc7b673668e2be776c88aaef116c41186837754c1dd0858d7210ff0509d114",
+    "docs/report/fingerprint-product-v1/calibration/FP2-p2-boundary-1.2.json": "ecc74629a0ec2970a802f0c5866002a7b270e0c86669fec5cd02856cbf6a131d",
+    "docs/report/fingerprint-product-v1/calibration/FP2-p2-null.json": "045132d16627c7b95ba4fce9738923dd8d4ad12d0fb47fd2285ceb6bc6e9ba5e",
+    "docs/report/fingerprint-product-v1/evaluation/FP1-p0-boundary-0.8.json": "9af959e4b219e41e247462fa0865ea56c7fc7615324f7317b3dc37e741075214",
+    "docs/report/fingerprint-product-v1/evaluation/FP1-p0-boundary-1.0.json": "f2485efac1c68bd688c437bad856e213137e5944eea38b30c59f30ab239caa20",
+    "docs/report/fingerprint-product-v1/evaluation/FP1-p0-boundary-1.2.json": "ffd5a405e8aaf104ac70bd7f2207cf25794b399e7c29d50e0d7652c3d139b63c",
+    "docs/report/fingerprint-product-v1/evaluation/FP1-p0-null.json": "ffc915fd8cbb2f8494c279e67afb6cbb1b396f53f726ad900f11a73df30f535d",
+    "docs/report/fingerprint-product-v1/evaluation/FP1-p1-boundary-0.8.json": "87e97982dcc26ca210ca1469b42f61c0ad1b6b2f5e2f7459c5b5b868132d359e",
+    "docs/report/fingerprint-product-v1/evaluation/FP1-p1-boundary-1.0.json": "916dba499e6b0173afc0c2813e32a4f06695328fa2855f664c0655cd323f06c0",
+    "docs/report/fingerprint-product-v1/evaluation/FP1-p1-boundary-1.2.json": "d1c09f16ad236a63d4cfb853d5cb3cea5ace5173a18f2f31ca3c97f9fa160221",
+    "docs/report/fingerprint-product-v1/evaluation/FP1-p1-null.json": "ea57d07175d00ab8ef478ef9e3fe6fedddc331ea37600db0dc63c73f072eeda6",
+    "docs/report/fingerprint-product-v1/evaluation/FP1-p2-boundary-0.8.json": "5f32353e24f5c18288122c1294e08c32de386bb3f677516b9b0f102a67c7dbb9",
+    "docs/report/fingerprint-product-v1/evaluation/FP1-p2-boundary-1.0.json": "e9a1598f41fb17da726068c6a4bbae04516b5f717f6c3f698e04a6397baafcc6",
+    "docs/report/fingerprint-product-v1/evaluation/FP1-p2-boundary-1.2.json": "b289ab30a07ee730138bb76fe9322ac86a9ac8fbbb89503b15398c8c428ef215",
+    "docs/report/fingerprint-product-v1/evaluation/FP1-p2-null.json": "c42108782aa0b8b9109411766da2426c3a9dc4cac7702b218b036ea5554acfe0",
+    "docs/report/fingerprint-product-v1/evaluation/FP2-p0-boundary-0.8.json": "68658cf601e8562b1c5390eb37128a79f28765a9006d73b82ef38eac45dc0fee",
+    "docs/report/fingerprint-product-v1/evaluation/FP2-p0-boundary-1.0.json": "8bafcbe95bbd4afc8b8853977938f93d50be6b84f3b5631843ffb26d61013bb5",
+    "docs/report/fingerprint-product-v1/evaluation/FP2-p0-boundary-1.2.json": "ecb8580f99cea872e8d4d7ed76bdafbb61381507b3989f149c5c00e781da67e8",
+    "docs/report/fingerprint-product-v1/evaluation/FP2-p0-null.json": "e032148e2af5ce95164bea9009f625420ca8a709c3a6e3ddd5dc6d3308851760",
+    "docs/report/fingerprint-product-v1/evaluation/FP2-p1-boundary-0.8.json": "d573995367ecec46248b9733785fe4adc30dbc2045e2527bb22dcbbe1bedb760",
+    "docs/report/fingerprint-product-v1/evaluation/FP2-p1-boundary-1.0.json": "c0c34da60fda24cbe4b112bae58e9625da9db395abf86752b4fe63b895c38c8d",
+    "docs/report/fingerprint-product-v1/evaluation/FP2-p1-boundary-1.2.json": "c8366afdb3edfc78772862863ec0d6563bc9118c3150231193ffe18165d67893",
+    "docs/report/fingerprint-product-v1/evaluation/FP2-p1-null.json": "5e32421a8b2a5ba8e407cd859de24b99fbba7005a4c3b4b3f5d84165525f7da0",
+    "docs/report/fingerprint-product-v1/evaluation/FP2-p2-boundary-0.8.json": "4b511ebd0808de295cf268de582cbad5745099bcb7deaaf54bd6fcb588e88166",
+    "docs/report/fingerprint-product-v1/evaluation/FP2-p2-boundary-1.0.json": "b1dc60ed94de63940f41e7db8af09d21458821722087f90735c5abdeb4cd971b",
+    "docs/report/fingerprint-product-v1/evaluation/FP2-p2-boundary-1.2.json": "8277d677e266c0842d65ecdb62957421a840ba1325b7ed816c5a6ddebcc3331e",
+    "docs/report/fingerprint-product-v1/evaluation/FP2-p2-null.json": "a6731bba8a65d01c895a91f35c10d877652975fe420b794739fb84e2d86ca174",
+    "docs/report/fingerprint-product-v1/intervals.json": "0abdef6e612fc114591e853beb1890e2431149e4a8f1f135b7a143a12dcc00b5",
+    "docs/report/power.json": "900f2782ad0ad0b8c53afbaf8ebeecc42b2b9354bbd33b9a8c60e09e3d819916",
+    "docs/report/power.md": "11fea0d7cd079755d477f538181c54ce069cb34b2d7b22d8e9bb51cfe316a9ce",
+    "docs/report/robustness-v3-1/README.md": "9e183ec5ee9f841b170d6fc4b0ea50c53711d115e9ae70e9999eb1750334ee3f",
+    "docs/report/robustness-v3-1/false-alarms.png": "2e35d7429e1dbf1278f222dd8a74ab3c7c3ce6c7456c0fe1c5873887c33a6df4",
+    "docs/report/robustness-v3-1/faults/faults.json": "bc9e6c857c96118e3c5749309cfdecd9f02e819b29fc236ec75a8edf6dec20a9",
+    "docs/report/robustness-v3-1/faults/faults.md": "0d6beb4cbdca114c45013ea63fa53c20715372b84de86d0ff3405f80a00e0690",
+    "docs/report/robustness-v3-1/power.png": "958eeede64b03f65d6f061fadfcce69fa54f9281a99d3f509c363ec5e0c74c7d",
+    "docs/report/robustness-v3-1/rates.csv": "b056219845ae4615bd0e335f6a64c542e9e87d3ca576750d22a1ba16d99cfe91",
+    "docs/report/robustness-v3-1/robustness.json": "566ce9d498c297b201a5d7e0afa527e7cd3e21cd269f7822cdbbe6c814909488",
+    "docs/report/robustness-v3-1/signal-calibration.json": "edfdbce04dfd99d6ad60d5d74d6416736d7aa0c0c29fb047b0a7e4679712051b",
+    "docs/report/robustness-v3-1/tool-audit.json": "082292561da6fedeef08961df9a44f80b5b03942ab000a9c610d189f83d310f5",
+    "docs/report/robustness-v3/README.md": "8ed5fe7998148cc4729497696f39f4191dc9b7dc0ac67311dfa980127d325899",
+    "docs/report/robustness-v3/false-alarms.png": "b576bd66fa23ac084e3ab96c82a3fc381e030f223ed410daf0ea291111c7a018",
+    "docs/report/robustness-v3/faults/faults.json": "91f4ae7165b6fedae87f537ff59306966c0930fb51d3cca550241f68b50ce798",
+    "docs/report/robustness-v3/faults/faults.md": "0d6beb4cbdca114c45013ea63fa53c20715372b84de86d0ff3405f80a00e0690",
+    "docs/report/robustness-v3/power.png": "e1a1d5a8021fd949ad72295cd991d7e6838a84ab687ad71a8daa65c0977d479b",
+    "docs/report/robustness-v3/rates.csv": "c78e694402a4e167278dc98a10d955c74a7bcf9e6a5367cc3d3c2542d3c98c90",
+    "docs/report/robustness-v3/robustness.json": "d994d902a49c3d4c7c8685f034da1b5c35e628291ae5c866a5b03e9a03651ebd",
+    "docs/report/robustness-v3/tool-audit.json": "082292561da6fedeef08961df9a44f80b5b03942ab000a9c610d189f83d310f5",
+    "docs/validation/fingerprint-candidate-exploration.json": "81f15e440be3db3c58759997f33cba2ddeade4fd2d6206c626ee82de976df423",
+    "docs/validation/fingerprint-component-null.json": "c8579f6f90d9982c6c6feeccaca371eb8deb57786d3438fd338b46996b68456f",
+    "docs/validation/fingerprint-core-exploration.json": "9cb611ca5cd4986f3e4299acc45c3ff920acd4dde71990d11b38df8b67e2651c",
+    "docs/validation/product-collection.json": "aa13b98fd7cbd7e4cd211c03c4c044886e1a7dbea40517513fc66b9f3c520bb9",
+    "docs/validation/product-fingerprint-band-positions.json": "a234a8e54e404e6d92a1d94092faaead877342e6330e02cd33f895c62d11209e",
+    "docs/validation/product-fingerprint-baseline.json": "b237c03fe10060dc4eddbf8e5e01ff6a701c7d375b310c033b01ddf27f92d92b",
+    "docs/validation/product-fingerprint-cli.json": "5735bb8c87ff9d8472dc61db12fc9ac57f00d9c7ae74cf6aa40dcc4152cc52a4",
+    "docs/validation/product-fingerprint-collection-fix.json": "4bb3767ac7727edcd0927d661bb5b99cf3d321f59bce2d4c3a2af68928a3560a",
+    "docs/validation/product-fingerprint-components.json": "0eeb6a2158cf2693b3e12ff52d5567cbc56012700c338a0434bc9f618a268cf8",
+    "docs/validation/product-fingerprint-intervals.json": "8bb9c32db0476030fbeb36095f335a8c54887d48a344c4fda8fb37d581acd1e5",
+    "docs/validation/product-fingerprint-null-runner.json": "80d5b1330252a6285bac4b8f9f4cbd1b9947061a1b6649c95ead35bdcaa2b5bf",
+    "docs/validation/product-fingerprint-null.json": "9954d8a35f283df82414bdaa8d6721ba636de052ddaf703d45c25b8070ccbc63",
+    "docs/validation/product-fingerprint-packs.json": "7b09b515ee468c6d4cff70adb039330f97d6206c10f04215a944dd318fc1e02e",
+    "docs/validation/product-fingerprint-qualification-runner.json": "d43baac2a964004361bc4b427f82003bf9c82bbc6f3a9d21dcd71a52175a80f4",
+    "docs/validation/product-methods-draft.json": "e2291f67e2199c555cb3c870c685810b941dda30838d52de4e91c24c900b736c",
+    "docs/validation/product-report-assets.json": "db56c20aef14dc8aaf95611240993c4d98ab657e8cec55e596c995fe8afeeb64",
+    "uv.lock": "c7498e436c8e2727024fb59100fe0eecde94c50256af8c28b7890846f1410631"
+  },
+  "replayed_targets": [
+    {
+      "capture_hash": "5aabce378165819baf7a9d64d7dae612a0898fec8bda4553ea4d6ab4b3bbcdaa",
+      "case": "clean",
+      "index": 0,
+      "pack_index": 0,
+      "seed": 884069111353170652
+    },
+    {
+      "capture_hash": "64e333bd5c844382673d2b08ff89e56e503d284649241f2966dd9e01a2a40aed",
+      "case": "swap",
+      "index": 0,
+      "pack_index": 0,
+      "seed": 56339210543303511
+    },
+    {
+      "capture_hash": "6124fdd4f5a96cdbb322f76dbdab0887d6e05297bbd566f7506f25614c099dca",
+      "case": "mix",
+      "index": 0,
+      "pack_index": 0,
+      "seed": 277399068164200669
+    },
+    {
+      "capture_hash": "021fc16a352990ea073b2be8f44ae1e0182a75281fd1e34c6422102b73994b71",
+      "case": "qsim",
+      "index": 0,
+      "pack_index": 0,
+      "seed": 18340066418313911
+    },
+    {
+      "capture_hash": "f117ce9c4a00f89ab5cefb991d98b404abb860a6ebb2e78a754fe1abab5a2a12",
+      "case": "clean",
+      "index": 59,
+      "pack_index": 2,
+      "seed": 828492371607902697
+    },
+    {
+      "capture_hash": "655f0041286cd0a9787d3311092b8f4a68b247daf8cc31cef446d6fc3e984e39",
+      "case": "swap",
+      "index": 29,
+      "pack_index": 2,
+      "seed": 92440541087762298
+    },
+    {
+      "capture_hash": "6025c502e7ff2f5c7d6266f568b4c919a3370bb6483630eb5a75d95419fa93db",
+      "case": "mix",
+      "index": 29,
+      "pack_index": 2,
+      "seed": 519884982521729271
+    },
+    {
+      "capture_hash": "2f9f931793f130f5b379600075fbf192a4ebfdded109b3a58358013432456d26",
+      "case": "qsim",
+      "index": 29,
+      "pack_index": 2,
+      "seed": 898865856053788202
+    }
+  ],
+  "scientific_runtime_enabled": false,
+  "scope": "All receipt arithmetic plus eight selected full target replays; not all target raw bodies retained",
+  "scripted_captures": 2208750,
+  "source_commit": "53125b2c25d5ac05dd5bfbf43d783bae0c910edd",
+  "spent_usd": 0,
+  "study_source_hash": "3cd7186eb4f11a3c57fc33f541e0318bb1ddf7db853fa899373ee73a5d0b1238",
+  "trial_count": 450,
+  "unchanged_interval_primitives_sha256": {
+    "src/servegauge/core/hashing.py": "159d61d1acf55492d6472b072732edf7af513b36926fcf2b464c9ac6e4cf380d",
+    "src/servegauge/stats/__init__.py": "9f8cfc736e6c3eda705cd1ba273ae27972973823c26e11e139efb4bd26605d5b",
+    "src/servegauge/stats/bootstrap.py": "b13a2b611d0396437d45d354d61067dd0ddb536e81de1a2d8fd1552e19f62c0f",
+    "src/servegauge/stats/change_variants.py": "6e5c1622971adcaaf1703061bb9e2b44c7cfb41eac95b2469e983a6e336a51dd",
+    "src/servegauge/stats/changepoint.py": "f03b1d7e8b00b14e19ee4f13647c0e6aabed3460714cf85aab11e60c2313395f",
+    "src/servegauge/stats/common.py": "51efb1f5a2019c6a8b2840be173937660ce811284adf29f0137f3aae1b2d81c4",
+    "src/servegauge/stats/energy.py": "775eed6f14798ae6be36ed0687e8b66b73bd72cd846504ad3279497f13067e2c",
+    "src/servegauge/stats/fingerprint_blocks.py": "28808070e4cd43f0fb7e47d1fa44e84fc1417cdf65e707e6c2f3d5544d663e7f",
+    "src/servegauge/stats/fingerprint_strata.py": "04d5af93d17a872bfc574c443f8276b33a358c3eaab71b6f32412a85d7cf38b2",
+    "src/servegauge/stats/intervals.py": "469e5f56b7c49e53a1c96a5fb65d63f0c86e0f7a2ce41ec81c0f90debef88cef",
+    "src/servegauge/stats/jsd.py": "fe9bba1242ec0c693512d0ce336e893639ba034b716460a9f2be39beb7cdc0a2",
+    "src/servegauge/stats/logprob_dispersion.py": "5e4e520cb676542a6049024cdce80e7d98b08c486bb23d1316f612270ed11d36",
+    "src/servegauge/stats/logprob_track.py": "e31b4601c7720a8ddc941ff7f947064016db305ad0fb0a88133b7f0364271805",
+    "src/servegauge/stats/mmd.py": "a09c8ee319210476f67551586762c5470c4175f2307f24c2c3a5dc06c68b83db",
+    "src/servegauge/stats/multiple.py": "ddc05856cf0c374c251d5e17c921459b0444128e5c37f202dae25b6a68359f95",
+    "src/servegauge/stats/noninferiority.py": "c507868a65a2721936a62efe87f3fec8b7213085c3ff01594025c980e8189dde",
+    "src/servegauge/stats/paired_fast.py": "468b0b6da6ef544d57c8d8c1bee7284856aa580c0536db13613c0f16217c17ac",
+    "src/servegauge/stats/power.py": "81cbbaf6f00a87077c1e3829f9210126b0020df356be6b5ef390b4b3b66b85f5",
+    "src/servegauge/stats/simulate.py": "2d9dd0f047045c40e7718f1bc45af5ee539e4fb4eb5cd4b890ccbae05118fcbd",
+    "src/servegauge/stats/tests.py": "a7e8c96a25106e882a6b446ca6752cdf97e627b996f81b36955f4c0bd6246b21",
+    "src/servegauge/validation/common.py": "3f16af254260d23a811dafd94feef027803ed45df6a3c88c157ada2109ff059d",
+    "src/servegauge/validation/fingerprint_product.py": "4237a15c1a1a21603d8de893d041c09a00fa6743acdbdd78c319d7876054facb"
+  },
+  "unique_role_seeds": 465,
+  "wire_sha256": "063d8366897b62a76cfc86e6e2b39d839642498864b53e4c8e514f563223133b"
+}

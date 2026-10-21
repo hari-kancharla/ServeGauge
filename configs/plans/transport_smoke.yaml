@@ -1,0 +1,16 @@
+plan_id: transport_smoke
+profile: gpt-oss-120b
+level: smoke
+seed: 20261018
+reference: {tier: MOCK, pack: null}
+concurrency_per_endpoint: 4
+requests_per_minute: 60000
+max_usd: 0
+endpoints:
+  - {id: 'mock:clean-1', kind: mock, base_url: 'http://127.0.0.1:8011/v1', model: mock, api_key_env: null, claimed_profile: gpt-oss-120b}
+  - {id: 'mock:clean-2', kind: mock, base_url: 'http://127.0.0.1:8012/v1', model: mock, api_key_env: null, claimed_profile: gpt-oss-120b}
+  - {id: 'mock:clean-3', kind: mock, base_url: 'http://127.0.0.1:8013/v1', model: mock, api_key_env: null, claimed_profile: gpt-oss-120b}
+  - {id: 'mock:faulty', kind: mock, base_url: 'http://127.0.0.1:8014/v1', model: mock, api_key_env: null, claimed_profile: gpt-oss-120b}
+suites: [S0]
+overrides: {S0: {items: 8}}
+# M3 transport-only acceptance inventory; full capabilities/protocol/tools arrive in M7/M8.

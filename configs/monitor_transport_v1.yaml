@@ -1,0 +1,8 @@
+# Inactive candidate contract. No alarm admission without separate qualification.
+version: monitor-transport-v1
+epoch_days: 30
+max_streams: 100
+max_updates: 120
+family_alpha: 0.05
+epoch_false_event_budget: 0.5
+batch_sizes: {core: 400, full: 800}

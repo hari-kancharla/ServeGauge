@@ -1,0 +1,9 @@
+# Inactive continuous-history candidate; qualification and admission remain separate.
+version: monitor-transport-v2
+horizon_days: 30
+max_streams: 100
+max_updates: 120
+max_history_batches: 121
+family_alpha: 0.05
+max_false_events_30_days: 1.0
+batch_sizes: {core: 400, full: 800}

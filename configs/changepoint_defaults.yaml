@@ -1,0 +1,100 @@
+version: calibrated-offline-v1
+scope:
+  maximum_false_alarms_per_30_days: 1.0
+  calibration_replicates: 5000
+  evaluation_replicates: 2000
+  calibration_budget_fraction: 0.5
+  primary_detector: D-A
+  days: 30
+  streams: 100
+  observations_per_day: 4
+  baseline_size: 64
+  binary_batch: 32
+  shift_day: 10
+  standardized_shift: 1.0
+  binary_baseline: 0.95
+  binary_shift: 0.75
+  gradual_days: 10
+  cusum_slack: 0.5
+  evalue_kappa: 0.5
+  adwin_deltas:
+  - 0.01
+  - 0.001
+  - 0.0001
+  - 1.0e-05
+  rationale: 100 endpoint-signal streams, four fingerprints/day, one expected false
+    alarm per 30 observatory days; separate calibration and evaluation seeds
+  seed: 20261019
+  executed_evaluation_replicates: 2000
+source_hash: 851f74ab4ac8ac5b5d61f5a26bfd28f38b7cedc2f812c9b77403b67a204c9065
+parameters:
+  D-A:
+    threshold: 22.618243294487847
+    calibration_tail:
+      successes: 2
+      n: 5000
+      estimate: 0.0004
+      ci_low: 0.00010970128207763504
+      ci_high: 0.0014573865014234442
+      reference_tier: MOCK
+      reference_estimate: null
+    per_stream_method_probability_budget: 0.0016666666666666668
+    method: largest calibration tail with Wilson upper bound inside declared budget
+  D-B:
+    threshold: 38.84133110289279
+    calibration_tail:
+      successes: 2
+      n: 5000
+      estimate: 0.0004
+      ci_low: 0.00010970128207763504
+      ci_high: 0.0014573865014234442
+      reference_tier: MOCK
+      reference_estimate: null
+    per_stream_method_probability_budget: 0.0016666666666666668
+    method: largest calibration tail with Wilson upper bound inside declared budget
+  D-C:
+    delta: 1.0e-05
+    calibration_candidates:
+    - delta: 0.01
+      any_alarm:
+        successes: 0
+        n: 5000
+        estimate: 0.0
+        ci_low: 0.0
+        ci_high: 0.0007677019450571248
+        reference_tier: MOCK
+        reference_estimate: null
+      per_update_union_bound: 1.2
+    - delta: 0.001
+      any_alarm:
+        successes: 0
+        n: 5000
+        estimate: 0.0
+        ci_low: 0.0
+        ci_high: 0.0007677019450571248
+        reference_tier: MOCK
+        reference_estimate: null
+      per_update_union_bound: 0.12
+    - delta: 0.0001
+      any_alarm:
+        successes: 0
+        n: 5000
+        estimate: 0.0
+        ci_low: 0.0
+        ci_high: 0.0007677019450571248
+        reference_tier: MOCK
+        reference_estimate: null
+      per_update_union_bound: 0.012
+    - delta: 1.0e-05
+      any_alarm:
+        successes: 0
+        n: 5000
+        estimate: 0.0
+        ci_low: 0.0
+        ci_high: 0.0007677019450571248
+        reference_tier: MOCK
+        reference_estimate: null
+      per_update_union_bound: 0.0012000000000000001
+    budget: 0.0016666666666666668
+qualification: simulation defaults; recalibrate after cadence, stream, baseline or
+  statistic changes

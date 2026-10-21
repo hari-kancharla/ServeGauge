@@ -1,0 +1,14 @@
+version: fingerprint-component-null-v1
+seed: 202610191350
+replicates: 2000
+cells: 2
+groups_per_cell: 4
+observations_per_group: 8
+profiles: [correlated, cache_burst]
+ar1_rho: 0.8
+healthy_logit_jitter: 0.3
+methods: [FP1, FP2, FP3-mean, FP3-dispersion]
+fixed_length: 16
+maximum_type_I: 0.065
+maximum_family_rate: 0.05
+rationale: "SPEC 21 original conservative-test and Holm gates; small exact enumeration checks mathematics, not production n or universality"

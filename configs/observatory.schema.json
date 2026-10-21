@@ -1,0 +1,530 @@
+{
+  "$defs": {
+    "CadenceSettings": {
+      "additionalProperties": false,
+      "properties": {
+        "fingerprint_level": {
+          "anyOf": [
+            {
+              "enum": [
+                "smoke",
+                "core",
+                "full"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fingerprint Level"
+        },
+        "level": {
+          "enum": [
+            "smoke",
+            "core",
+            "full"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "overrides": {
+          "additionalProperties": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Overrides",
+          "type": "object"
+        },
+        "tests": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Tests",
+          "type": "array"
+        }
+      },
+      "required": [
+        "level",
+        "tests"
+      ],
+      "title": "CadenceSettings",
+      "type": "object"
+    },
+    "EndpointSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "api_key_env": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Api Key Env"
+        },
+        "base_url": {
+          "title": "Base Url",
+          "type": "string"
+        },
+        "claimed_profile": {
+          "title": "Claimed Profile",
+          "type": "string"
+        },
+        "defaults": {
+          "additionalProperties": true,
+          "title": "Defaults",
+          "type": "object"
+        },
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "openai_compat",
+            "openrouter",
+            "selfhosted",
+            "mock"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "labels": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Labels",
+          "type": "object"
+        },
+        "metadata": {
+          "additionalProperties": true,
+          "title": "Metadata",
+          "type": "object"
+        },
+        "model": {
+          "title": "Model",
+          "type": "string"
+        },
+        "openrouter_pin": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/OpenRouterPin"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "base_url",
+        "model",
+        "claimed_profile"
+      ],
+      "title": "EndpointSpec",
+      "type": "object"
+    },
+    "FaultConfig": {
+      "additionalProperties": false,
+      "properties": {
+        "corrupt_arguments": {
+          "default": 0,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Corrupt Arguments",
+          "type": "number"
+        },
+        "drop_tool_calls": {
+          "default": 0,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Drop Tool Calls",
+          "type": "number"
+        },
+        "error_rate": {
+          "default": 0,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Error Rate",
+          "type": "number"
+        },
+        "fault_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fault Id"
+        },
+        "ignore_max_tokens": {
+          "default": false,
+          "title": "Ignore Max Tokens",
+          "type": "boolean"
+        },
+        "ignore_reasoning_effort": {
+          "default": false,
+          "title": "Ignore Reasoning Effort",
+          "type": "boolean"
+        },
+        "ignore_stop": {
+          "default": false,
+          "title": "Ignore Stop",
+          "type": "boolean"
+        },
+        "ignore_temperature": {
+          "default": false,
+          "title": "Ignore Temperature",
+          "type": "boolean"
+        },
+        "ignore_top_p": {
+          "default": false,
+          "title": "Ignore Top P",
+          "type": "boolean"
+        },
+        "leak_markers": {
+          "default": 0,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Leak Markers",
+          "type": "number"
+        },
+        "logit_noise": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Logit Noise",
+          "type": "number"
+        },
+        "misreport_usage_pct": {
+          "default": 0,
+          "title": "Misreport Usage Pct",
+          "type": "number"
+        },
+        "plain_text_after_tool_result": {
+          "default": 0,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Plain Text After Tool Result",
+          "type": "number"
+        },
+        "route_to_other_model": {
+          "default": 0,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Route To Other Model",
+          "type": "number"
+        },
+        "seed": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Seed"
+        },
+        "stale_cache": {
+          "default": 0,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Stale Cache",
+          "type": "number"
+        },
+        "stream_delta_without_index": {
+          "default": false,
+          "title": "Stream Delta Without Index",
+          "type": "boolean"
+        },
+        "truncate_output_after": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Truncate Output After"
+        },
+        "truncate_prompt_head_over": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Truncate Prompt Head Over"
+        }
+      },
+      "title": "FaultConfig",
+      "type": "object"
+    },
+    "MonitorModel": {
+      "additionalProperties": false,
+      "properties": {
+        "endpoints": {
+          "items": {
+            "$ref": "#/$defs/EndpointSpec"
+          },
+          "minItems": 1,
+          "title": "Endpoints",
+          "type": "array"
+        },
+        "faults": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FaultConfig"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "id": {
+          "maxLength": 100,
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "mock_context_length": {
+          "anyOf": [
+            {
+              "maximum": 131072,
+              "minimum": 256,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mock Context Length"
+        },
+        "profile": {
+          "title": "Profile",
+          "type": "string"
+        },
+        "reference": {
+          "$ref": "#/$defs/ReferenceSpec"
+        },
+        "sampling_version": {
+          "default": "v2",
+          "enum": [
+            "v1",
+            "v2"
+          ],
+          "title": "Sampling Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "profile",
+        "endpoints"
+      ],
+      "title": "MonitorModel",
+      "type": "object"
+    },
+    "OpenRouterPin": {
+      "additionalProperties": false,
+      "properties": {
+        "allow_fallbacks": {
+          "default": false,
+          "title": "Allow Fallbacks",
+          "type": "boolean"
+        },
+        "require_parameters": {
+          "default": true,
+          "title": "Require Parameters",
+          "type": "boolean"
+        },
+        "tag": {
+          "title": "Tag",
+          "type": "string"
+        }
+      },
+      "required": [
+        "tag"
+      ],
+      "title": "OpenRouterPin",
+      "type": "object"
+    },
+    "PublishingSettings": {
+      "additionalProperties": false,
+      "properties": {
+        "credential_env": {
+          "default": "HF_TOKEN",
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+          "title": "Credential Env",
+          "type": "string"
+        },
+        "enabled": {
+          "default": false,
+          "title": "Enabled",
+          "type": "boolean"
+        },
+        "license": {
+          "const": "cc-by-4.0",
+          "default": "cc-by-4.0",
+          "title": "License",
+          "type": "string"
+        },
+        "repo_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Repo Id"
+        }
+      },
+      "title": "PublishingSettings",
+      "type": "object"
+    },
+    "ReferenceSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "pack": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Pack"
+        },
+        "tier": {
+          "enum": [
+            "BASELINE",
+            "R1",
+            "R2",
+            "R3",
+            "MOCK"
+          ],
+          "title": "Tier",
+          "type": "string"
+        }
+      },
+      "required": [
+        "tier"
+      ],
+      "title": "ReferenceSpec",
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "budgets": {
+      "additionalProperties": {
+        "minimum": 0,
+        "type": "number"
+      },
+      "title": "Budgets",
+      "type": "object"
+    },
+    "cadences": {
+      "additionalProperties": {
+        "$ref": "#/$defs/CadenceSettings"
+      },
+      "title": "Cadences",
+      "type": "object"
+    },
+    "concurrency_per_endpoint": {
+      "default": 4,
+      "minimum": 1,
+      "title": "Concurrency Per Endpoint",
+      "type": "integer"
+    },
+    "enabled": {
+      "default": false,
+      "title": "Enabled",
+      "type": "boolean"
+    },
+    "endpoint_selection": {
+      "const": "explicit",
+      "default": "explicit",
+      "title": "Endpoint Selection",
+      "type": "string"
+    },
+    "id": {
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Id",
+      "type": "string"
+    },
+    "mode": {
+      "default": "mock",
+      "enum": [
+        "mock",
+        "owner"
+      ],
+      "title": "Mode",
+      "type": "string"
+    },
+    "models": {
+      "items": {
+        "$ref": "#/$defs/MonitorModel"
+      },
+      "title": "Models",
+      "type": "array"
+    },
+    "publishing": {
+      "$ref": "#/$defs/PublishingSettings"
+    },
+    "requests_per_minute": {
+      "default": 60,
+      "exclusiveMinimum": 0,
+      "title": "Requests Per Minute",
+      "type": "number"
+    },
+    "seed": {
+      "default": 20261020,
+      "minimum": 0,
+      "title": "Seed",
+      "type": "integer"
+    },
+    "version": {
+      "const": "observatory-v1",
+      "default": "observatory-v1",
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "title": "ObservatoryConfig",
+  "type": "object"
+}

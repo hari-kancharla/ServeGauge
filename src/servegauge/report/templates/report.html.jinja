@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>{{ title }} · ServeGauge</title>
+  <meta name="description" content="Recorded inference endpoint checks with independent counts, uncertainty, references and replayable evidence.">
+  <link rel="stylesheet" href="{{ asset_prefix }}report.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23186354'/%3E%3Cpath d='M8 23V16M16 23V9M24 23V13' stroke='white' stroke-width='3'/%3E%3C/svg%3E">
+  <script src="{{ asset_prefix }}vega-6.4.0.min.js" defer></script>
+  <script src="{{ asset_prefix }}report.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to evidence</a>
+<header class="topbar">
+  <a class="brand" href="#main" aria-label="ServeGauge evidence report"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>ServeGauge</a>
+  <nav aria-label="Report sections"><a href="#overview">Overview</a><a href="#checks">Checks</a><a href="#diagnoses">Diagnoses</a><a href="#provenance">Provenance</a></nav>
+  <span class="record-label">Recorded evidence</span>
+</header>
+<main id="main">
+  <section class="intro" aria-labelledby="report-title">
+    <div><p class="eyebrow">Endpoint report / {{ profile }}</p><h1 id="report-title">{{ title }}</h1><p class="intro-copy">{{ description }}</p></div>
+    <div class="capture-meta"><span>Captured</span><strong>{{ captured_at }}</strong><span class="mono" title="{{ run_id }}">{{ short_run_id }}</span></div>
+  </section>
+  <div class="scope-note"><strong>{{ scope_label }}</strong><span>{{ scope_note }}</span></div>
+  <section id="overview" aria-labelledby="overview-title">
+    <div class="section-heading"><div><p class="eyebrow">Run summary</p><h2 id="overview-title">What the checks established</h2></div><p>{{ total_checks }} check records · {{ endpoint_count }} endpoint{% if endpoint_count != 1 %}s{% endif %} · {{ capture_count }} captures</p></div>
+    <div class="outcome-grid">
+      {% for summary in summaries %}<a class="outcome-card {{ summary.verdict|lower }}" href="#checks" data-outcome="{{ summary.filter }}"><span class="outcome-label"><span class="status-dot" aria-hidden="true"></span>{{ summary.label }}</span><strong>{{ summary.count }}</strong><span>{{ summary.description }}</span></a>{% endfor %}
+    </div>
+    <div class="panel chart-panel">
+      <div class="panel-heading"><div><h3>Outcome counts by endpoint</h3><p>Checks matching the filters below. Counts describe this report, not a provider quality score.</p></div><span class="reference-tag">{{ reference_label }}</span></div>
+      <div class="chart-legend" aria-label="Chart outcome legend">{% for item in legend %}<span><i style="background:{{ item.color }}" aria-hidden="true"></i>{{ item.label }}</span>{% endfor %}</div>
+      <div id="outcomes-chart" class="chart" role="img" aria-label="Recorded check counts by endpoint and outcome" data-chart-state="pending"><p class="chart-fallback">The chart is optional. All outcome counts are in the table below.</p></div>
+      <details class="chart-table"><summary>View chart data</summary><div class="table-scroll" tabindex="0" role="region" aria-label="Chart data table"><table><caption>Exact outcome counts among the check records in view</caption><thead><tr><th scope="col">Endpoint</th><th scope="col">Outcome</th><th scope="col">Count</th></tr></thead><tbody id="chart-data-body">{% for row in counts %}<tr><th scope="row">{{ row.label }}</th><td>{{ row.verdict }}</td><td class="numeric">{{ row.count }}</td></tr>{% endfor %}</tbody></table></div></details>
+    </div>
+  </section>
+  <section id="checks" aria-labelledby="checks-title">
+    <div class="section-heading"><div><p class="eyebrow">Measurements</p><h2 id="checks-title">Checks, intervals and references</h2></div><a class="download-link" href="checks.json" download>Download complete JSON <span aria-hidden="true">↗</span></a></div>
+    <form class="filter-bar" role="search" aria-label="Filter recorded checks">
+      <div class="search-field"><label for="check-search">Search checks</label><input id="check-search" type="search" placeholder="Check ID, suite or reason" autocomplete="off"></div>
+      <div><label for="endpoint-filter">Endpoint</label><select id="endpoint-filter"><option value="all">All endpoints</option>{% for endpoint in endpoints %}<option value="{{ endpoint.id }}">{{ endpoint.label }}</option>{% endfor %}</select></div>
+      <div><label for="outcome-filter">Outcome</label><select id="outcome-filter"><option value="all">All outcomes</option><option value="other">Info / unsupported / N/A</option>{% for item in legend %}<option value="{{ item.verdict }}">{{ item.label }}</option>{% endfor %}</select></div>
+      <button type="reset" class="reset-button">Reset</button>
+    </form>
+    <div class="results-meta"><p id="visible-count" role="status" aria-live="polite">Showing {{ total_checks }} of {{ total_checks }} check records</p><p>Intervals and n refer to each check's independent sampling unit.</p></div>
+    <noscript><p class="scope-note">JavaScript is disabled. All recorded checks and the chart data table remain available.</p></noscript>
+    <div class="panel table-scroll check-table-wrap" tabindex="0" role="region" aria-label="Recorded checks, scroll horizontally for all statistics">
+      <table class="check-table"><caption class="sr-only">Recorded endpoint checks with uncertainty and reference values</caption><thead><tr><th scope="col">Check / suite</th><th scope="col">Endpoint</th><th scope="col">Outcome</th><th scope="col">n</th><th scope="col">Estimate / interval</th><th scope="col">Delta / interval</th><th scope="col">Reference</th><th scope="col">Margin / adjusted p</th><th scope="col">Reason and evidence</th></tr></thead>
+      <tbody>{% for check in checks %}<tr class="check-row" id="{{ check.row_id }}" data-endpoint="{{ check.endpoint_id }}" data-verdict="{{ check.verdict }}" data-search="{{ check.search }}">
+        <th scope="row"><span class="check-id mono">{{ check.check_id }}</span><span class="subtext">{{ check.suite_id }} · {{ check.check_class }}</span>{% if check.requirement_ids %}<span class="requirement-label">{{ check.requirement_ids|join(', ') }}</span>{% endif %}</th>
+        <td><span class="endpoint-name" title="{{ check.endpoint_id }}">{{ check.endpoint_label }}</span></td>
+        <td><span class="verdict {{ check.verdict|lower }}">{{ check.verdict_label }}</span></td>
+        <td class="numeric mono">{{ check.n }}</td>
+        <td><span class="mono">{{ check.estimate_text }}</span><span class="subtext mono">{{ check.interval_text }}</span>{% if check.interval_label %}<span class="subtext">{{ check.interval_label }}</span>{% endif %}</td>
+        <td><span class="mono">{{ check.delta_text }}</span><span class="subtext mono">{{ check.delta_interval_text }}</span></td>
+        <td><span class="reference-tag">{{ check.reference_tier }}</span><span class="subtext mono">{{ check.reference_text }}</span></td>
+        <td><span class="mono">{{ check.margin_text }}</span><span class="subtext mono">p(adj) {{ check.adjusted_p_text }}</span></td>
+        <td class="reason-cell"><p>{{ check.reason }}</p><details><summary>Inspect evidence</summary><dl class="evidence-details"><dt>Raw p-value</dt><dd class="mono">{{ check.p_text }}</dd><dt>MDE</dt><dd class="mono">{{ check.mde_text }}</dd><dt>Recorded exchanges</dt><dd>{{ check.evidence_count }}</dd>{% if check.evidence_ids %}<dt>Exchange IDs (first {{ check.evidence_ids|length }})</dt><dd class="mono evidence-ids">{{ check.evidence_ids|join('\n') }}</dd>{% endif %}</dl></details></td>
+      </tr>{% endfor %}</tbody></table>
+    </div>
+    <p id="no-results" class="empty-state" hidden>No checks match these filters. Reset the filters to see the full recorded run.</p>
+  </section>
+  <section id="diagnoses" aria-labelledby="diagnoses-title">
+    <div class="section-heading"><div><p class="eyebrow">Interpretation</p><h2 id="diagnoses-title">Diagnoses and competing explanations</h2></div><p>Confidence is an evidence rule, not a probability of cause.</p></div>
+    <p class="diagnosis-note">Read the evidence and falsifiers before attributing a cause. Call-shaped visible text alone cannot identify an internal serving parser.</p>
+    {% if diagnoses %}<div class="diagnosis-grid">{% for diagnosis in diagnoses %}<article class="panel diagnosis-card"><div class="diagnosis-heading"><span class="eyebrow">{{ diagnosis.failure_class }}</span><span class="confidence">{{ diagnosis.confidence }} support</span></div><h3>{{ diagnosis.code }}</h3><p class="endpoint-name">{{ diagnosis.endpoint_label }}</p><p>{{ diagnosis.summary }}</p><details><summary>Alternatives and falsifiers</summary><h4>Other explanations</h4><ul>{% for item in diagnosis.alternatives %}<li>{{ item }}</li>{% endfor %}</ul><h4>What would change this diagnosis</h4><ul>{% for item in diagnosis.falsifiers %}<li>{{ item }}</li>{% endfor %}</ul><p class="subtext">{{ diagnosis.evidence_count }} linked exchanges · {{ diagnosis.check_ids|join(', ') }}</p></details>{% if diagnosis.bundle_href %}<a class="download-link" href="{{ diagnosis.bundle_href }}">Open local evidence bundle <span aria-hidden="true">↗</span></a>{% endif %}</article>{% endfor %}</div>{% else %}<div class="panel empty-diagnoses"><h3>No diagnosis established</h3><p>Read individual check outcomes above. Missing evidence or inconclusive checks do not establish that the endpoint is fault-free.</p></div>{% endif %}
+  </section>
+  <section id="provenance" class="panel provenance-panel" aria-labelledby="provenance-title">
+    <div><p class="eyebrow">Reproducibility</p><h2 id="provenance-title">Where these results came from</h2><p>{{ provenance_note }}</p></div>
+    <dl>{% for row in provenance %}<div><dt>{{ row.label }}</dt><dd class="mono">{{ row.value }}</dd></div>{% endfor %}</dl>
+  </section>
+</main>
+<footer><span class="brand-footer">ServeGauge</span><p>Evidence on recorded probes and sampling settings. No certification of model weights, hardware, quantization or provider intent.</p>{% if methods_href %}<a href="{{ methods_href }}">Methods and limits</a>{% endif %}</footer>
+<script id="report-data" type="application/json">{{ chart_payload|tojson }}</script>
+</body>
+</html>

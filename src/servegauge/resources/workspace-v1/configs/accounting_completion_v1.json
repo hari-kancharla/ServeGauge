@@ -1,0 +1,7 @@
+{
+  "version": "completion-count-v1",
+  "counter_version": "native-text-channels-v1",
+  "generation_version": "generation-field-pairs-v1",
+  "output_cap": 512,
+  "reasoning_effort": "low"
+}

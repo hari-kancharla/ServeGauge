@@ -1,0 +1,11 @@
+{
+  "version": "cache-observations-v1",
+  "smoke": {"groups": 10, "draws": 4},
+  "core": {"groups": 400, "draws": 20},
+  "full": {"groups": 800, "draws": 40},
+  "output_cap": 128,
+  "temperature": 1.0,
+  "reasoning_effort": "low",
+  "choices": ["red", "blue", "green", "gold", "orange", "violet"],
+  "maximum_requests_per_endpoint": 1000000
+}

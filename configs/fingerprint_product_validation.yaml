@@ -1,0 +1,30 @@
+version: fingerprint-product-v1
+seed: 202610191440
+workers: 4
+design:
+  methods: [FP1, FP2, FP3]
+  fp1_cells: 40
+  fp1_samples: 90
+  fp2_cells: 25
+  fp2_samples: 30
+  fp3_samples: 400
+healthy_logit_jitter: 0.3
+fault_logit_noise: 0.3
+route_mix: 0.5
+calibration_replicates: 200
+coverage_replicates: 400
+null_replicates: 2000
+clean_replicates: 60
+fault_replicates: 30
+probability_grid:
+  - [0.25, 0.25, 0.25, 0.25]
+  - [0.55, 0.25, 0.13, 0.07]
+  - [0.85, 0.10, 0.04, 0.01]
+boundary_margin_factors: [0.8, 1.0, 1.2]
+maximum_type_I: 0.065
+maximum_family_rate: 0.05
+minimum_coverage_lower: 0.95
+maximum_false_equivalence_upper: 0.05
+minimum_clean_pass_rate: 0.8
+minimum_fault_power_lower: 0.8
+rationale: "Larger matched-n candidates after retained original-size failures. Separate exact finite-n text estimands, interval coverage, boundary false equivalence, null families and actual captured-wire power. Original faults, margins and reference controls are unchanged; no automatic provider qualification."

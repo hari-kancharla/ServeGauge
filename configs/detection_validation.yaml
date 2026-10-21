@@ -1,0 +1,17 @@
+version: detection-improvements-v2
+seed: 202610190144
+noise:
+  query_sizes: [20, 50, 100, 200]
+  healthy_jitter: [0.0, 0.1, 0.3]
+  fault_noise: 0.3
+  replicates: 100
+  null_replicates: 2000
+  permutations: 999
+  minimum_power_lower: 0.8
+  maximum_null_rate: 0.05
+  rationale: "Truthful top-4 logprobs; unchanged extra iid logit noise, matched healthy variability; three-method Holm family"
+change:
+  calibration_replicates: 5000
+  evaluation_replicates: 2000
+  minimum_abrupt_power: 0.8
+  rationale: "Original v1 trajectory sizes, strengths, cadence and alert target; fresh seeds; no holdout tuning"

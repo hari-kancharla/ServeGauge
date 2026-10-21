@@ -1,0 +1,96 @@
+{
+  "candidate_only": true,
+  "cases": [
+    {
+      "baseline": 0.5,
+      "cadence": "daily",
+      "days": 150,
+      "name": "null-half",
+      "size": 400
+    },
+    {
+      "baseline": 0.75,
+      "cadence": "daily",
+      "days": 150,
+      "name": "null-three-quarters",
+      "size": 400
+    },
+    {
+      "baseline": 0.95,
+      "cadence": "daily",
+      "days": 150,
+      "name": "null-high",
+      "size": 400
+    },
+    {
+      "baseline": 0.95,
+      "cadence": "daily",
+      "change_index": 30,
+      "days": 120,
+      "drop": 0.2,
+      "name": "abrupt-core",
+      "ramp": 1,
+      "size": 400
+    },
+    {
+      "baseline": 0.95,
+      "cadence": "daily",
+      "change_index": 30,
+      "days": 120,
+      "drop": 0.2,
+      "name": "gradual-core",
+      "ramp": 30,
+      "size": 400
+    },
+    {
+      "baseline": 0.95,
+      "cadence": "monthly",
+      "change_index": 12,
+      "days": 36,
+      "drop": 0.2,
+      "name": "gradual-monthly",
+      "ramp": 12,
+      "size": 800
+    },
+    {
+      "baseline": 0.95,
+      "cadence": "daily",
+      "change_index": 30,
+      "days": 120,
+      "drop": 0.05,
+      "name": "mild-core",
+      "ramp": 30,
+      "size": 400
+    },
+    {
+      "baseline": 0.95,
+      "cadence": "monthly",
+      "change_index": 12,
+      "days": 36,
+      "drop": 0.05,
+      "name": "mild-monthly",
+      "ramp": 12,
+      "size": 800
+    },
+    {
+      "baseline": 0.95,
+      "cadence": "daily",
+      "change_index": 30,
+      "days": 120,
+      "drop": 0.2,
+      "missing": 0.15,
+      "name": "missing-gradual",
+      "ramp": 30,
+      "size": 400
+    }
+  ],
+  "interval_scope": "Wilson trajectory any-event rates and item-clustered trajectory bootstrap (2000 resamples) for event counts and conditional delays. Analytic scope is fixed rolling 30-day declared family, not all-future simultaneous.",
+  "namespace": "rolling-evaluation-20261020-v1",
+  "new_spend_usd": 0,
+  "operating_qualification_accepted": false,
+  "oracle": "Independent Decimal-120 thresholds, vectorized sufficient-count policy; compare full public raw-bit replay on 120 held-out count trajectories.",
+  "replicates_per_case": 2000,
+  "selection": "No tuned parameter. Fixed versioned policy; keep every weak-power case.",
+  "source_hash": "8b645eadfa87f0e01625697c65c7b94a1225295b8f08ab4b2710c2751fa510b4",
+  "version": "rolling-candidate-study-v1"
+}

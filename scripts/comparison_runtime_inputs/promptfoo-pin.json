@@ -1,0 +1,16 @@
+{
+  "core_python_dependency": false,
+  "integrity": "sha512-Y6fq/WGTL7lPvDsirNSmmmcPLhURwRao03iv8fCoLbFq6H1eqg5VVTmXiap5Jl+fiRaQQZXYMHb2N1gQm1tGyQ==",
+  "license": "MIT",
+  "lifecycle_scripts_enabled": false,
+  "lock_sha256": "800cc11d8fd125d1932d761a6436a3aae885e41d784b5fc3f6397e0ebbbf149d",
+  "model_api_calls": 0,
+  "name": "promptfoo",
+  "new_spend_usd": 0,
+  "node_engine": ">=22.22.0",
+  "package_sha256": "25ece4bf4497c0a46d1db7fc263eee164bdcd11480bd9416222872eedc443d52",
+  "repository": "git+https://github.com/promptfoo/promptfoo.git",
+  "tarball": "https://registry.npmjs.org/promptfoo/-/promptfoo-0.124.1.tgz",
+  "tool_version": "0.124.1",
+  "version": "comparison-tool-pin-v1"
+}

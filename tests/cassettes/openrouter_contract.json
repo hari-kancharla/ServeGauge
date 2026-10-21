@@ -1,0 +1,80 @@
+{
+  "provenance": "Synthetic contract fixture with fictional providers; not live evidence.",
+  "payload": {
+    "data": {
+      "id": "example/model",
+      "endpoints": [
+        {
+          "provider_name": "Provider A",
+          "tag": "provider-a/fp4/us",
+          "quantization": "fp4",
+          "context_length": 131072,
+          "max_completion_tokens": 4096,
+          "max_prompt_tokens": 131072,
+          "supported_parameters": [
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "tools",
+            "tool_choice",
+            "response_format",
+            "structured_outputs",
+            "reasoning",
+            "logprobs",
+            "top_logprobs"
+          ],
+          "supports_tool_choice": {
+            "none": false,
+            "auto": true,
+            "required": false,
+            "function": false
+          },
+          "pricing": {
+            "prompt": "0.0000001",
+            "completion": "0.0000002",
+            "input_cache_read": "0.00000005",
+            "discount": 0
+          },
+          "status": 0,
+          "uptime_last_1d": 99.9,
+          "service_tier": null
+        },
+        {
+          "provider_name": "Provider B",
+          "tag": "provider-b/bf16",
+          "quantization": "fp4",
+          "context_length": 131072,
+          "max_completion_tokens": 4096,
+          "max_prompt_tokens": 131072,
+          "supported_parameters": [
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "tools",
+            "tool_choice",
+            "response_format",
+            "structured_outputs",
+            "reasoning",
+            "logprobs",
+            "top_logprobs"
+          ],
+          "supports_tool_choice": {
+            "none": false,
+            "auto": true,
+            "required": false,
+            "function": false
+          },
+          "pricing": {
+            "prompt": "0.0000001",
+            "completion": "0.0000002",
+            "input_cache_read": "0.00000005",
+            "discount": 0
+          },
+          "status": 1,
+          "uptime_last_1d": 99.9,
+          "service_tier": null
+        }
+      ]
+    }
+  }
+}
