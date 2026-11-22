@@ -23,7 +23,7 @@ PowerShell and macOS or Linux terminals. Initial setup downloads dependencies
 and checksum-verified tokenizer files. The demo uses no API key or paid credits.
 
 ```text
-git clone https://github.com/hari-kancharla/ServeGuage.git servegauge
+git clone https://github.com/hari-kancharla/ServeGauge.git servegauge
 cd servegauge
 uv run python scripts/dev.py setup
 uv run --offline servegauge --help
@@ -91,6 +91,12 @@ exit codes, estimates, requirements files, and reports.
 - [Reference packs and fingerprint qualification](docs/references.md)
 - [Local monitoring](docs/monitoring.md)
 - [Development and verification](docs/development.md)
+
+`configs/endpoints/` holds three OpenRouter endpoint discovery snapshots taken on
+2026-10-18: `openai/gpt-oss-120b` (24 endpoints), `deepseek/deepseek-v4-pro-0813`
+(23), and `z-ai/glm-5.3` (46). They are inputs for owner runs, not published
+measurement results. This repository does not include results from a live
+multi-endpoint study.
 
 The retained laboratory files support reproducible tests. They describe scripted
 MOCK processes, not a ranking or certification of real providers. Private

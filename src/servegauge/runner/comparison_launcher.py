@@ -7,6 +7,7 @@ import hashlib
 import math
 import os
 import subprocess
+import sys
 import time
 from collections.abc import Mapping
 from datetime import UTC, datetime
@@ -240,7 +241,10 @@ def launch(
         _require_sanitized(note.model_dump(mode="json"))
         setup_measurement(note, kit_hash=kit_hash, procedure=procedure, first_valid_utc=None)
     if user is None:
-        user = f"{os.getuid()}:{os.getgid()}" if os.name != "nt" else "65534:65534"
+        if sys.platform == "win32":
+            user = "65534:65534"
+        else:
+            user = f"{os.getuid()}:{os.getgid()}"
     out.mkdir(mode=0o700, parents=True)
     procedures = []
     for procedure in ["ordinary", "external"]:
