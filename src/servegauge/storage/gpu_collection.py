@@ -42,8 +42,10 @@ def collection_assets(root: Path, spec: CollectionSpec) -> dict[str, Any]:
     ]
     _paths(*(root / name for name in names))
     embed = yaml.safe_load((root / "configs/fingerprints_embed.yaml").read_bytes())
-    relative = Path(embed["model_manifest"])
-    if relative.is_absolute() or ".." in relative.parts or "\\" in str(relative):
+    declared = str(embed["model_manifest"])
+    relative = Path(declared)
+    # Check the declared text: str(Path) always uses backslashes on Windows.
+    if relative.is_absolute() or ".." in relative.parts or "\\" in declared:
         raise ValueError("study_workspace_embedding_manifest_required")
     path = root / relative
     _paths(path)

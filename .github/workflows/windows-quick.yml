@@ -1,0 +1,15 @@
+name: Windows quick check
+on: [push]
+permissions:
+  contents: read
+jobs:
+  quick:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+          enable-cache: true
+      - run: uv run python scripts/dev.py setup
+      - run: uv run pytest --no-cov -q tests/integration/test_gpu_study_analysis_workflow.py tests/integration/test_gpu_study_cli_workflow.py tests/integration/test_gpu_study_collection_workflow.py tests/integration/test_gpu_study_owner_workflow.py tests/integration/test_runner.py tests/unit/test_comparison_isolation.py tests/unit/test_gpu_study_protocol.py tests/unit/test_observatory_provenance.py tests/unit/test_cli_bindings.py tests/unit/test_monitor_producer_identity.py

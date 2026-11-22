@@ -45,7 +45,7 @@ def proportion(successes: int, n: int) -> dict[str, Any]:
 def source_hash() -> str:
     return content_hash(
         {
-            str(p.relative_to(ROOT)): content_hash(p.read_text(encoding="utf-8"))
+            p.relative_to(ROOT).as_posix(): content_hash(p.read_text(encoding="utf-8"))
             for p in sorted((ROOT / "src/servegauge").rglob("*.py"))
         }
     )
