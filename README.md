@@ -23,7 +23,7 @@ PowerShell and macOS or Linux terminals. Initial setup downloads dependencies
 and checksum-verified tokenizer files. The demo uses no API key or paid credits.
 
 ```text
-git clone https://github.com/hari-kancharla/ServeGuage.git servegauge
+git clone https://github.com/hari-kancharla/ServeGauge.git servegauge
 cd servegauge
 uv run python scripts/dev.py setup
 uv run --offline servegauge --help
