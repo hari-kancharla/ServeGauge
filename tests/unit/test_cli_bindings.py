@@ -56,8 +56,19 @@ def process(
     environment = {
         k: v
         for k, v in os.environ.items()
-        if k not in {"OPENROUTER_API_KEY", "SERVEGAUGE_OWNER_RUN", "TRUEWEIGHTS_OWNER_RUN"}
+        if k
+        not in {
+            "OPENROUTER_API_KEY",
+            "SERVEGAUGE_OWNER_RUN",
+            "TRUEWEIGHTS_OWNER_RUN",
+            # CI runners force colored Rich output, which splits option names with
+            # escape codes; children print plain text so output checks stay stable.
+            "GITHUB_ACTIONS",
+            "FORCE_COLOR",
+            "PY_COLORS",
+        }
     }
+    environment["NO_COLOR"] = "1"
     environment["SERVEGAUGE_TOKENIZER_CACHE"] = str(ROOT / ".cache/tokenizers")
     # Every child refuses all sockets; no account or provider preflight can escape.
     code = (

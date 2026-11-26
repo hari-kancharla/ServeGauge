@@ -4,9 +4,11 @@ from __future__ import annotations
 
 import _random
 import ast
+import ctypes
 import hashlib
 import importlib.metadata
 import importlib.util
+import os
 import platform
 import random
 import sys
@@ -183,6 +185,73 @@ def generator_manifest(
     return {**value, "generator_hash": content_hash(value)}
 
 
+class _DlInfo(ctypes.Structure):
+    dli_fname: bytes | None
+    dli_fbase: int | None
+    dli_sname: bytes | None
+    dli_saddr: int | None
+    _fields_ = [
+        ("dli_fname", ctypes.c_char_p),
+        ("dli_fbase", ctypes.c_void_p),
+        ("dli_sname", ctypes.c_char_p),
+        ("dli_saddr", ctypes.c_void_p),
+    ]
+
+
+def _linux_python_library() -> Path | None:
+    """Find the loaded CPython object through its dynamically resolved API symbol."""
+    if sys.platform != "linux":
+        return None
+    try:
+        address = ctypes.cast(ctypes.pythonapi.Py_GetVersion, ctypes.c_void_p).value
+        if type(address) is not int or not 0 < address < 1 << (ctypes.sizeof(ctypes.c_void_p) * 8):
+            return None
+        try:
+            library = ctypes.CDLL(None)
+            lookup = library.dladdr
+        except AttributeError:
+            library = ctypes.CDLL("libdl.so.2")
+            lookup = library.dladdr
+        lookup.argtypes = [ctypes.c_void_p, ctypes.POINTER(_DlInfo)]
+        lookup.restype = ctypes.c_int
+        info = _DlInfo()
+        if lookup(ctypes.c_void_p(address), ctypes.byref(info)) == 0:
+            return None
+        filename = info.dli_fname
+        if not filename:
+            return None
+        path = Path(os.fsdecode(filename))
+        if not path.is_absolute() or any(p.lower() == "starter files" for p in path.parts):
+            return None
+        # A statically linked interpreter reports its own (often venv-symlinked) path.
+        # Resolve to the real file that was loaded, as the executable hash does.
+        return path.resolve()
+    except (OSError, AttributeError, ValueError, TypeError, ctypes.ArgumentError):
+        return None
+
+
+def _windows_python_library() -> Path | None:
+    """Resolve the loaded CPython DLL; absent or truncated evidence stays unknown."""
+    if sys.platform != "win32":
+        return None
+    handle = getattr(sys, "dllhandle", None)
+    if type(handle) is not int or not 0 < handle < 1 << (ctypes.sizeof(ctypes.c_void_p) * 8):
+        return None
+    try:
+        library = ctypes.WinDLL("kernel32.dll", use_last_error=True)
+        filename = library.GetModuleFileNameW
+        filename.argtypes = [ctypes.c_void_p, ctypes.POINTER(ctypes.c_wchar), ctypes.c_uint32]
+        filename.restype = ctypes.c_uint32
+        buffer = ctypes.create_unicode_buffer(32768)
+        length = filename(ctypes.c_void_p(handle), buffer, len(buffer))
+        if not 0 < length < len(buffer):
+            return None
+        path = Path(buffer.value)
+        return path if path.is_absolute() else None
+    except (OSError, ValueError, AttributeError):
+        return None
+
+
 def runtime_envelope(*, lock_path: Path = Path("uv.lock")) -> dict[str, Any]:
     """Record actual local inputs; this alone never qualifies their behavior."""
     dependencies: dict[str, str | None] = {}
@@ -198,14 +267,21 @@ def runtime_envelope(*, lock_path: Path = Path("uv.lock")) -> dict[str, Any]:
     if any(p.lower() == "starter files" for p in executable.parts):
         raise ValueError("runtime_executable_unavailable")
     executable_hash = _sha(executable.resolve())
-    library_dir = sysconfig.get_config_var("LIBDIR")
-    library_name = sysconfig.get_config_var("LDLIBRARY")
-    shared = sysconfig.get_config_var("Py_ENABLE_SHARED")
-    library_hash = (
-        _sha(Path(library_dir) / library_name)
-        if isinstance(library_dir, str) and isinstance(library_name, str)
-        else None
-    )
+    if sys.platform == "win32":
+        shared = 1
+        library_hash = _sha(_windows_python_library())
+    else:
+        shared = sysconfig.get_config_var("Py_ENABLE_SHARED")
+        if sys.platform == "linux":
+            library_hash = _sha(_linux_python_library()) if shared == 1 else None
+        else:
+            library_dir = sysconfig.get_config_var("LIBDIR")
+            library_name = sysconfig.get_config_var("LDLIBRARY")
+            library_hash = (
+                _sha(Path(library_dir) / library_name)
+                if isinstance(library_dir, str) and isinstance(library_name, str)
+                else None
+            )
     rng = {
         "origin": "built-in"
         if origin == "built-in"

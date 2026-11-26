@@ -225,7 +225,9 @@ async def test_total_request_deadline_preserves_partial_capture_and_charge(tmp_p
             approved=True,
             transports={endpoint.id: transport},
         ),
-        timeout=0.5,
+        # Hang guard only; the 0.01s request deadline under test is asserted below.
+        # Slow CI runners can spend more than 0.5s on run setup before the request.
+        timeout=30,
     )
     record = next(RawStore(tmp_path / "data/raw").exchanges(run_id=result.run_id))
     assert result.errors == 1 and record.error == "transport_timeout"
