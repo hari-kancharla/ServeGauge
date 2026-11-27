@@ -92,6 +92,12 @@ exit codes, estimates, requirements files, and reports.
 - [Local monitoring](docs/monitoring.md)
 - [Development and verification](docs/development.md)
 
+`configs/endpoints/` holds three OpenRouter endpoint discovery snapshots taken on
+2026-10-18: `openai/gpt-oss-120b` (24 endpoints), `deepseek/deepseek-v4-pro-0813`
+(23), and `z-ai/glm-5.3` (46). They are inputs for owner runs, not published
+measurement results. This repository does not include results from a live
+multi-endpoint study.
+
 The retained laboratory files support reproducible tests. They describe scripted
 MOCK processes, not a ranking or certification of real providers. Private
 captures, account state, development instructions, and live pilot reports are

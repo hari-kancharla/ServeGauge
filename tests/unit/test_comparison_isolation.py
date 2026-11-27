@@ -92,7 +92,7 @@ def test_generated_eval_is_serial_uncached_local_and_never_owner(tmp_path: Path)
     profile = process.profile.read_text()
     assert "(deny default)" in profile and "(deny network*)" in profile
     assert "(allow file-write*" in profile
-    assert str(run) in profile
+    assert json.dumps(str(run)) in profile
     assert '(subpath "/")' not in profile
 
 
